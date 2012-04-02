@@ -8,7 +8,7 @@ Which is why [Svbtle][dc] interests me. Apart from being the hardest name to typ
 
 > I plan to offer copy-editing and other benefits to help improve the writing of members on the Network, for example.
 
-It's a network that looks like it's actually going to actively *do something* for its writers rather than just give them more viewers and the [occasional plug from Curtis himself][dc2]. Of course, how it plays out in the next few months will be interesting because those "benefits" will be hard to scale as more writers join up. Although knowing Curtis, I doubt there will be too many to begin with. I haven't signed up for an invite because I know I won't get in[^1]. That and the fact that I don't want to be on the clock or feel responsible for writing --- I like the freedom to be lethargic, to passively observe the daily workings of the world without feeling the need to say something about it at every step of the way [^2]. 
+It's a network that looks like it's actually going to actively *do something* for its writers rather than just give them more viewers and the [occasional plug from Curtis himself][dc2]. Of course, how it plays out in the next few months will be interesting because those "benefits" will be hard to scale as more writers join up. Although knowing Curtis, I doubt there will be too many to begin with. I haven't signed up for an invite because I know I won't get in[^1]. That and the fact that I don't want to be on the clock or feel responsible for writing — I like the freedom to be lethargic, to passively observe the daily workings of the world without feeling the need to say something about it at every step of the way [^2]. 
 
 [dc]: http://dcurt.is/codename-svbtle
 [dc2]: https://twitter.com/dcurtis/status/186897703198928898

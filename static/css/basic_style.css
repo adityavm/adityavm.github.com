@@ -98,7 +98,9 @@ body {
   font-size: 9px;
 }
 #content #posts .post .post-body blockquote {
-  border-left: 2px solid #298cb2;
+  margin: 20px auto;
+  width: 80%;
+  border-left: 5px solid #298cb2;
   padding-left: 10px;
   color: #333;
 }
