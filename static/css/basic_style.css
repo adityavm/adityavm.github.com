@@ -9,7 +9,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  padding-top: 20px;
+  padding-top: 85px;
   margin-top: 0;
   background-color: #3b3b3b;
   height: 100%;
@@ -28,6 +28,16 @@ body {
 #top .blog-title a:hover {
   background-color: #ff476c;
   color: #fff;
+}
+#top a.side {
+  color: #fff;
+  display: block;
+  padding: 2px 10px;
+  text-align: right;
+}
+#top a.side:hover {
+  background-color: #fff;
+  color: #3b3b3b;
 }
 #top .copyright {
   position: absolute;
