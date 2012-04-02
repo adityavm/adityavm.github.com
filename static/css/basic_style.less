@@ -61,7 +61,7 @@ html,body {
 			margin: 50px 0;
 
 			.post-title {
-				font-size: 18px;
+				font-size: 20px;
 				font-family: "skolar", serif;
 				font-weight: 600;
 				text-align: center;
@@ -75,12 +75,25 @@ html,body {
 				}
 			}
 
+			.meta {
+				padding: 2px 4px;
+				color: #aaa;
+				font-size: 12px;
+				text-align: center;
+			}
+
 			&.link {
 				.post-title {
 					font-size: 14px;
 					text-transform: uppercase;
 
 					a { color: lighten(@teal, 10%); }
+				}
+
+				.meta {
+					font-style: italic;
+					text-align: right;
+					border-bottom: 1px solid #eee;
 				}
 			}
 
@@ -96,15 +109,6 @@ html,body {
 						color: #fff;
 					}
 				}
-			}
-
-			.meta {
-				padding: 2px 4px;
-				color: #aaa;
-				font-size: 12px;
-				font-style: italic;
-				text-align: right;
-				border-bottom: 1px solid #eee;
 			}
 		}
 	}
