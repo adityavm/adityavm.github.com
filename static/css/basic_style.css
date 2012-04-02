@@ -48,7 +48,7 @@ body {
   color: #888;
 }
 #content #posts .post {
-  margin: 50px 0;
+  margin: 80px 0;
 }
 #content #posts .post .post-title {
   font-size: 20px;
@@ -115,6 +115,9 @@ body {
 }
 #content #posts .post .post-body .footnote a {
   color: #666;
+}
+#content #posts .post .post-body .footnote a[rev=footnote] {
+  font-size: 9px;
 }
 #content #pages {
   margin: 20px auto;
