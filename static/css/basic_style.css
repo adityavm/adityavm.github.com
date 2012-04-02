@@ -13,11 +13,10 @@ body {
   margin-top: 0;
   background-color: #3b3b3b;
   height: 100%;
-  width: 100px;
 }
 #top .blog-title {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
 }
 #top .blog-title a {
   text-decoration: none;
@@ -73,6 +72,7 @@ body {
 #content #posts .post.link .post-title {
   font-size: 14px;
   text-transform: uppercase;
+  text-align: left;
 }
 #content #posts .post.link .post-title a {
   color: #3ca8d2;
@@ -88,12 +88,31 @@ body {
   font-family: "skolar";
 }
 #content #posts .post .post-body a {
-  color: #298cb2;
+  color: #222;
 }
 #content #posts .post .post-body a:hover {
-  background-color: #298cb2;
-  color: #fff;
+  color: #298cb2;
+}
+#content #posts .post .post-body a[rel=footnote] {
+  font-size: 9px;
+}
+#content #posts .post .post-body blockquote {
+  border-left: 2px solid #298cb2;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#content #posts .post .post-body .footnote {
+  font-size: 13px;
+  color: #aaa;
+}
+#content #posts .post .post-body .footnote hr {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+  height: 0;
+  width: 200px;
 }
 #content #pages {
+  margin: 20px auto;
   text-align: center;
 }

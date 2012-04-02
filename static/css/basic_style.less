@@ -14,11 +14,10 @@ html,body {
 	padding-top: 20px; margin-top: 0;
 	background-color: @dgray;
 	height: 100%;
-	width: 100px;
 
 	.blog-title {
 		text-transform: uppercase;
-		font-size: 14px;
+		font-size: 16px;
 
 		a {
 			text-decoration: none;
@@ -87,6 +86,7 @@ html,body {
 				.post-title {
 					font-size: 14px;
 					text-transform: uppercase;
+					text-align: left;
 
 					a { color: lighten(@teal, 10%); } 
 				}
@@ -104,11 +104,32 @@ html,body {
 				font-family: "skolar";
 
 				a {
-					color: @teal;
+					color: #222;
 
 					&:hover {
-						background-color: @teal;
-						color: #fff;
+						color: @teal;
+					}
+
+					&[rel=footnote]{
+						font-size: 9px;
+					}
+				}
+
+				blockquote {
+					border-left: 2px solid @teal;
+					padding-left: 10px;
+					margin-left: 10px;
+				}
+
+				.footnote {
+					font-size: 13px;
+					color: #aaa;
+
+					hr {
+						border: 0;
+						border-bottom: 1px solid #ccc;
+						margin: 20px 0;
+						height: 0; width: 200px;
 					}
 				}
 			}
@@ -116,6 +137,7 @@ html,body {
 	}
 
 	#pages {
+		margin: 20px auto;
 		text-align: center;
 	}
 }
