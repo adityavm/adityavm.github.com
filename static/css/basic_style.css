@@ -48,6 +48,7 @@ body {
 }
 #content #posts .post.link .post-title {
   font-size: 14px;
+  text-transform: uppercase;
 }
 #content #posts .post.link .post-title a {
   color: #65bbdc;
