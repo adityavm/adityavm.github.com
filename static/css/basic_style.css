@@ -58,7 +58,6 @@ body {
 }
 #content #posts .post .post-title a {
   color: #298CB2;
-  border-bottom: 1px solid #ccc;
 }
 #content #posts .post .post-title a:hover {
   text-decoration: underline;
@@ -90,6 +89,7 @@ body {
 }
 #content #posts .post .post-body a {
   color: #222;
+  border-bottom: 1px solid #ccc;
 }
 #content #posts .post .post-body a:hover {
   color: #298cb2;
@@ -100,6 +100,7 @@ body {
 #content #posts .post .post-body blockquote {
   border-left: 2px solid #298cb2;
   padding-left: 10px;
+  color: #333;
 }
 #content #posts .post .post-body .footnote {
   font-size: 13px;
