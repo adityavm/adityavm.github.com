@@ -32,6 +32,8 @@ html,body {
 	}
 
 	#posts {
+		@teal: #298CB2;
+
 		.post {
 			margin: 50px 0;
 
@@ -45,9 +47,26 @@ html,body {
 				a {	color: #298CB2; }
 			}
 
-			.postbody {
+			&.link {
+				.post-title {
+					font-size: 14px;
+
+					a { color: lighten(@teal, 20%); }
+				}
+			}
+
+			.post-body {
 				color: #555;
 				font-family: "skolar";
+
+				a {
+					color: @teal;
+
+					&:hover {
+						background-color: @teal;
+						color: #fff;
+					}
+				}
 			}
 
 			.meta {

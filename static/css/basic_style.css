@@ -40,9 +40,22 @@ body {
 #content #posts .post .post-title a {
   color: #298CB2;
 }
-#content #posts .post .postbody {
+#content #posts .post.link .post-title {
+  font-size: 14px;
+}
+#content #posts .post.link .post-title a {
+  color: #65bbdc;
+}
+#content #posts .post .post-body {
   color: #555;
   font-family: "skolar";
+}
+#content #posts .post .post-body a {
+  color: #298cb2;
+}
+#content #posts .post .post-body a:hover {
+  background-color: #298cb2;
+  color: #fff;
 }
 #content #posts .post .meta {
   padding: 2px 4px;
