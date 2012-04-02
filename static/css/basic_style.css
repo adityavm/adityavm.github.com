@@ -40,6 +40,9 @@ body {
 #content #posts .post .post-title a {
   color: #298CB2;
 }
+#content #posts .post .post-title a:hover {
+  text-decoration: underline;
+}
 #content #posts .post.link .post-title {
   font-size: 14px;
 }
