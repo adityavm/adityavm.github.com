@@ -97,7 +97,8 @@ body {
 }
 #content #posts .post .post-body {
   color: #666;
-  font-family: "prenton", sans-serif;
+  font-family: "facitweb", sans-serif;
+  line-height: 1.5em;
 }
 #content #posts .post .post-body a {
   color: #222;
