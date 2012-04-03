@@ -97,6 +97,7 @@ body {
 }
 #content #posts .post .post-body {
   color: #666;
+  font-size: 12px;
   font-family: "facitweb", sans-serif;
   line-height: 1.5em;
 }
@@ -118,7 +119,7 @@ body {
   color: #333;
 }
 #content #posts .post .post-body .footnote {
-  font-size: 13px;
+  font-size: 12px;
   color: #888;
 }
 #content #posts .post .post-body .footnote hr {
