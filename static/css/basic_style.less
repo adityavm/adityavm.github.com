@@ -48,7 +48,8 @@ a {
 		color: @dgray;
 		background-color: #f5f5f5;
 		display: block;
-		padding: 4px 10px;
+		padding: 5px 10px;
+		font-size: 16px;
 		text-align: right;
 		text-decoration: none;
 
@@ -56,6 +57,10 @@ a {
 			background-color: @teal;
 			color: #f5f5f5;
 		}
+	}
+
+	a.side + a.side {
+		border-top: 1px solid #f1f1f1;
 	}
 
 	.copyright {
