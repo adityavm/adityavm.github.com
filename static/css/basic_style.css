@@ -20,6 +20,9 @@ a {
   margin-top: 0;
   height: 100%;
 }
+#top img.icon {
+  width: 150px;
+}
 #top .blog-title {
   text-transform: uppercase;
   font-size: 20px;
