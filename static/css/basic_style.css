@@ -125,6 +125,9 @@ a {
 #content #posts .post .post-body a[rel=footnote] {
   font-size: 9px;
 }
+#content #posts .post .post-body p {
+  margin: 1em 0;
+}
 #content #posts .post .post-body blockquote {
   margin: 20px auto;
   width: 80%;
