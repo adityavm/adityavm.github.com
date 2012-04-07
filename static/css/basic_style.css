@@ -154,8 +154,11 @@ a {
 }
 #content #posts .post .post-footer {
   font-size: 12px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #eee;
   padding-top: 5px;
+}
+#content #posts .post .post-footer a {
+  color: #ccc;
 }
 #content #pages {
   margin: 20px auto;
