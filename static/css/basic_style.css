@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "facitweb", sans-serif;
+  background-color: #fff;
+}
+body {
+  border-top: 5px solid #298cb2;
+}
+a {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+}
+#top {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 80px;
+  margin-top: 0;
+  height: 100%;
+}
+#top img.icon {
+  width: 150px;
+}
+#top .blog-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#top .blog-title a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #3b3b3b;
+  color: #ff476c;
+}
+#top .blog-title a:hover {
+  background-color: #ff476c;
+  color: #fff;
+}
+#top a.side {
+  color: #3b3b3b;
+  background-color: #f5f5f5;
+  display: block;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: right;
+  text-decoration: none;
+}
+#top a.side:hover {
+  background-color: #298cb2;
+  color: #f5f5f5;
+}
+#top a.side + a.side {
+  border-top: 1px solid #f1f1f1;
+}
+#top .copyright {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  display: none;
+}
+#content {
+  margin: 100px auto 0;
+  width: 600px;
+}
+#content a {
+  text-decoration: none;
+  color: #888;
+}
+#content #posts .post {
+  margin: 80px 0;
+}
+#content #posts .post .post-title {
+  font-size: 24px;
+  font-family: "skolar", "Georgia", serif;
+  font-weight: 600;
+  text-align: center;
+}
+#content #posts .post .post-title a {
+  color: #298CB2;
+}
+#content #posts .post .post-title a:hover {
+  text-decoration: underline;
+}
+#content #posts .post .meta {
+  padding: 2px 4px;
+  color: #aaa;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#content #posts .post.link .post-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+}
+#content #posts .post.link .post-title a {
+  color: #3ca8d2;
+}
+#content #posts .post.link .meta {
+  font-style: italic;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  text-transform: normal;
+}
+#content #posts .post .post-body {
+  color: #666;
+  font-size: 13px;
+  font-family: "facitweb", sans-serif;
+  line-height: 1.7em;
+}
+#content #posts .post .post-body a {
+  color: #222;
+  border-bottom: 1px solid #ccc;
+}
+#content #posts .post .post-body a:hover {
+  color: #298cb2;
+}
+#content #posts .post .post-body a[rel=footnote] {
+  font-size: 9px;
+}
+#content #posts .post .post-body p {
+  margin: 1em 0;
+}
+#content #posts .post .post-body blockquote {
+  margin: 20px 5px;
+  width: 80%;
+  border-left: 5px solid #298cb2;
+  padding-left: 10px;
+  color: #333;
+}
+#content #posts .post .post-body .footnote {
+  font-size: 13px;
+  color: #888;
+}
+#content #posts .post .post-body .footnote hr {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+  height: 0;
+  width: 200px;
+}
+#content #posts .post .post-body .footnote a {
+  color: #666;
+}
+#content #posts .post .post-body .footnote a[rev=footnote] {
+  font-size: 9px;
+}
+#content #posts .post .post-footer {
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
+#content #pages {
+  margin: 20px auto;
+  text-align: center;
+}
