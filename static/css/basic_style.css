@@ -135,6 +135,15 @@ a {
   padding-left: 10px;
   color: #333;
 }
+#content #posts .post .post-body blockquote cite {
+  color: #888;
+}
+#content #posts .post .post-body blockquote cite a {
+  color: #298cb2;
+}
+#content #posts .post .post-body blockquote cite:before {
+  content: "\2014";
+}
 #content #posts .post .post-body .footnote {
   font-size: 13px;
   color: #888;
