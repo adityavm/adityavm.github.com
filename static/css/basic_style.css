@@ -67,7 +67,7 @@ a {
 }
 #content {
   margin: 100px 0 0 200px;
-  width: 700px;
+  width: 500px;
 }
 #content a {
   text-decoration: none;
@@ -95,6 +95,9 @@ a {
   font-size: 12px;
   text-transform: uppercase;
   border-bottom: 1px solid #eee;
+}
+#content #posts .post .meta a:hover {
+  text-decoration: underline;
 }
 #content #posts .post.link .post-title {
   margin-bottom: 20px;
@@ -172,6 +175,9 @@ a {
 }
 #content #posts .post .post-footer a {
   color: #ccc;
+}
+#content #posts .post .post-footer a:hover {
+  text-decoration: underline;
 }
 #content #paginator {
   margin: 20px auto;
