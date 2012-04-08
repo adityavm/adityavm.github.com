@@ -66,8 +66,8 @@ a {
   display: none;
 }
 #content {
-  margin: 100px auto 0;
-  width: 600px;
+  margin: 100px 0 0 200px;
+  width: 700px;
 }
 #content a {
   text-decoration: none;
@@ -77,10 +77,10 @@ a {
   margin: 100px 0;
 }
 #content #posts .post .post-title {
+  margin-bottom: 5px;
   font-size: 24px;
   font-family: "skolar", "Georgia", serif;
   font-weight: normal;
-  text-align: center;
 }
 #content #posts .post .post-title a {
   color: #298CB2;
@@ -89,13 +89,15 @@ a {
   text-decoration: underline;
 }
 #content #posts .post .meta {
-  padding: 2px 4px;
+  padding: 0 0 10px;
+  margin-bottom: 5px;
   color: #aaa;
   font-size: 12px;
-  text-align: center;
   text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
 }
 #content #posts .post.link .post-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
@@ -109,6 +111,7 @@ a {
   text-align: right;
   border-bottom: 1px solid #eee;
   text-transform: normal;
+  border-bottom: 0;
 }
 #content #posts .post .post-body {
   color: #666;
