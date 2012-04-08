@@ -94,7 +94,7 @@ a {
   color: #aaa;
   font-size: 12px;
   text-transform: uppercase;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 #content #posts .post.link .post-title {
   margin-bottom: 20px;
@@ -154,8 +154,8 @@ a {
 }
 #content #posts .post .post-body .footnote hr {
   border: 0;
-  border-bottom: 1px solid #ccc;
-  margin: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin: 5px 0;
   height: 0;
   width: 200px;
 }
