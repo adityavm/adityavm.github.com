@@ -79,7 +79,7 @@ a {
 #content #posts .post .post-title {
   font-size: 24px;
   font-family: "skolar", "Georgia", serif;
-  font-weight: 600;
+  font-weight: normal;
   text-align: center;
 }
 #content #posts .post .post-title a {
@@ -96,6 +96,7 @@ a {
   text-transform: uppercase;
 }
 #content #posts .post.link .post-title {
+  font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
   text-align: left;
@@ -169,7 +170,16 @@ a {
 #content #posts .post .post-footer a {
   color: #ccc;
 }
-#content #pages {
+#content #paginator {
   margin: 20px auto;
   text-align: center;
+}
+#content #paginator a {
+  background-color: #383838;
+  color: #eee;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+#content #paginator a:hover {
+  background-color: #298cb2;
 }
