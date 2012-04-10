@@ -181,8 +181,7 @@ a {
 }
 #content #paginator,
 #content #btb {
-  margin: 20px auto;
-  text-align: center;
+  margin: 20px auto 40px;
 }
 #content #paginator a,
 #content #btb a {
@@ -196,6 +195,5 @@ a {
   background-color: #298cb2;
 }
 #content #btb {
-  margin-bottom: 40px;
   text-align: left;
 }
