@@ -179,16 +179,23 @@ a {
 #content #posts .post .post-footer a:hover {
   text-decoration: underline;
 }
-#content #paginator {
+#content #paginator,
+#content #btb {
   margin: 20px auto;
   text-align: center;
 }
-#content #paginator a {
+#content #paginator a,
+#content #btb a {
   background-color: #3b3b3b;
   color: #eee;
   padding: 4px 8px;
   font-size: 16px;
 }
-#content #paginator a:hover {
+#content #paginator a:hover,
+#content #btb a:hover {
   background-color: #298cb2;
+}
+#content #btb {
+  margin-bottom: 40px;
+  text-align: left;
 }
