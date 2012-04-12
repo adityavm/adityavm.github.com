@@ -1,18 +1,20 @@
-@dgray: #3B3B3B;
-@pink: #FF476C;
-@teal: #298CB2;
-@brick: #C25B37;
-@mud: #CC9324;
+@dgray: #3b3b3b;
+@blue: #324654;
+@dirt: #788880;
+@green: #9C9985;
+@orange: #C46D3B;
+@ceramic: #E3CBAC;
+
 
 html,body {
 	margin: 0;
 	padding: 0;
 	font: 14px "facitweb", sans-serif;
-	background-color: #fff;
+	background-color: @green;
 }
 
 body {
-	border-top: 5px solid @brick;
+	border-top: 5px solid @green;
 }
 
 a {
@@ -24,7 +26,6 @@ a {
 	position: fixed;
 	right: 0; top: 0;
 	padding-top: 80px; margin-top: 0;
-	//background-color: @dgray;
 	height: 100%;
 
 	img.icon {
@@ -41,10 +42,10 @@ a {
 			display: inline-block;
 			padding: 5px 10px;
 			background-color: @dgray;
-			color: @mud;
+			color: @orange;
 
 			&:hover {
-				background-color: @mud;
+				background-color: @orange;
 				color: #fff;
 			}
 		}
@@ -52,7 +53,7 @@ a {
 
 	a.side {
 		color: @dgray;
-		background-color: #f5f5f5;
+		background-color: fadeout(#000, 90%);
 		display: block;
 		padding: 5px 10px;
 		font-size: 16px;
@@ -60,7 +61,7 @@ a {
 		text-decoration: none;
 
 		&:hover {
-			background-color: @brick;
+			background-color: @orange;
 			color: #f5f5f5;
 		}
 	}
@@ -98,10 +99,9 @@ a {
 				font-size: 24px;
 				font-family: "skolar", "Georgia", serif;
 				font-weight: normal;
-				//text-align: center;
 
 				a {	
-					color: @brick;
+					color: #fff;
 					
 					&:hover {
 						text-decoration: underline;
@@ -116,7 +116,7 @@ a {
 				font-size: 12px;
 				//text-align: center;
 				text-transform: uppercase;
-				border-bottom: 1px solid #eee;
+				border-bottom: 1px solid fadeout(#fff, 90%);
 
 				a {
 					&:hover {
@@ -133,7 +133,7 @@ a {
 					text-transform: uppercase;
 					text-align: left;
 
-					a { color: lighten(@brick, 10%); } 
+					a { color: fadeout(#fff, 10%); } 
 				}
 
 				.meta {
@@ -152,11 +152,11 @@ a {
 				line-height: 1.7em;
 
 				a {
-					color: #222;
+					color: #eee;
 					border-bottom: 1px solid #ccc;
 
 					&:hover {
-						color: @brick;
+						color: #fff;
 					}
 
 					&[rel=footnote]{
@@ -171,15 +171,15 @@ a {
 				blockquote {
 					margin: 20px 5px;
 					width: 80%;
-					border-left: 5px solid @brick;
+					border-left: 5px solid @orange;
 					padding-left: 10px;
-					color: #333;
+					color: #ddd;
 
 					cite {
-						color: #888;
+						color: #eee;
 
 						a {
-							color: @brick;
+							color: #fff;
 						}
 
 						&:before {
@@ -190,17 +190,17 @@ a {
 
 				.footnote {
 					font-size: 13px;
-					color: #888;
+					color: #ddd;
 
 					hr {
 						border: 0;
-						border-bottom: 1px solid #eee;
+						border-bottom: 1px solid fadeout(#fff, 90%);
 						margin: 5px 0;
 						height: 0; width: 200px;
 					}
 
 					a {
-						color: #666;
+						color: #eee;
 
 						&[rev=footnote]{
 							font-size: 9px;
@@ -211,11 +211,11 @@ a {
 
 			.post-footer {
 				font-size: 12px;
-				border-top: 1px solid #eee;
+				border-top: 1px solid fadeout(#fff, 90%);
 				padding-top: 5px;
 
 				a {
-					color: #ccc;
+					color: #ddd;
 
 					&:hover {
 						text-decoration: underline;
@@ -231,13 +231,14 @@ a {
 		//text-align: center;
 
 		a {
-			background-color: @dgray;
+			background-color: fadeout(#000, 50%);
 			color: #eee;
 			padding: 4px 8px;
 			font-size: 16px;
 
 			&:hover {
-				background-color: @brick;
+				background-color: @orange;
+				color: #fff;
 			}
 		}
 	}
