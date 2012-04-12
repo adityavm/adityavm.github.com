@@ -50,7 +50,7 @@ a {
 }
 #top a.side:hover {
   background-color: #c46d3b;
-  color: #f5f5f5;
+  color: #fff;
 }
 #top a.side + a.side {
   border-top: 1px solid rgba(0, 0, 0, 0.06999999999999995);
@@ -131,8 +131,7 @@ a {
   border-bottom: 1px solid #c46d3b;
 }
 #content #posts .post .post-body a:hover {
-  color: #fff;
-  border-bottom-color: #9d572f;
+  background-color: rgba(255, 255, 255, 0.09999999999999998);
 }
 #content #posts .post .post-body a[rel=footnote] {
   font-size: 9px;

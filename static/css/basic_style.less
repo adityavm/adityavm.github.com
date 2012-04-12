@@ -62,7 +62,7 @@ a {
 
 		&:hover {
 			background-color: @orange;
-			color: #f5f5f5;
+			color: #fff;
 		}
 	}
 
@@ -159,8 +159,7 @@ a {
 					border-bottom: 1px solid @orange;
 
 					&:hover {
-						color: #fff;
-						border-bottom-color: darken(@orange, 10%);
+						background-color: fadeout(#fff, 90%);
 					}
 
 					&[rel=footnote]{
