@@ -6,7 +6,7 @@ body {
   background-color: #9c9985;
 }
 body {
-  border-top: 5px solid #9c9985;
+  border-top: 5px solid #c46d3b;
 }
 a {
   -webkit-transition-duration: 0.2s;
@@ -41,7 +41,7 @@ a {
 }
 #top a.side {
   color: #3b3b3b;
-  background-color: rgba(0, 0, 0, 0.09999999999999998);
+  background-color: rgba(0, 0, 0, 0.050000000000000044);
   display: block;
   padding: 5px 10px;
   font-size: 16px;
@@ -53,7 +53,7 @@ a {
   color: #f5f5f5;
 }
 #top a.side + a.side {
-  border-top: 1px solid rgba(0, 0, 0, 0.09999999999999998);
+  border-top: 1px solid rgba(0, 0, 0, 0.06999999999999995);
 }
 #top .copyright {
   position: absolute;
@@ -91,10 +91,13 @@ a {
 #content #posts .post .meta {
   padding: 0 0 10px;
   margin-bottom: 5px;
-  color: #aaa;
+  color: #eee;
   font-size: 12px;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.09999999999999998);
+}
+#content #posts .post .meta a {
+  color: #ddd;
 }
 #content #posts .post .meta a:hover {
   text-decoration: underline;
@@ -117,7 +120,7 @@ a {
   border-bottom: 0;
 }
 #content #posts .post .post-body {
-  color: #eee;
+  color: #fff;
   font-size: 13px;
   font-family: "facitweb", sans-serif;
   line-height: 1.7em;
