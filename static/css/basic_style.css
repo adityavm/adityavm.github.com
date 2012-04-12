@@ -32,7 +32,7 @@ a {
   text-decoration: none;
   display: inline-block;
   padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #c46d3b;
 }
 #top .blog-title a:hover {
@@ -126,8 +126,8 @@ a {
   line-height: 1.7em;
 }
 #content #posts .post .post-body a {
-  color: #eee;
-  border-bottom: 1px solid #ccc;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 #content #posts .post .post-body a:hover {
   color: #fff;
