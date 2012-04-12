@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font: 14px "facitweb", sans-serif;
-  background-color: #9c9985;
+  background-color: #13120f;
 }
 body {
   border-top: 5px solid #c46d3b;
@@ -131,6 +131,7 @@ a {
 }
 #content #posts .post .post-body a:hover {
   color: #fff;
+  border-bottom-color: #c46d3b;
 }
 #content #posts .post .post-body a[rel=footnote] {
   font-size: 9px;
@@ -146,7 +147,7 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 #content #posts .post .post-body blockquote cite {
-  color: #eee;
+  color: rgba(255, 255, 255, 0.6);
 }
 #content #posts .post .post-body blockquote cite a {
   color: #fff;
