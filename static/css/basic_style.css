@@ -53,7 +53,7 @@ a {
   color: #f5f5f5;
 }
 #top a.side + a.side {
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid rgba(0, 0, 0, 0.09999999999999998);
 }
 #top .copyright {
   position: absolute;
@@ -117,7 +117,7 @@ a {
   border-bottom: 0;
 }
 #content #posts .post .post-body {
-  color: #666;
+  color: #eee;
   font-size: 13px;
   font-family: "facitweb", sans-serif;
   line-height: 1.7em;
