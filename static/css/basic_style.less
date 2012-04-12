@@ -41,7 +41,7 @@ a {
 			text-decoration: none;
 			display: inline-block;
 			padding: 5px 10px;
-			background-color: fadeout(#000, 30%);
+			background-color: fadeout(#000, 40%);
 			color: @orange;
 
 			&:hover {
@@ -52,7 +52,7 @@ a {
 	}
 
 	a.side {
-		color: @dgray;
+		color: fadeout(#fff, 50%);
 		background-color: fadeout(#000, 95%);
 		display: block;
 		padding: 5px 10px;
@@ -112,14 +112,14 @@ a {
 			.meta {
 				padding: 0 0 10px;
 				margin-bottom: 5px;
-				color: #eee;
+				color: fadeout(#fff, 20%);
 				font-size: 12px;
 				//text-align: center;
 				text-transform: uppercase;
 				border-bottom: 1px solid fadeout(#fff, 90%);
 
 				a {
-					color: #ddd;
+					color: fadeout(#fff, 5%);
 					
 					&:hover {
 						text-decoration: underline;
@@ -150,16 +150,17 @@ a {
 			.post-body {
 				color: #fff;
 				font-size: 13px;
+				font-weight: 300;
 				font-family: "facitweb", sans-serif;
 				line-height: 1.7em;
 
 				a {
 					color: #fff;
-					border-bottom: 1px solid #ddd;
+					border-bottom: 1px solid @orange;
 
 					&:hover {
 						color: #fff;
-						border-bottom-color: @orange;
+						border-bottom-color: darken(@orange, 10%);
 					}
 
 					&[rel=footnote]{
@@ -176,7 +177,7 @@ a {
 					width: 80%;
 					border-left: 5px solid @orange;
 					padding-left: 10px;
-					color: fadeout(#fff, 30%);
+					color: fadeout(#fff, 15%);
 
 					cite {
 						color: fadeout(#fff, 40%);
@@ -189,6 +190,12 @@ a {
 							content: "\2014";
 						}
 					}
+				}
+
+				code {
+					background-color: fadeout(#fff, 90%);
+					border: 1px solid fadeout(#000, 85%);
+					padding: 3px 6px 2px;
 				}
 
 				.footnote {
