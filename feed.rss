@@ -4,11 +4,17 @@
 			<title>Psychonaut</title>
 			<description></description>
 			<link>http://adityavm.github.com</link>
-			<lastBuildDate>Fri, 13 Apr 2012 17:11:15 +0000</lastBuildDate>
-			<pubDate>Fri, 13 Apr 2012 17:11:15 +0000</pubDate>
+			<lastBuildDate>Fri, 13 Apr 2012 17:50:54 +0000</lastBuildDate>
+			<pubDate>Fri, 13 Apr 2012 17:50:54 +0000</pubDate>
 			<atom:link href="http://adityavm.github.com/feed.rss" rel="self" type="application/rss+xml" />
 	
 			<item>
+					<title>Light Table</title>
+					<description><![CDATA[<p>Interesting IDE concept, especially the 'smallest unit of code is a function' part. Now add Vim keybindings (because it's still the fastest way to move around text, regardless of what you say) and support for the most popular languages to this and we have something awesome.</p>]]></description>
+					<link>http://www.chris-granger.com/2012/04/12/light-table---a-new-ide-concept/</link>
+					<guid>http://adityavm.github.com/post/light-table/</guid>
+					<pubDate>Fri, 13 Apr 2012 00:00:00 +0000</pubDate>
+			</item><item>
 					<title>Application Silos</title>
 					<description><![CDATA[<p>The reason the Internet works is because it's interconnected. More than just hyperlinks pointing to things, websites can <em>talk</em> to each other and present context-specific information that they themselves don't necessarily contain, e.g. which of your friends like a website via. the Facebook "Like" button. Best of all, everything is distributed.</p>
 <p>Why, then, do applications on our computers behave like silos?</p>
@@ -62,13 +68,6 @@
 </div>]]></description>
 					<link>http://adityavm.github.com/post/comics-to-movies-and-back-to-comics-again/</link>
 					<guid>http://adityavm.github.com/post/comics-to-movies-and-back-to-comics-again/</guid>
-					<pubDate>Sat, 07 Apr 2012 00:00:00 +0000</pubDate>
-			</item><item>
-					<title>Symbols, Everlasting</title>
-					<description><![CDATA[<p>Interesting look at villainy. Could also be a justification-in-disguise of why Curtis went from calling himself a "superhero" to a "villain". Personally, his definition of a villain is what I would call an anti-hero. Villains are defined as people who cause damage and harm to people and things around them. It's not about hurting a few to save many; that's as selfish a reason as doing something just because you want to. Nothing a villain does is for the good of those around him, not in the long or short run. So maybe Curtis should start calling himself a symbol, rather than a superhero or a villain. Allying himself to either side seems counter-logical.</p>
-<p>Of course, since he brings up the Batman reference, I should also point out the Joker who was a villain not out of some personal "ego, greed, lust, or the desire for power", but because as Alfred put it, "Some men just want to watch the world burn."</p>]]></description>
-					<link>http://dcurt.is/villainy</link>
-					<guid>http://adityavm.github.com/post/symbols-everlasting/</guid>
 					<pubDate>Sat, 07 Apr 2012 00:00:00 +0000</pubDate>
 			</item>
 	</channel>
