@@ -131,7 +131,7 @@ a {
 				.post-title {
 					margin-bottom: 20px;
 					font-weight: 400;
-					font-size: 19px;
+					font-size: 18px;
 					text-align: left;
 
 					a { 
@@ -139,9 +139,14 @@ a {
 						border-bottom: 1px solid fadeout(#fff, 60%);
 						
 						&.permalink {
+							float: left;
 							color: fadeout(#fff, 30%);
 							border-bottom: 0;
-							margin-left: 3px;
+							margin-left: -20px;
+						}
+
+						&:hover {
+							text-decoration: none;
 						}
 					} 
 				}

@@ -105,7 +105,7 @@ a {
 #content #posts .post.link .post-title {
   margin-bottom: 20px;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 18px;
   text-align: left;
 }
 #content #posts .post.link .post-title a {
@@ -113,9 +113,13 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 #content #posts .post.link .post-title a.permalink {
+  float: left;
   color: rgba(255, 255, 255, 0.7);
   border-bottom: 0;
-  margin-left: 3px;
+  margin-left: -20px;
+}
+#content #posts .post.link .post-title a:hover {
+  text-decoration: none;
 }
 #content #posts .post.link .meta {
   font-style: italic;
