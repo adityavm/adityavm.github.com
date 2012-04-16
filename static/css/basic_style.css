@@ -176,6 +176,12 @@ a {
 #content #posts .post .post-body img {
   max-width: 600px;
 }
+#content #posts .post .post-body .disclaimer {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin-bottom: 2em;
+}
 #content #posts .post .post-body .footnote {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
