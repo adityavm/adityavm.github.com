@@ -23,6 +23,11 @@ a {
 	-moz-transition-duration: 0.2s;
 }
 
+sup {
+	position: relative; top: -0.5em;
+	vertical-align: middle;
+}
+
 #top {
 	position: fixed;
 	right: 0; top: 0;
@@ -185,7 +190,7 @@ a {
 				}
 
 				p {
-					margin: 1em 0;
+					margin: 1.5em 0;
 				}
 
 				blockquote {
@@ -223,6 +228,8 @@ a {
 					color: fadeout(#fff, 50%);
 					display: inline-block;
 					margin-bottom: 2em;
+
+					strong { text-transform: uppercase; }
 				}
 
 				.footnote {

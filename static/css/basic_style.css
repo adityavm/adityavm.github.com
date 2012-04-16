@@ -13,6 +13,11 @@ a {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
 }
+sup {
+  position: relative;
+  top: -0.5em;
+  vertical-align: middle;
+}
 #top {
   position: fixed;
   right: 0;
@@ -150,7 +155,7 @@ a {
   font-size: 9px;
 }
 #content #posts .post .post-body p {
-  margin: 1em 0;
+  margin: 1.5em 0;
 }
 #content #posts .post .post-body blockquote {
   margin: 20px 5px;
@@ -181,6 +186,9 @@ a {
   color: rgba(255, 255, 255, 0.5);
   display: inline-block;
   margin-bottom: 2em;
+}
+#content #posts .post .post-body .disclaimer strong {
+  text-transform: uppercase;
 }
 #content #posts .post .post-body .footnote {
   font-size: 13px;
