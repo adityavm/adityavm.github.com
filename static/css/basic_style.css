@@ -173,6 +173,9 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.15000000000000002);
   padding: 3px 6px 2px;
 }
+#content #posts .post .post-body img {
+  max-width: 600px;
+}
 #content #posts .post .post-body .footnote {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
