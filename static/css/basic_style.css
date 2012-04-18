@@ -6,6 +6,9 @@ body {
   background-color: #4b493d;
   text-rendering: optimizelegibility;
 }
+body {
+  border-top: 5px solid #9d572f;
+}
 a {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -20,7 +23,6 @@ sup {
   padding: 80px 0 0;
   margin-top: 0;
   height: 100%;
-  border-top: 5px solid #c46d3b;
 }
 #sidebar img.icon {
   width: 150px;
@@ -34,7 +36,7 @@ sup {
   text-decoration: none;
   display: inline-block;
   padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.30000000000000004);
   color: #c46d3b;
 }
 #sidebar .blog-title a:hover {
@@ -63,7 +65,8 @@ sup {
   display: none;
 }
 #content {
-  padding: 0 100px 0 100px;
+  padding: 5px 100px 0 100px;
+  margin-top: -5px;
   width: 600px;
   background-color: #676554;
   float: left;
