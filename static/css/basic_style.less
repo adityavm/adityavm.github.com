@@ -5,12 +5,13 @@
 @orange: #C46D3B;
 @ceramic: #E3CBAC;
 
+@bg: darken(@green, 20%);
 
 html,body {
 	margin: 0;
 	padding: 0;
 	font: 14px "facitweb", sans-serif;
-	background-color: darken(@green, 20%);
+	background-color: darken(@bg, 10%);
 	text-rendering: optimizelegibility;
 }
 
@@ -28,10 +29,9 @@ sup {
 	vertical-align: baseline;
 }
 
-#top {
-	position: fixed;
-	right: 0; top: 0;
-	padding-top: 80px; margin-top: 0;
+#sidebar {
+	float: left;
+	padding: 80px 0 0; margin-top: 0;
 	height: 100%;
 
 	img.icon {
@@ -63,7 +63,6 @@ sup {
 		display: block;
 		padding: 5px 10px;
 		font-size: 16px;
-		text-align: right;
 		text-decoration: none;
 
 		&:hover {
@@ -88,8 +87,10 @@ sup {
 }
 
 #content {
-	margin: 100px 0 0 100px;
-	width: 500px;
+	padding: 0 100px 0 100px;
+	width: 600px;
+	background-color: @bg;
+	float: left;
 
 	a {
 		text-decoration: none;
