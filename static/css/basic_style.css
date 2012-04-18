@@ -8,6 +8,7 @@ body {
 }
 body {
   border-top: 5px solid #9d572f;
+  min-width: 1000px;
 }
 a {
   -webkit-transition-duration: 0.2s;
@@ -68,6 +69,7 @@ sup {
   padding: 5px 100px 0 100px;
   margin-top: -5px;
   width: 600px;
+  min-height: 100%;
   background-color: #676554;
   float: left;
   border-top: 5px solid #c46d3b;
