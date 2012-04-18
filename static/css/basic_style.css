@@ -6,9 +6,6 @@ body {
   background-color: #4b493d;
   text-rendering: optimizelegibility;
 }
-body {
-  border-top: 5px solid #c46d3b;
-}
 a {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -23,6 +20,7 @@ sup {
   padding: 80px 0 0;
   margin-top: 0;
   height: 100%;
+  border-top: 5px solid #c46d3b;
 }
 #sidebar img.icon {
   width: 150px;
@@ -36,7 +34,7 @@ sup {
   text-decoration: none;
   display: inline-block;
   padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #c46d3b;
 }
 #sidebar .blog-title a:hover {
@@ -45,18 +43,14 @@ sup {
 }
 #sidebar a.side {
   color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(0, 0, 0, 0.050000000000000044);
   display: block;
   padding: 5px 10px;
   font-size: 16px;
   text-decoration: none;
 }
 #sidebar a.side:hover {
-  background-color: #c46d3b;
+  background-color: rgba(0, 0, 0, 0.050000000000000044);
   color: #fff;
-}
-#sidebar a.side + a.side {
-  border-top: 1px solid rgba(0, 0, 0, 0.06999999999999995);
 }
 #sidebar .copyright {
   position: absolute;
@@ -73,6 +67,8 @@ sup {
   width: 600px;
   background-color: #676554;
   float: left;
+  border-top: 5px solid #c46d3b;
+  box-shadow: rgba(0, 0, 0, 0.30000000000000004) 1px 1px 8px;
 }
 #content a {
   text-decoration: none;
