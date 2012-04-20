@@ -4,8 +4,8 @@
 			<title>Psychonaut</title>
 			<description></description>
 			<link>http://adityavm.github.com</link>
-			<lastBuildDate>Fri, 20 Apr 2012 15:13:03 +0000</lastBuildDate>
-			<pubDate>Fri, 20 Apr 2012 15:13:03 +0000</pubDate>
+			<lastBuildDate>Fri, 20 Apr 2012 15:21:55 +0000</lastBuildDate>
+			<pubDate>Fri, 20 Apr 2012 15:21:55 +0000</pubDate>
 			<atom:link href="http://adityavm.github.com/feed.rss" rel="self" type="application/rss+xml" />
 	
 			<item>
@@ -19,7 +19,8 @@
 <p>Usage is simple:</p>
 <pre><code>python path/to/githubfeed.py "url-to-private-feed"
 </code></pre>
-<p>The feed URL can be found at the top right on your dashboard, and the script should work automatically when you plug it in (given you have all dependencies in place; check out the source for that). I'll probably make a proper setup later.</p>]]></description>
+<p>The feed URL can be found at the top right on your dashboard, and the script should work automatically when you plug it in (given you have all dependencies in place; check out the source for that). I'll probably make a proper setup later.</p>
+<p><a href="https://github.com/adityavm/general/blob/master/githubfeed.py">Grab the Script</a></p>]]></description>
 					<link>http://adityavm.github.com/post/github-notifier/</link>
 					<guid>http://adityavm.github.com/post/github-notifier/</guid>
 					<pubDate>Fri, 20 Apr 2012 00:00:00 +0000</pubDate>
