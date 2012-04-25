@@ -4,11 +4,20 @@
 			<title>Psychonaut</title>
 			<description></description>
 			<link>http://adityavm.github.com</link>
-			<lastBuildDate>Fri, 20 Apr 2012 15:21:55 +0000</lastBuildDate>
-			<pubDate>Fri, 20 Apr 2012 15:21:55 +0000</pubDate>
+			<lastBuildDate>Wed, 25 Apr 2012 20:08:52 +0000</lastBuildDate>
+			<pubDate>Wed, 25 Apr 2012 20:08:52 +0000</pubDate>
 			<atom:link href="http://adityavm.github.com/feed.rss" rel="self" type="application/rss+xml" />
 	
 			<item>
+					<title>Don't Expect Applause</title>
+					<description><![CDATA[<blockquote>
+<p>If your work is filled with the hope and longing for applause, it's no longer your work — the dependence on approval has corrupted it, turned it into a process where you are striving for ever more approval.</p>
+<p><cite><a href="http://sethgodin.typepad.com/seths_blog/2012/04/dont-expect-applause.html">Don't Expect Applause</a>, Seth Godin</cite></p>
+</blockquote>]]></description>
+					<link>http://adityavm.github.com/post/don-t-expect-applause/</link>
+					<guid>http://adityavm.github.com/post/don-t-expect-applause/</guid>
+					<pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
+			</item><item>
 					<title>Github Notifier</title>
 					<description><![CDATA[<blockquote class="twitter-tweet"><p>I'm watching more repositories on Github than I'm following people on Twitter.What does that tell you?</p>— Aditya Mukherjee (@aditya) <a href="https://twitter.com/aditya/status/190033805782949888" data-datetime="2012-04-11T11:09:24+00:00">April 11, 2012</a></blockquote>
 
@@ -62,12 +71,6 @@
 					<link>http://adityavm.github.com/post/austin-kleon-s-sketchbook/</link>
 					<guid>http://adityavm.github.com/post/austin-kleon-s-sketchbook/</guid>
 					<pubDate>Sun, 15 Apr 2012 00:00:00 +0000</pubDate>
-			</item><item>
-					<title>Light Table</title>
-					<description><![CDATA[<p>Interesting IDE concept, especially the 'smallest unit of code is a function' part. Now add Vim keybindings (because it's still the fastest way to move around text, regardless of what you say) and support for the most popular languages to this and we have something awesome.</p>]]></description>
-					<link>http://adityavm.github.com/post/light-table/</link>
-					<guid>http://adityavm.github.com/post/light-table/</guid>
-					<pubDate>Fri, 13 Apr 2012 00:00:00 +0000</pubDate>
 			</item>
 	</channel>
 </rss>
