@@ -111,7 +111,7 @@ sup {
 #content #posts .post.link .post-title {
   margin-bottom: 10px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
 }
 #content #posts .post.link .post-title a {
@@ -123,7 +123,7 @@ sup {
   float: left;
   color: rgba(255, 255, 255, 0.7);
   border-bottom: 0;
-  margin-left: -20px;
+  margin: -2px 0 0 -17px;
 }
 #content #posts .post.link .post-title a:hover {
   text-decoration: none;
@@ -192,7 +192,7 @@ sup {
   text-transform: uppercase;
 }
 #content #posts .post .post-body .footnote {
-  font-size: 13px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
 }
 #content #posts .post .post-body .footnote hr {
