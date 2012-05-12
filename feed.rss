@@ -4,11 +4,18 @@
 			<title>Psychonaut</title>
 			<description></description>
 			<link>http://adityavm.github.com</link>
-			<lastBuildDate>Sat, 12 May 2012 12:04:04 +0000</lastBuildDate>
-			<pubDate>Sat, 12 May 2012 12:04:04 +0000</pubDate>
+			<lastBuildDate>Sat, 12 May 2012 12:29:58 +0000</lastBuildDate>
+			<pubDate>Sat, 12 May 2012 12:29:58 +0000</pubDate>
 			<atom:link href="http://adityavm.github.com/feed.rss" rel="self" type="application/rss+xml" />
 	
 			<item>
+					<title>Github Octicons</title>
+					<description><![CDATA[<p>These are absolutely gorgeous. Congratulations to Github on coming up with a rather interesting and <a href="https://github.com/blog/1135-the-making-of-octicons">well implemented</a> solution to their problem. With the state of displays being in flux as it is today, it makes sense to offload the rendering to the OS as much as possible, effectively future proofing another aspect of their website.</p>
+<p>While this might not be a solution for most of us, it seems like the best way to distribute icons (and <a href="https://github.com/dcurtis/markdown-mark">glyphs</a> in general) that scale well across all resolutions and sizes. Maybe we should start thinking differently about what constitutes a "font", and expand on how we use them beyond the alphanumeric symbols.</p>]]></description>
+					<link>http://adityavm.github.com/post/github-octicons/</link>
+					<guid>http://adityavm.github.com/post/github-octicons/</guid>
+					<pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
+			</item><item>
 					<title>Don't Expect Applause</title>
 					<description><![CDATA[<blockquote>
 <p>If your work is filled with the hope and longing for applause, it's no longer your work — the dependence on approval has corrupted it, turned it into a process where you are striving for ever more approval.</p>
@@ -64,13 +71,6 @@
 					<link>http://adityavm.github.com/post/e-mail:-don-t-fix-what-s-not-broken/</link>
 					<guid>http://adityavm.github.com/post/e-mail:-don-t-fix-what-s-not-broken/</guid>
 					<pubDate>Mon, 16 Apr 2012 00:00:00 +0000</pubDate>
-			</item><item>
-					<title>Austin Kleon's Sketchbook</title>
-					<description><![CDATA[<p><a href="http://www.austinkleon.com/2012/04/15/tour-sketchbook/"><img alt="" src="http://adityavm.github.com/static/images/ak-sketchbook.jpg" /></a></p>
-<p>I would pay good money to buy his sketchbook(s?) and keep it in a glass case.</p>]]></description>
-					<link>http://adityavm.github.com/post/austin-kleon-s-sketchbook/</link>
-					<guid>http://adityavm.github.com/post/austin-kleon-s-sketchbook/</guid>
-					<pubDate>Sun, 15 Apr 2012 00:00:00 +0000</pubDate>
 			</item>
 	</channel>
 </rss>
