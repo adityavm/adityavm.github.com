@@ -4,11 +4,25 @@
 			<title>Psychonaut</title>
 			<description></description>
 			<link>http://adityavm.github.com</link>
-			<lastBuildDate>Sun, 13 May 2012 09:48:05 +0000</lastBuildDate>
-			<pubDate>Sun, 13 May 2012 09:48:05 +0000</pubDate>
+			<lastBuildDate>Sun, 13 May 2012 10:31:34 +0000</lastBuildDate>
+			<pubDate>Sun, 13 May 2012 10:31:34 +0000</pubDate>
 			<atom:link href="http://adityavm.github.com/feed.rss" rel="self" type="application/rss+xml" />
 	
 			<item>
+					<title>The Problem With The Avengers</title>
+					<description><![CDATA[<blockquote class="twitter-tweet"><p>So Avengers Assemble was awful. I know no movie could live up to the hype, but it's like they didn't even try.</p>— Aditya Mukherjee (@aditya) <a href="https://twitter.com/aditya/status/197019721294548994" data-datetime="2012-04-30T17:48:56+00:00">April 30, 2012</a></blockquote>
+
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Few people have asked me over the last couple of weeks why I didn't like The Avengers. I've given them reasons that range from a lack of story to absolutely no relation between the heroes except for the fact that they're all in the movie trying to fend off one enemy. But even to myself, these reasons seem incomplete. I've liked movies like this before. So why didn't I like The Avengers? I think I've got it now.</p>
+<p>The Avengers is as predictable and clichéd as a movie can get.</p>
+<p>Right at the start, we're told Loki is going to attack Earth. And like clockwork, half an hour before the movie ends, he does. Obviously, we need some defence, and you get no prizes for guessing who that will be. After the customary five minutes of resistance, every hero gives in. You know the <em>whole</em> story in the first 10 minutes of the movie. All that's left to see and hear are the witty one-liners and things blowing up in 3D.</p>
+<p>What really was a turn off was the lack of a significant new character. Agent Maria Hill was the randomest bit of eye candy if I've seen, and I sincerely doubt The Avengers would've failed without Barton we saw in the movie. We even had the same enemy — Loki. The only <em>new</em> thing was the introduction of the Chitauri, but their worth was lost in the obscurity of being the generic war-mongering race of aliens that is the bane of Earth in every science fiction movie ever. It's like if Nolan made all three Batman movies with Ra's al Ghul as the antagonist. I doubt one would go to watch each movie thinking "Geez, I wonder what he's going to do this time?"</p>
+<p>The least they could've done was introduce a new villain, like we saw with X-Men: First Class. That would have made the movie unpredictable in itself since a new villain would bring their own agenda instead of rehashing a previously failed one. But instead of that, we have Transformers with humans instead of robots.</p>]]></description>
+					<link>http://adityavm.github.com/post/the-problem-with-the-avengers/</link>
+					<guid>http://adityavm.github.com/post/the-problem-with-the-avengers/</guid>
+					<pubDate>Sun, 13 May 2012 00:00:00 +0000</pubDate>
+			</item><item>
 					<title>Github Octicons</title>
 					<description><![CDATA[<p>These are absolutely gorgeous. Congratulations to Github on coming up with a rather interesting and <a href="https://github.com/blog/1135-the-making-of-octicons">well implemented</a> solution to their problem. With the state of displays being in flux as it is today, it makes sense to offload the rendering to the OS as much as possible, effectively future proofing another aspect of their website.</p>
 <p>While this might not be a solution for most of us, it seems like the best way to distribute icons (and <a href="https://github.com/dcurtis/markdown-mark">glyphs</a> in general) that scale well across all resolutions and sizes. Maybe we should start thinking differently about what constitutes a "font", and expand on how we use them beyond the alphanumeric symbols.</p><p><a href='http://adityavm.github.com/post/github-octicons/' class='parmalink'>&#x2693;</a></p>]]></description>
@@ -107,16 +121,6 @@
 					<link>http://adityavm.github.com/post/what-does-a-music-conductor-do/</link>
 					<guid>http://adityavm.github.com/post/what-does-a-music-conductor-do/</guid>
 					<pubDate>Mon, 09 Apr 2012 00:00:00 +0000</pubDate>
-			</item><item>
-					<title>On What People Want</title>
-					<description><![CDATA[<blockquote>
-<p>People don’t know what they want until you’ve given it to them.</p>
-<p>And then they don’t know what they want next: they think it’s more of what they liked last time.</p>
-<p><cite><a href="http://neil-gaiman.tumblr.com/post/20439013505/do-you-ever-feel-pressured-by-the-changing-desires-of">Neil Gaiman</a> (via <a href="http://notes.byjasm.in/74">Jasmin Wong</a>)</cite></p>
-</blockquote><p><a href='http://adityavm.github.com/post/on-what-people-want/' class='parmalink'>&#x2693;</a></p>]]></description>
-					<link>http://adityavm.github.com/post/on-what-people-want/</link>
-					<guid>http://adityavm.github.com/post/on-what-people-want/</guid>
-					<pubDate>Sat, 07 Apr 2012 00:00:00 +0000</pubDate>
 			</item>
 	</channel>
 </rss>
