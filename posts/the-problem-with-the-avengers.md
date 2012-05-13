@@ -1,0 +1,11 @@
+<blockquote class="twitter-tweet"><p>So Avengers Assemble was awful. I know no movie could live up to the hype, but it's like they didn't even try.</p>— Aditya Mukherjee (@aditya) <a href="https://twitter.com/aditya/status/197019721294548994" data-datetime="2012-04-30T17:48:56+00:00">April 30, 2012</a></blockquote><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Few people have asked me over the last couple of weeks why I didn't like The Avengers. I've given them reasons that range from a lack of story to absolutely no relation between the heroes except for the fact that they're all in the movie trying to fend off one enemy. But even to myself, these reasons seem incomplete. I've liked movies like this before. So why didn't I like The Avengers? I think I've got it now.
+
+The Avengers is as predictable and clichéd as a movie can get.
+
+Right at the start, we're told Loki is going to attack Earth. And like clockwork, half an hour before the movie ends, he does. Obviously, we need some defence, and you get no prizes for guessing who that will be. After the customary five minutes of resistance, every hero gives in. You know the *whole* story in the first 10 minutes of the movie. All that's left to see and hear are the witty one-liners and things blowing up in 3D.
+
+What really was a turn off was the lack of a significant new character. Agent Maria Hill was the randomest bit of eye candy if I've seen, and I sincerely doubt The Avengers would've failed without Barton we saw in the movie. We even had the same enemy — Loki. The only *new* thing was the introduction of the Chitauri, but their worth was lost in the obscurity of being the generic war-mongering race of aliens that is the bane of Earth in every science fiction movie ever. It's like if Nolan made all three Batman movies with Ra's al Ghul as the antagonist. I doubt one would go to watch each movie thinking "Geez, I wonder what he's going to do this time?"
+
+The least they could've done was introduce a new villain, like we saw with X-Men: First Class. That would have made the movie unpredictable in itself since a new villain would bring their own agenda instead of rehashing a previously failed one. But instead of that, we have Transformers with humans instead of robots.
