@@ -4,8 +4,8 @@
 			<title>Psychonaut</title>
 			<description></description>
 			<link>http://adityavm.github.com</link>
-			<lastBuildDate>Sun, 13 May 2012 15:03:12 +0000</lastBuildDate>
-			<pubDate>Sun, 13 May 2012 15:03:12 +0000</pubDate>
+			<lastBuildDate>Sun, 13 May 2012 15:19:55 +0000</lastBuildDate>
+			<pubDate>Sun, 13 May 2012 15:19:55 +0000</pubDate>
 			<atom:link href="http://adityavm.github.com/feed.rss" rel="self" type="application/rss+xml" />
 	
 			<item>
@@ -26,7 +26,7 @@
 					<title>Github Octicons</title>
 					<description><![CDATA[<p>These are absolutely gorgeous. Congratulations to Github on coming up with a rather interesting and <a href="https://github.com/blog/1135-the-making-of-octicons">well implemented</a> solution to their problem. With the state of displays being in flux as it is today, it makes sense to offload the rendering to the OS as much as possible, effectively future proofing another aspect of their website.</p>
 <p>While this might not be a solution for most of us, it seems like the best way to distribute icons (and <a href="https://github.com/dcurtis/markdown-mark">glyphs</a> in general) that scale well across all resolutions and sizes. Maybe we should start thinking differently about what constitutes a "font", and expand on how we use them beyond the alphanumeric symbols.</p>
-<p>UPDATE: Looks like I've been living under a rock. Turns out <a href="http://www.delicious.com/stacks/view/SC3hpq">Icon Fonts</a> are a real thing. Suddenly my epiphany doesn't seem so epiphanic.</p><p><a href='http://adityavm.github.com/post/github-octicons/' class='parmalink'>&#x2693;</a></p>]]></description>
+<p><strong>UPDATE</strong>: Looks like I've been living under a rock. Turns out <a href="http://www.delicious.com/stacks/view/SC3hpq">Icon Fonts</a> are a real thing. Suddenly my epiphany doesn't seem so epiphanic.</p><p><a href='http://adityavm.github.com/post/github-octicons/' class='parmalink'>&#x2693;</a></p>]]></description>
 					<link>http://adityavm.github.com/post/github-octicons/</link>
 					<guid>http://adityavm.github.com/post/github-octicons/</guid>
 					<pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
