@@ -4,11 +4,17 @@
 			<title>Psychonaut</title>
 			<description></description>
 			<link>http://adityavm.github.com</link>
-			<lastBuildDate>Sat, 12 May 2012 12:29:58 +0000</lastBuildDate>
-			<pubDate>Sat, 12 May 2012 12:29:58 +0000</pubDate>
+			<lastBuildDate>Sun, 13 May 2012 07:25:50 +0000</lastBuildDate>
+			<pubDate>Sun, 13 May 2012 07:25:50 +0000</pubDate>
 			<atom:link href="http://adityavm.github.com/feed.rss" rel="self" type="application/rss+xml" />
 	
 			<item>
+					<title>Test</title>
+					<description><![CDATA[<p>Fill it!</p>]]></description>
+					<link>http://adityavm.github.com/post/test/</link>
+					<guid>http://adityavm.github.com/post/test/</guid>
+					<pubDate>Sun, 13 May 2012 00:00:00 +0000</pubDate>
+			</item><item>
 					<title>Github Octicons</title>
 					<description><![CDATA[<p>These are absolutely gorgeous. Congratulations to Github on coming up with a rather interesting and <a href="https://github.com/blog/1135-the-making-of-octicons">well implemented</a> solution to their problem. With the state of displays being in flux as it is today, it makes sense to offload the rendering to the OS as much as possible, effectively future proofing another aspect of their website.</p>
 <p>While this might not be a solution for most of us, it seems like the best way to distribute icons (and <a href="https://github.com/dcurtis/markdown-mark">glyphs</a> in general) that scale well across all resolutions and sizes. Maybe we should start thinking differently about what constitutes a "font", and expand on how we use them beyond the alphanumeric symbols.</p>]]></description>
@@ -49,28 +55,6 @@
 					<link>http://adityavm.github.com/post/doing-the-right-thing/</link>
 					<guid>http://adityavm.github.com/post/doing-the-right-thing/</guid>
 					<pubDate>Tue, 17 Apr 2012 00:00:00 +0000</pubDate>
-			</item><item>
-					<title>E-mail: Don't Fix What's Not Broken</title>
-					<description><![CDATA[<p><span class="disclaimer"><strong>Disclaimer</strong>: Commentary on the latest fad to get riled up about isn't my thing, but I wanted to elaborate on my <a href="https://twitter.com/aditya/status/191856633066958848">miniphany</a> <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. Maybe it will lead to a better workflow for people who are looking for a solution to come to them rather than them solving it themselves.<span></p>
-<p>I ran into <a href="http://joncalhoun.posterous.com/email-sucks-this-is-how-we-fix-it">this rant about e-mail</a> while link-jumping:</p>
-<blockquote>
-<p>Nothing is integrated with my email, yet it is my primary source of communication. What the hell? I shouldn't have to forward an email to accounting and then follow up to make sure they handled it. I shouldn't need to lookup the original email for a feature request - it should be integrated into the request itself.</p>
-</blockquote>
-<p>The reason I took it seriously is because he's actually taken the initiative and is <a href="http://www.roockit.com/">trying to solve the problem</a>. Although I do think it's a waste of his time because he has misunderstood the problem.</p>
-<p>E-mail is probably a bad name for what it actually does when you look at the protocol used to implement it. It's got nothing to do with "mail" in the traditional sense. What e-mail is, is an extensible and powerful notification system. It's job is to ping you and alert you to something that needs your attention, then get out of your way. It's a different issue altogether that we use it for communication, because it's a carry over from the older web when the requirements of communication were simpler. For some reason, people like <a href="http://joncalhoun.posterous.com/email-sucks-this-is-how-we-fix-it">joncalhoun</a> and even <a href="http://paulgraham.com/ambitious.html">Paul Graham</a> have forgotten or misunderstood what e-mail was, in the sense that they want e-mail to <em>work</em> for them. It's like how someone got tweets to operate lights and fans in their house. It's the client's/application's problem, not the protocol's.</p>
-<p>If you want issue tracking or calendaring, or even a to-do list, you go to an issue tracker, a calendar or a to-do list app. What e-mail does is notify you when something changes in those apps. It is up to <em>those</em> apps — not e-mail — to build the social stuff you're looking for. Github sends me an e-mail whenever someone adds an issue to my repositories, and I click through to manage it there. It doesn't make sense to have that functionality built into my e-mail client. If you don't use a dedicated issue-tracker for your bugs, you're doing it wrong. Could an e-mail client be written to handle different types of messages? Send a bug to your issue tracker, or send a to-do item to your to-do app? Sure. But that's not something that needs to be added to the protocol.</p>
-<p>So here's the oft repeated statement, slightly tweaked: E-mail is not broken, your workflow is.</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>That's a mini-epiphany, 140 characters and all.&#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>]]></description>
-					<link>http://adityavm.github.com/post/e-mail:-don-t-fix-what-s-not-broken/</link>
-					<guid>http://adityavm.github.com/post/e-mail:-don-t-fix-what-s-not-broken/</guid>
-					<pubDate>Mon, 16 Apr 2012 00:00:00 +0000</pubDate>
 			</item>
 	</channel>
 </rss>
