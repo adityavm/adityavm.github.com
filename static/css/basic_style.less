@@ -20,6 +20,12 @@ body {
 	min-width: 1000px;
 }
 
+@media screen and (min-width: 480px) {
+	body {
+		min-width: 480px;
+	}
+}
+
 a {
 	-webkit-transition-duration: 0.2s;
 	-moz-transition-duration: 0.2s;
@@ -90,6 +96,11 @@ sup {
 
 #intro {
 	display: none;
+}
+
+@media screen and (min-width: 480px) {
+	#sidebar { display: none; }
+	#intro { display: block; }
 }
 
 #content {
@@ -312,5 +323,69 @@ sup {
 
 	#btb {
 		text-align: left;
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	#content {
+		margin: 0 auto;
+		width: 100%;
+
+		#posts {
+			.post {
+				margin: 300px 0;
+				
+				.post-title {
+					font-size: 74px;
+					margin-bottom: 15px;
+				}
+				
+				.meta { font-size: 42px; }
+				
+				&.link {
+					.post-title { font-size: 54px; }	
+
+					a {
+						&.permalink { font-size: 56px; }
+					}
+				}
+
+				.post-body {
+					font-size: 42px;
+
+					a {
+						&[rel=footnote]{ font-size: 39px; }
+					}
+
+					blockquote {
+						padding-left: 30px;
+					}
+
+					img {
+						max-width: 100%;
+					}
+
+					.footnote {
+						font-size: 42px;
+
+						a {
+							&[rev=footnote]{ font-size: 39px; }
+						}
+					}
+				}
+
+				.post-footer {
+					font-size: 26px;
+				}
+			}
+
+			#paginator, #btb {
+				a { 
+					font-size: 46px;
+					padding: 8px 12px;
+				}
+			}
+		}
 	}
 }
