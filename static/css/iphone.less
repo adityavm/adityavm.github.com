@@ -30,4 +30,45 @@ body {
 #content {
 	margin: 0 auto;
 	width: 90%;
+
+	#posts {
+		.post {
+			
+			.post-title { font-size: 44px; }
+			
+			.meta { font-size: 32px; }
+			
+			&.link {
+				.post-title { font-size: 34px; }	
+
+				a {
+					&.permalink { font-size: 36px; }
+				}
+			}
+
+			.post-body {
+				font-size: 32px;
+
+				a {
+					&[rel=footnote]{ font-size: 29px; }
+				}
+
+				.footnote {
+					font-size: 32px;
+
+					a {
+						&[rev=footnote]{ font-size: 29px; }
+					}
+				}
+			}
+
+			.post-footer {
+				font-size: 32px;
+			}
+		}
+
+		#paginator, #btb {
+			a { font-size: 36px; }
+		}
+	}
 }
