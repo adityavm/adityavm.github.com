@@ -5,12 +5,14 @@ body {
   font: 14px "facitweb", sans-serif;
   background-color: #4b493d;
   text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body {
   border-top: 5px solid #9d572f;
   min-width: 1000px;
 }
-@media screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   body {
     min-width: 480px;
   }

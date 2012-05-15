@@ -13,6 +13,9 @@ html,body {
 	font: 14px "facitweb", sans-serif;
 	background-color: darken(@bg, 10%);
 	text-rendering: optimizelegibility;
+
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:100%;
 }
 
 body {
@@ -20,7 +23,7 @@ body {
 	min-width: 1000px;
 }
 
-@media screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
 	body {
 		min-width: 480px;
 	}
