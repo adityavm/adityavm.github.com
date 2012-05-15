@@ -15,7 +15,7 @@ html,body {
 	text-rendering: optimizelegibility;
 
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:100%;
+	-ms-text-size-adjust: 100%;
 }
 
 body {
@@ -104,6 +104,28 @@ sup {
 @media screen and (min-width: 480px) {
 	#sidebar { display: none; }
 	#intro { display: block; }
+
+	#intro {
+		display: block;
+		position: static;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		height: auto;
+
+		.blog-title {
+			a {
+				font-size: 54px;
+				background-color: rgba(0,0,0,0.4);
+				color: #fff;
+			}
+		}
+
+		a.side {
+			display: inline-block;
+			border-top: 0 !important;
+		}
+	}
 }
 
 #content {
@@ -350,7 +372,12 @@ sup {
 					.post-title { font-size: 54px; }	
 
 					a {
-						&.permalink { font-size: 56px; }
+						&.permalink {
+							font-size: 56px;
+							
+							-webkit-text-size-adjust: 100%;
+							-ms-text-size-adjust: 100%;
+						}
 					}
 				}
 
