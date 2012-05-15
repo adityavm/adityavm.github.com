@@ -23,7 +23,7 @@ body {
 	min-width: 1000px;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
 	body {
 		min-width: 480px;
 	}
@@ -101,7 +101,7 @@ sup {
 	display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
 	#sidebar { display: none; }
 	#intro { display: block; }
 
@@ -113,6 +113,7 @@ sup {
 		text-align: center;
 		height: auto;
 		margin-bottom: 20px;
+		border-top: 0;
 
 		img.icon {
 			width: 240px;
@@ -129,6 +130,7 @@ sup {
 
 		a.side {
 			font-size: 44px;
+			padding: 5px 15px;
 			display: inline-block;
 			border-top: 0 !important;
 		}
@@ -358,7 +360,7 @@ sup {
 	}
 }
 
-@media screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
 
 	#content {
 		margin: 0 auto;
