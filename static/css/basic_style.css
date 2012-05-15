@@ -101,7 +101,7 @@ sup {
     margin-bottom: 20px;
   }
   #intro img.icon {
-    width: 100%;
+    width: 240px;
   }
   #intro .blog-title a {
     font-size: 54px;
@@ -314,11 +314,6 @@ sup {
   }
   #content #posts .post.link .post-title {
     font-size: 54px;
-  }
-  #content #posts .post.link a.permalink {
-    font-size: 56px;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
   }
   #content #posts .post .post-body {
     font-size: 42px;
