@@ -2,11 +2,11 @@ body{min-width:480px;}
 #intro{display:block;position:static;width:90%;margin:0 auto;text-align:center;height:auto;}#intro .blog-title a{background-color:rgba(0, 0, 0, 0.4);color:#fff;}
 #intro a.side{display:inline-block;border-top:0 !important;}
 #sidebar{display:none;}
-#content{margin:0 auto;width:90%;}#content #posts .post .post-title{font-size:44px;}
-#content #posts .post .meta{font-size:32px;}
-#content #posts .post.link .post-title{font-size:34px;}
-#content #posts .post.link a.permalink{font-size:36px;}
-#content #posts .post .post-body{font-size:32px;}#content #posts .post .post-body a[rel=footnote]{font-size:29px;}
-#content #posts .post .post-body .footnote{font-size:32px;}#content #posts .post .post-body .footnote a[rev=footnote]{font-size:29px;}
-#content #posts .post .post-footer{font-size:32px;}
-#content #posts #paginator a,#content #posts #btb a{font-size:36px;}
+#content{margin:0 auto;width:100%;}#content #posts .post{margin:200px 0;}#content #posts .post .post-title{font-size:64px;}
+#content #posts .post .meta{font-size:42px;}
+#content #posts .post.link .post-title{font-size:44px;}
+#content #posts .post.link a.permalink{font-size:46px;}
+#content #posts .post .post-body{font-size:42px;}#content #posts .post .post-body a[rel=footnote]{font-size:39px;}
+#content #posts .post .post-body .footnote{font-size:42px;}#content #posts .post .post-body .footnote a[rev=footnote]{font-size:39px;}
+#content #posts .post .post-footer{font-size:42px;}
+#content #posts #paginator a,#content #posts #btb a{font-size:46px;}
