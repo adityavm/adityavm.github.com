@@ -303,6 +303,7 @@ sup {
   #content {
     margin: 0 auto;
     width: 100%;
+    overflow-x: hidden;
   }
   #content #posts .post {
     margin: 300px 0;
