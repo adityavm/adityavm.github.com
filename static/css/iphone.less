@@ -33,14 +33,17 @@ body {
 
 	#posts {
 		.post {
-			margin: 200px 0;
+			margin: 300px 0;
 			
-			.post-title { font-size: 64px; }
+			.post-title {
+				font-size: 74px;
+				margin-bottom: 15px;
+			}
 			
 			.meta { font-size: 42px; }
 			
 			&.link {
-				.post-title { font-size: 44px; }	
+				.post-title { font-size: 54px; }	
 
 				a {
 					&.permalink { font-size: 46px; }
@@ -54,6 +57,14 @@ body {
 					&[rel=footnote]{ font-size: 39px; }
 				}
 
+				blockquote {
+					padding-left: 30px;
+				}
+
+				img {
+					max-width: 100%;
+				}
+
 				.footnote {
 					font-size: 42px;
 
@@ -64,7 +75,7 @@ body {
 			}
 
 			.post-footer {
-				font-size: 42px;
+				font-size: 32px;
 			}
 		}
 
