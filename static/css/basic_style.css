@@ -99,6 +99,7 @@ sup {
     margin: 0 auto;
     text-align: center;
     height: auto;
+    max-height: none;
     margin-bottom: 20px;
   }
   #intro img.icon {
@@ -240,7 +241,7 @@ sup {
   max-width: 800px;
 }
 #content #posts .post .post-body strong {
-  font-family: "gotham";
+  font-family: "gotham", sans-serif;
   font-weight: normal;
 }
 #content #posts .post .post-body .disclaimer {
@@ -324,8 +325,9 @@ sup {
     font-size: 44px;
   }
   #content #posts .post.link .post-title a.permalink {
-    font-size: 54px;
+    font-size: 44px;
     margin-left: 0px;
+    margin-right: 5px;
   }
   #content #posts .post .post-body {
     font-size: 32px;
