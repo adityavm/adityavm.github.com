@@ -98,13 +98,19 @@ sup {
     margin: 0 auto;
     text-align: center;
     height: auto;
+    margin-bottom: 20px;
+  }
+  #intro img.icon {
+    width: 100%;
   }
   #intro .blog-title a {
     font-size: 54px;
+    padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
   }
   #intro a.side {
+    font-size: 44px;
     display: inline-block;
     border-top: 0 !important;
   }
