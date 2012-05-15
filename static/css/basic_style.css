@@ -107,7 +107,7 @@ sup {
   #intro .blog-title a {
     font-size: 54px;
     padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: transparent;
     color: #fff;
   }
   #intro a.side {
@@ -299,65 +299,53 @@ sup {
 #content #btb {
   text-align: left;
 }
-/*
 @media only screen and (max-width: 480px) {
-
-	#content {
-		margin: 0 auto;
-		width: 100%;
-		overflow-x: hidden;
-
-		#posts {
-			.post {
-				margin: 300px 0;
-				
-				.post-title {
-					font-size: 74px;
-					margin-bottom: 15px;
-				}
-				
-				.meta { font-size: 42px; }
-				
-				&.link {
-					.post-title { font-size: 54px; }	
-				}
-
-				.post-body {
-					font-size: 42px;
-
-					a {
-						&[rel=footnote]{ font-size: 39px; }
-					}
-
-					blockquote {
-						padding-left: 30px;
-					}
-
-					img {
-						max-width: 100%;
-					}
-
-					.footnote {
-						font-size: 42px;
-
-						a {
-							&[rev=footnote]{ font-size: 39px; }
-						}
-					}
-				}
-
-				.post-footer {
-					font-size: 26px;
-				}
-			}
-
-			#paginator, #btb {
-				a { 
-					font-size: 46px;
-					padding: 8px 12px;
-				}
-			}
-		}
-	}
+  #content {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 5px 15px;
+  }
+  #content #posts .post {
+    margin: 300px 0;
+  }
+  #content #posts .post:first-child {
+    margin-top: 5px;
+  }
+  #content #posts .post .post-title {
+    font-size: 74px;
+    margin-bottom: 15px;
+  }
+  #content #posts .post .meta {
+    font-size: 42px;
+  }
+  #content #posts .post.link .post-title {
+    font-size: 54px;
+  }
+  #content #posts .post .post-body {
+    font-size: 42px;
+  }
+  #content #posts .post .post-body a[rel=footnote] {
+    font-size: 39px;
+  }
+  #content #posts .post .post-body blockquote {
+    padding-left: 30px;
+  }
+  #content #posts .post .post-body img {
+    max-width: 100%;
+  }
+  #content #posts .post .post-body .footnote {
+    font-size: 42px;
+  }
+  #content #posts .post .post-body .footnote a[rev=footnote] {
+    font-size: 39px;
+  }
+  #content #posts .post .post-footer {
+    font-size: 26px;
+  }
+  #content #posts #paginator a,
+  #content #posts #btb a {
+    font-size: 46px;
+    padding: 8px 12px;
+  }
 }
-*/

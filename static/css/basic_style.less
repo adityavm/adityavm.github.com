@@ -123,7 +123,7 @@ sup {
 			a {
 				font-size: 54px;
 				padding: 10px 15px;
-				background-color: rgba(0,0,0,0.4);
+				background-color: transparent;
 				color: #fff;
 			}
 		}
@@ -360,17 +360,21 @@ sup {
 	}
 }
 
-/*
 @media only screen and (max-width: 480px) {
 
 	#content {
 		margin: 0 auto;
 		width: 100%;
 		overflow-x: hidden;
+		padding: 5px 15px;
 
 		#posts {
 			.post {
 				margin: 300px 0;
+
+				&:first-child {
+					margin-top: 5px;
+				}
 				
 				.post-title {
 					font-size: 74px;
@@ -421,4 +425,3 @@ sup {
 		}
 	}
 }
-*/
