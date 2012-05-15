@@ -26,6 +26,7 @@ body {
 @media only screen and (max-width: 480px) {
 	body {
 		min-width: 480px;
+		border-top: 0;
 	}
 }
 
@@ -113,7 +114,6 @@ sup {
 		text-align: center;
 		height: auto;
 		margin-bottom: 20px;
-		border-top: 0;
 
 		img.icon {
 			width: 240px;
@@ -378,17 +378,25 @@ sup {
 				
 				.post-title {
 					font-size: 74px;
-					margin-bottom: 15px;
+					margin-bottom: 30px;
+					line-height: 1em;
 				}
 				
-				.meta { font-size: 42px; }
+				.meta { font-size: 32px; }
 				
 				&.link {
-					.post-title { font-size: 54px; }	
+					.post-title {
+						font-size: 44px;
+					
+						a.permalink {
+							font-size: 54px;
+							margin-left: 0px;
+						}
+					}
 				}
 
 				.post-body {
-					font-size: 42px;
+					font-size: 32px;
 
 					a {
 						&[rel=footnote]{ font-size: 39px; }
@@ -399,7 +407,8 @@ sup {
 					}
 
 					img {
-						max-width: 100%;
+						max-width: 480px;
+						margin-left: -15px;
 					}
 
 					.footnote {
@@ -412,7 +421,7 @@ sup {
 				}
 
 				.post-footer {
-					font-size: 26px;
+					font-size: 20px;
 				}
 			}
 

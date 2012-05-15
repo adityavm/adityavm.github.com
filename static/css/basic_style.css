@@ -15,6 +15,7 @@ body {
 @media only screen and (max-width: 480px) {
   body {
     min-width: 480px;
+    border-top: 0;
   }
 }
 a {
@@ -99,7 +100,6 @@ sup {
     text-align: center;
     height: auto;
     margin-bottom: 20px;
-    border-top: 0;
   }
   #intro img.icon {
     width: 240px;
@@ -314,16 +314,21 @@ sup {
   }
   #content #posts .post .post-title {
     font-size: 74px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    line-height: 1em;
   }
   #content #posts .post .meta {
-    font-size: 42px;
+    font-size: 32px;
   }
   #content #posts .post.link .post-title {
+    font-size: 44px;
+  }
+  #content #posts .post.link .post-title a.permalink {
     font-size: 54px;
+    margin-left: 0px;
   }
   #content #posts .post .post-body {
-    font-size: 42px;
+    font-size: 32px;
   }
   #content #posts .post .post-body a[rel=footnote] {
     font-size: 39px;
@@ -332,7 +337,8 @@ sup {
     padding-left: 30px;
   }
   #content #posts .post .post-body img {
-    max-width: 100%;
+    max-width: 480px;
+    margin-left: -15px;
   }
   #content #posts .post .post-body .footnote {
     font-size: 42px;
@@ -341,7 +347,7 @@ sup {
     font-size: 39px;
   }
   #content #posts .post .post-footer {
-    font-size: 26px;
+    font-size: 20px;
   }
   #content #posts #paginator a,
   #content #posts #btb a {
