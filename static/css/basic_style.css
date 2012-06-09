@@ -16,7 +16,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .post-body{color:#fff;font-size:12px;font-weight:300;font-family:"facitweb",sans-serif;line-height:1.7em;}#content #posts .post .post-body a{color:#fff;border-bottom:1px solid #c46d3b;}#content #posts .post .post-body a:hover{background-color:rgba(255, 255, 255, 0.09999999999999998);}
 #content #posts .post .post-body a[rel=footnote]{font-size:9px;}
 #content #posts .post .post-body p{margin:1.5em 0;}
-#content #posts .post .post-body h4{font:normal 12pt "gotham","Helvetica Neue",sans-serif;margin:3em 0 0.7;text-transform:uppercase;}
+#content #posts .post .post-body h4{font:normal 12pt "gotham","Helvetica Neue",sans-serif;margin:3em 0 0.7em;text-transform:uppercase;}
 #content #posts .post .post-body h4+p{margin-top:0em;}
 #content #posts .post .post-body blockquote{margin:20px 5px;width:80%;border-left:5px solid #c46d3b;padding-left:10px;color:rgba(255, 255, 255, 0.85);}#content #posts .post .post-body blockquote cite{color:rgba(255, 255, 255, 0.6);}#content #posts .post .post-body blockquote cite a{color:#fff;font-style:normal;}
 #content #posts .post .post-body blockquote cite a:nth-of-type(1){font-family:"gotham","Helvetica Neue",sans-serif;text-transform:uppercase;}
