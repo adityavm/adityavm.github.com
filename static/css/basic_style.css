@@ -22,6 +22,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .post-body blockquote cite a:nth-of-type(1){font-family:"gotham","Helvetica Neue",sans-serif;text-transform:uppercase;}
 #content #posts .post .post-body blockquote cite:before{content:"\2014";}
 #content #posts .post .post-body code{background-color:rgba(255, 255, 255, 0.09999999999999998);border:1px solid rgba(0, 0, 0, 0.15000000000000002);padding:3px 6px 2px;}
+#content #posts .post .post-body pre{margin:0 -100px 0;padding:0 100px;background-color:rgba(0, 0, 0, 0.2);border-width:2px 0;border-color:rgba(0, 0, 0, 0.03);border-style:solid;}#content #posts .post .post-body pre code{background-color:transparent;border:0;padding:0;}
 #content #posts .post .post-body img{margin-left:-100px;max-width:800px;}
 #content #posts .post .post-body strong{font-family:"gotham",sans-serif;font-weight:normal;}
 #content #posts .post .post-body .disclaimer{font-style:italic;color:rgba(255, 255, 255, 0.5);display:inline-block;margin-bottom:2em;}#content #posts .post .post-body .disclaimer strong{text-transform:uppercase;}
