@@ -40,19 +40,15 @@ sup {
 	vertical-align: baseline;
 }
 
-#sidebar, #intro {
-	float: left;
-	padding: 80px 0 0; margin-top: 0;
-	max-height: 100%;
+#intro {
 
 	img.icon {
-		width: 120px;
-		padding: 0 15px;
+		width: 60px;
 	}
 
 	.blog-title {
 		text-transform: uppercase;
-		font-size: 20px;
+		font-size: 16px;
 		margin: 0 0 30px;
 
 		a {
@@ -71,10 +67,11 @@ sup {
 
 	a.side {
 		color: fadeout(#fff, 50%);
-		display: block;
+		display: inline-block;
 		padding: 5px 10px;
 		font-size: 16px;
 		text-decoration: none;
+		float: left;
 
 		&:hover {
 			//background-color: @orange;
@@ -82,70 +79,17 @@ sup {
 			color: #fff;
 		}
 	}
-
-	a.side + a.side {
-		//border-top: 1px solid fadeout(#000, 93%);
-	}
-
-	.copyright {
-		position: absolute;
-		right: 0; bottom: 20px;
-		padding: 5px 10px;
-		text-align: center;
-		color: #666;
-		font-size: 12px;
-		display: none;
-	}
-}
-
-#intro {
-	display: none;
-}
-
-@media only screen and (max-width: 480px) {
-	#sidebar { display: none; }
-	#intro { display: block; }
-
-	#intro {
-		display: block;
-		position: static;
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-		height: auto; max-height: none;
-		margin-bottom: 20px;
-
-		img.icon {
-			width: 240px;
-		}
-
-		.blog-title {
-			a {
-				font-size: 54px;
-				padding: 10px 15px;
-				background-color: transparent;
-				color: #fff;
-			}
-		}
-
-		a.side {
-			font-size: 44px;
-			padding: 5px 15px;
-			display: inline-block;
-			border-top: 0 !important;
-		}
-	}
 }
 
 #content {
-	padding: 5px 100px 0 100px;
-	margin-top: -5px;
-	width: 600px; min-height: 100%;
-	background-color: darken(@bg, 3%);
-	float: left;
+	padding: 5px 50px 0;
+	margin: -5px auto 0;
+	width: 500px; min-height: 100%;
+	background-color: rgba(255,255,255,0.05);
+	//float: left;
 	border-top: 5px solid @orange;
 
-	box-shadow: fadeout(#000, 70%) 1px 1px 8px;
+	box-shadow: fadeout(#000, 90%) 0 0 8px;
 
 	a {
 		text-decoration: none;
@@ -154,7 +98,7 @@ sup {
 
 	#posts {
 		.post {
-			margin: 100px 0;
+			margin: 150px 0;
 
 			.post-title {
 				margin-bottom: 5px;
@@ -292,8 +236,8 @@ sup {
 				}
 
 				pre {
-					margin: 0 -100px 0;
-					padding: 0 100px;
+					margin: 0 -50px 0;
+					padding: 0 50px;
 					background-color: rgba(0,0,0,0.2);
 					border-width: 2px 0;
 					border-color: rgba(0,0,0,0.03);
@@ -307,8 +251,8 @@ sup {
 				}
 
 				img {
-					margin-left: -100px;
-					max-width: 800px;
+					margin-left: -50px;
+					max-width: 600px;
 				}
 
 				strong {
@@ -364,7 +308,8 @@ sup {
 
 	#paginator,
 	#btb {
-		margin: 20px auto 40px;
+		padding: 20px 0 40px;
+		margin: 0 auto;
 		//text-align: center;
 
 		a {
