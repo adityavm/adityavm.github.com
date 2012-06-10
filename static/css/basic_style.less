@@ -87,9 +87,9 @@ sup {
 	}
 
 	a:hover {
-		background-color: fadeout(#000, 99%);
+		background-color: fadeout(#000, 90%);
 		border-bottom: 2px solid @orange;
-		color: #fff;
+		color: #fff !important;
 	}
 }
 
@@ -120,6 +120,11 @@ sup {
 
 				a {	
 					color: #fff;
+
+					&:visited:after {
+						content: " f";
+						font-family: "icons";
+					}
 					
 					&:hover {
 						text-decoration: underline;
