@@ -30,5 +30,5 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #bottom{margin-left:-50px;padding:5px 50px;background-color:rgba(0, 0, 0, 0.2);width:500px;}#content #bottom #paginator,#content #bottom #btb{width:200px;}#content #bottom #paginator a,#content #bottom #btb a{color:#eee;padding:5px 8px;font-size:13px;}#content #bottom #paginator a:hover,#content #bottom #btb a:hover{background-color:rgba(0, 0, 0, 0.1);color:#fff;}
 #content #bottom #btb{text-align:left;}
 #posts .post:first-child{margin-top:50px;}
-#posts .post:last-of-type{margin-bottom:50px;}
+#posts div:nth-last-of-type(2){margin-bottom:50px;}
 .clear{clear:both;}
