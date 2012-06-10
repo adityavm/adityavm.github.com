@@ -42,11 +42,11 @@ sup {
 
 #intro {
 	padding: 0 50px;
+	background-color: fadeout(#000, 85%);
 
 	.left {
 		float: left;
 		width: 50%;
-		background-color: fadeout(#000, 85%);
 
 		.blog-title {
 			text-transform: uppercase;
@@ -67,6 +67,8 @@ sup {
 
 				img.icon {
 					width: 30px;
+					vertical-align: middle;
+					position: relative; top: -3px;
 				}
 			}
 		}
@@ -96,7 +98,7 @@ sup {
 	padding: 5px 50px 0;
 	margin: -5px auto 0;
 	width: 500px; min-height: 100%;
-	background-color: lighten(#4b493d, 10%);
+	background-color: lighten(@bg, 2%);
 	//float: left;
 	border-top: 5px solid @orange;
 
