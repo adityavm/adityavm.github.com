@@ -62,11 +62,6 @@ sup {
 				//background-color: fadeout(#000, 70%);
 				color: @orange;
 
-				&:hover {
-					background-color: @orange;
-					color: #fff;
-				}
-
 				img.icon {
 					width: 30px;
 					vertical-align: middle;
@@ -86,13 +81,12 @@ sup {
 			font-size: 13px;
 			text-decoration: none;
 			float: left;
-
-			&:hover {
-				//background-color: @orange;
-				background-color: fadeout(#000, 95%);
-				color: #fff;
-			}
 		}
+	}
+
+	a:hover {
+		border-bottom: 2px solid @orange;
+		color: #fff;
 	}
 }
 

@@ -1,4 +1,4 @@
-<iframe width="560" height="315" src="http://www.youtube.com/embed/j6oBbBfhgYE" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="281" src="http://www.youtube.com/embed/j6oBbBfhgYE" frameborder="0" allowfullscreen></iframe>
 
 Two lives are interesting, but not hard. Three lives, on the other hand, result in things like multiple personality disorders. There are times I do feel like I have MPD, but that story is for another time. To most people on the Internet I am the slightly cynical, slightly more misanthropic and opinionated designer. But as things go, even my MPD has MPD. My other Internet life goes by the alias "Painkiller", who is an avid gamer and equally opinionated, semi-raging 18 year old. I don't like to get these lives mixed up, so I don't talk about them in the realm [^1] of the other. But let's break that rule today.
 
