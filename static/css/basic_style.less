@@ -41,42 +41,53 @@ sup {
 }
 
 #intro {
+	padding: 0 50px;
 
-	img.icon {
-		width: 60px;
-	}
+	.left {
+		float: left;
+		width: 50%;
+		background-color: fadeout(#000, 85%);
 
-	.blog-title {
-		text-transform: uppercase;
-		font-size: 16px;
-		margin: 0 0 30px;
+		.blog-title {
+			text-transform: uppercase;
+			font-size: 16px;
+			margin: 0 0 30px;
 
-		a {
-			text-decoration: none;
-			display: inline-block;
-			padding: 5px 10px;
-			background-color: fadeout(#000, 70%);
-			color: @orange;
+			a {
+				text-decoration: none;
+				display: inline-block;
+				padding: 8px 10px 7px;
+				//background-color: fadeout(#000, 70%);
+				color: @orange;
 
-			&:hover {
-				background-color: @orange;
-				color: #fff;
+				&:hover {
+					background-color: @orange;
+					color: #fff;
+				}
+
+				img.icon {
+					width: 30px;
+				}
 			}
 		}
 	}
 
-	a.side {
-		color: fadeout(#fff, 50%);
-		display: inline-block;
-		padding: 5px 10px;
-		font-size: 16px;
-		text-decoration: none;
-		float: left;
+	.right {
+		float: right;
 
-		&:hover {
-			//background-color: @orange;
-			background-color: fadeout(#000, 95%);
-			color: #fff;
+		a.side {
+			color: fadeout(#fff, 50%);
+			display: inline-block;
+			padding: 8px 10px 7px;
+			font-size: 13px;
+			text-decoration: none;
+			float: left;
+
+			&:hover {
+				//background-color: @orange;
+				background-color: fadeout(#000, 95%);
+				color: #fff;
+			}
 		}
 	}
 }
@@ -85,7 +96,7 @@ sup {
 	padding: 5px 50px 0;
 	margin: -5px auto 0;
 	width: 500px; min-height: 100%;
-	background-color: rgba(255,255,255,0.05);
+	background-color: lighten(#4b493d, 10%);
 	//float: left;
 	border-top: 5px solid @orange;
 
@@ -405,3 +416,5 @@ sup {
 		}
 	}
 }
+
+.clear { clear: both; }
