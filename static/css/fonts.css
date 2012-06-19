@@ -1,25 +1,19 @@
 @font-face {
 	font-family: 'gotham';
-	src: url(http://dl.dropbox.com/u/74874/fonts/gotham-book-webfont.eot);
-	src: local(‚ò∫'),
-		 url('http://dl.dropbox.com/u/74874/fonts/gotham-book-webfont.woff') format('woff'),
-		 url('http://dl.dropbox.com/u/74874/fonts/gotham-book-webfont.ttf') format('truetype'),
-		 url('http://dl.dropbox.com/u/74874/fonts/gotham-book-webfont.svg#webfont') format('svg');
-	/*
+	src: url('../fonts/gotham-book-webfont.eot#');
+		 url('../fonts/gotham-book-webfont.woff') format('woff'),
+		 url('../fonts/gotham-book-webfont.ttf') format('truetype'),
+		 url('../fonts/gotham-book-webfont.svg#webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
-	*/
 }
 
 @font-face {
 	font-family: 'icons';
-	src: url(http://dl.dropbox.com/u/74874/fonts/foundation-icons-general.eot);
-	src: local(‚ò∫'),
-		 url('http://dl.dropbox.com/u/74874/fonts/foundation-icons-general.woff') format('woff'),
-		 url('http://dl.dropbox.com/u/74874/fonts/foundation-icons-general.ttf') format('truetype'),
-		 url('http://dl.dropbox.com/u/74874/fonts/foundation-icons-general.svg#webfont') format('svg');
-	/*
+	src: url('../fonts/foundation-icons-general.eot#');
+		 url('../fonts/foundation-icons-general.woff') format('woff'),
+		 url('../fonts/foundation-icons-general.ttf') format('truetype'),
+		 url('../fonts/foundation-icons-general.svg#webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
-	*/
 }
