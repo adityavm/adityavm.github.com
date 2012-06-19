@@ -33,8 +33,8 @@ body {
 */
 
 a {
-	-webkit-transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
+	//-webkit-transition-duration: 0.2s;
+	//-moz-transition-duration: 0.2s
 }
 
 sup {
@@ -193,9 +193,16 @@ sup {
 					color: #fff;
 					border-bottom: 1px solid @orange;
 
-					&:visited:after {
-						content: " f";
-						font-family: "icons";
+					&:visited {
+						
+					
+						&:after {
+							content: " f";
+							font-family: "icons";
+							font-size: 9px;
+							vertical-align: top;
+							position: relative; top: -2px;
+						}
 					}
 
 					&:hover {
