@@ -25,8 +25,10 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .post-body img{margin-left:-50px;max-width:600px;}
 #content #posts .post .post-body strong{font-family:"gotham",sans-serif;font-weight:normal;}
 #content #posts .post .post-body .disclaimer{font-style:italic;color:rgba(255, 255, 255, 0.5);display:inline-block;margin-bottom:2em;}#content #posts .post .post-body .disclaimer strong{text-transform:uppercase;}
-#content #posts .post .post-body .footnote{font-size:12px;color:rgba(255, 255, 255, 0.7);}#content #posts .post .post-body .footnote hr{border:0;border-bottom:1px solid rgba(255, 255, 255, 0.09999999999999998);margin:5px 0;height:0;width:200px;}
+#content #posts .post .post-body .footnote{font-size:11px;color:rgba(255, 255, 255, 0.7);}#content #posts .post .post-body .footnote hr{border:0;border-bottom:1px solid rgba(255, 255, 255, 0.09999999999999998);margin:5px 0;height:0;width:200px;}
 #content #posts .post .post-body .footnote a{color:#eee;}#content #posts .post .post-body .footnote a[rev=footnote]{font-size:9px;}
+#content #posts .post .post-body .footnote ol{margin-left:0;padding-left:10px;}#content #posts .post .post-body .footnote ol li{position:relative;list-style:none;}#content #posts .post .post-body .footnote ol li:before{content:counter(li);counter-increment:li;position:absolute;left:-9px;top:-3px;font-size:8px;}
+#content #posts .post .post-body .footnote ol li p{margin:0 0 0.5em;}
 #content #posts .post .post-footer{font-size:12px;border-top:1px solid rgba(255, 255, 255, 0.09999999999999998);padding-top:10px;}#content #posts .post .post-footer a{color:rgba(255, 255, 255, 0.6);}#content #posts .post .post-footer a:hover{text-decoration:underline;}
 #content #posts .post.link .post-footer{display:none;}
 #content #bottom{padding:8px 50px;background-color:rgba(0, 0, 0, 0.2);width:500px;}#content #bottom #paginator,#content #bottom #btb{width:200px;float:left;}#content #bottom #paginator a,#content #bottom #btb a{color:#eee;padding:8px 8px;font-size:13px;}#content #bottom #paginator a:hover,#content #bottom #btb a:hover{border-top:2px solid #c46d3b;background-color:rgba(0, 0, 0, 0.1);color:#fff;}
