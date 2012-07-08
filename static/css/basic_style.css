@@ -125,10 +125,10 @@ sup {
   border-bottom: 0;
 }
 #content #posts .post .post-body {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   font-family: "adobe-garamond-pro", serif;
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 #content #posts .post .post-body a {
   color: #333;
@@ -183,8 +183,7 @@ sup {
 }
 #content #posts .post .post-body code {
   font-family: "Inconsolata", "Consolas", "Monaco", monospace;
-  background-color: rgba(255, 255, 255, 0.09999999999999998);
-  border: 1px solid rgba(0, 0, 0, 0.15000000000000002);
+  background-color: rgba(0, 0, 0, 0.010000000000000009);
   padding: 3px 6px 2px;
 }
 #content #posts .post .post-body pre {
@@ -205,16 +204,14 @@ sup {
   max-width: 800px;
 }
 #content #posts .post .post-body strong {
-  font-weight: normal;
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: bold;
 }
 #content #posts .post .post-body .disclaimer {
   font-style: italic;
   color: rgba(0, 0, 0, 0.5);
   display: inline-block;
   margin-bottom: 2em;
-}
-#content #posts .post .post-body .disclaimer strong {
-  text-transform: uppercase;
 }
 #content #posts .post .post-body .twitter-tweet-rendered {
   margin: 0 auto;
