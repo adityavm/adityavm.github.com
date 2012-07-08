@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   font: 14px "ff-dagny-web-pro", sans-serif;
-  background-color: #fff;
+  background-color: #f5f5f5;
   text-rendering: optimizelegibility;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 body {
   min-width: 1000px;
+  border-top: 2px solid #000;
 }
 a {
   -webkit-transition-duration: 0.2s;
@@ -24,7 +25,6 @@ sup {
   padding: 0 45px;
   width: 710px;
   height: 34px;
-  background-color: #fff;
 }
 #intro .left {
   float: left;
@@ -54,7 +54,7 @@ sup {
 #intro .right a.side {
   color: #888;
   display: inline-block;
-  padding: 8px 10px 9px;
+  padding: 10px 10px 11px;
   font-size: 16px;
   text-decoration: none;
   float: left;
@@ -67,7 +67,6 @@ sup {
   margin: 0 auto;
   width: 800px;
   min-height: 100%;
-  background-color: #fff;
   color: #000;
 }
 #content a {
@@ -76,7 +75,7 @@ sup {
 }
 #content #posts .post {
   padding: 50px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px dashed #eee;
 }
 #content #posts .post .post-title {
   margin-bottom: 5px;
@@ -110,7 +109,6 @@ sup {
 }
 #content #posts .post.link .post-title a {
   color: #222;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 #content #posts .post.link .post-title a.permalink {
   font-size: 24px;
@@ -163,7 +161,7 @@ sup {
   margin-top: 0em;
 }
 #content #posts .post .post-body blockquote {
-  margin: 20px 5px;
+  margin: 20px 0;
   width: 80%;
   border-left: 5px solid #c46d3b;
   padding-left: 15px;
@@ -240,7 +238,7 @@ sup {
 }
 #content #posts .post .post-body .footnote ol {
   margin-left: 0;
-  padding-left: 10px;
+  padding-left: 15px;
   counter-reset: li;
 }
 #content #posts .post .post-body .footnote ol li {
@@ -304,7 +302,6 @@ sup {
   float: right;
   color: #ccc;
   font-size: 16px;
-  padding: 1px 0 0;
 }
 #posts > .post:first-child {
   padding-top: 100px !important;

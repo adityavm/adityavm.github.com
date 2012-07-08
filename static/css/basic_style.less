@@ -11,7 +11,7 @@ html,body {
 	margin: 0;
 	padding: 0;
 	font: 14px "ff-dagny-web-pro", sans-serif;
-	background-color: #fff;
+	background-color: #f5f5f5;
 	text-rendering: optimizelegibility;
 
 	-webkit-text-size-adjust: 100%;
@@ -20,6 +20,7 @@ html,body {
 
 body {
 	min-width: 1000px;
+	border-top: 2px solid #000;
 }
 
 a {
@@ -35,7 +36,6 @@ sup {
 #intro {
 	padding: 0 45px;
 	width: 710px; height: 34px;
-	background-color: #fff;
 
 	.left {
 		float: left;
@@ -68,7 +68,7 @@ sup {
 		a.side {
 			color: #888;
 			display: inline-block;
-			padding: 8px 10px 9px;
+			padding: 10px 10px 11px;
 			font-size: 16px;
 			text-decoration: none;
 			float: left;
@@ -84,7 +84,6 @@ sup {
 #content {
 	margin: 0 auto;
 	width: 800px; min-height: 100%;
-	background-color: #fff;
 	color: #000;
 
 	a {
@@ -95,7 +94,7 @@ sup {
 	#posts {
 		.post {
 			padding: 50px;
-			border-top: 1px solid rgba(0,0,0,0.05);
+			border-top: 1px dashed #eee;
 
 			.post-title {
 				margin-bottom: 5px;
@@ -138,7 +137,6 @@ sup {
 
 					a { 
 						color: #222;
-						border-bottom: 1px solid fadeout(#fff, 60%);
 						
 						&.permalink {
 							font-size: 24px;
@@ -202,7 +200,7 @@ sup {
 				}
 
 				blockquote {
-					margin: 20px 5px;
+					margin: 20px 0;
 					width: 80%;
 					border-left: 5px solid @orange;
 					padding-left: 15px;
@@ -290,7 +288,7 @@ sup {
 					}
 
 					ol {
-						margin-left: 0;	padding-left: 10px;
+						margin-left: 0;	padding-left: 15px;
 						counter-reset: li;
 
 						li {
@@ -332,7 +330,6 @@ sup {
 	}
 
 	#bottom {
-		//margin-left: -50px;
 		padding: 0 50px;
 		width: 800px;
 
@@ -362,7 +359,6 @@ sup {
 			float: right;
 			color: #ccc;
 			font-size: 16px;
-			padding: 1px 0 0;
 		}
 	}
 }
