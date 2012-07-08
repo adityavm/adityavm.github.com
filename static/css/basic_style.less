@@ -10,8 +10,8 @@
 html,body {
 	margin: 0;
 	padding: 0;
-	font: 14px "facitweb", sans-serif;
-	background-color: darken(@bg, 10%);
+	font: 14px "ff-dagny-web-pro", sans-serif;
+	background-color: #fff;
 	text-rendering: optimizelegibility;
 
 	-webkit-text-size-adjust: 100%;
@@ -19,7 +19,6 @@ html,body {
 }
 
 body {
-	border-top: 5px solid darken(@orange, 10%);
 	min-width: 1000px;
 }
 
@@ -44,13 +43,13 @@ sup {
 
 #intro {
 	padding: 0 45px;
-	//margin-left: -50px;
-	width: 510px; height: 34px;
-	background-color: fadeout(#000, 85%);
+	width: 710px; height: 34px;
+	background-color: #fff;
 
 	.left {
 		float: left;
 		width: 50%;
+		visibility: hidden;
 
 		.blog-title {
 			text-transform: uppercase;
@@ -77,31 +76,26 @@ sup {
 		float: right;
 
 		a.side {
-			color: fadeout(#fff, 50%);
+			color: #888;
 			display: inline-block;
 			padding: 8px 10px 9px;
-			font-size: 13px;
+			font-size: 16px;
 			text-decoration: none;
 			float: left;
 		}
 	}
 
 	a:hover {
-		background-color: fadeout(#000, 90%);
-		border-bottom: 2px solid @orange;
+		background-color: #222;
 		color: #fff !important;
 	}
 }
 
 #content {
-	//padding: 0 50px;
-	margin: -5px auto 0;
-	width: 600px; min-height: 100%;
-	background-color: darken(@bg, 7%);
-	//float: left;
-	border-top: 5px solid @orange;
-
-	box-shadow: fadeout(#000, 90%) 0 0 8px;
+	margin: 0 auto;
+	width: 800px; min-height: 100%;
+	background-color: #fff;
+	color: #000;
 
 	a {
 		text-decoration: none;
@@ -115,12 +109,12 @@ sup {
 
 			.post-title {
 				margin-bottom: 5px;
-				font-size: 24px;
-				font-family: "gotham", "Helvetica Neue", sans-serif;
-				font-weight: normal;
+				font-size: 34px;
+				font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+				font-weight: bold;
 
 				a {	
-					color: #fff;
+					color: #000;
 					
 					&:hover {
 						text-decoration: underline;
@@ -131,14 +125,14 @@ sup {
 			.meta {
 				padding: 0 0 10px;
 				margin-bottom: 5px;
-				color: fadeout(#fff, 20%);
-				font-size: 12px;
+				color: #666;
+				font-size: 14px;
 				//text-align: center;
 				text-transform: uppercase;
-				border-bottom: 1px solid fadeout(#fff, 90%);
+				border-bottom: 1px solid fadeout(#000, 90%);
 
 				a {
-					color: fadeout(#fff, 5%);
+					color: fadeout(#000, 5%);
 					
 					&:hover {
 						text-decoration: underline;
@@ -149,26 +143,19 @@ sup {
 			&.link {
 				.post-title {
 					margin-bottom: 10px;
-					font-weight: 400;
-					font-size: 14px;
+					font-size: 24px;
 					text-align: left;
 
 					a { 
-						color: fadeout(#fff, 10%);
+						color: #222;
 						border-bottom: 1px solid fadeout(#fff, 60%);
 						
 						&.permalink {
-							font-size: 16px;
+							font-size: 24px;
 							float: left;
-							color: fadeout(#fff, 30%);
+							color: fadeout(#000, 30%);
 							border-bottom: 0;
-							margin: -2px 0 0 -17px;
-						}
-
-						&:hover {
-							text-decoration: none;
-							color: #fff;
-							border-bottom-color: #fff;
+							margin: -2px 0 0 -24px;
 						}
 					} 
 				}
@@ -183,34 +170,22 @@ sup {
 			}
 
 			.post-body {
-				color: #fff;
-				font-size: 12px;
-				font-weight: 300;
-				font-family: "facitweb", sans-serif;
+				font-size: 24px;
+				font-weight: 400;
+				font-family: "adobe-garamond-pro", serif;
 				line-height: 1.7em;
 
 				a {
-					color: #fff;
-					border-bottom: 1px solid @orange;
-
-					&:visited {
-						color: fadeout(#fff, 20%);
-					
-						&:after {
-							content: " f";
-							font-family: "icons";
-							font-size: 9px;
-							vertical-align: top;
-							position: relative; top: -2px;
-						}
-					}
+					color: #333;
+					border-bottom: 1px solid #ddd;
 
 					&:hover {
-						background-color: fadeout(#fff, 90%);
+						color: @orange;
+						border-bottom-color: #aaa;
 					}
 
 					&[rel=footnote]{
-						font-size: 9px;
+						font-size: 75%;
 					}
 
 					&.permalink {
@@ -227,7 +202,7 @@ sup {
 				}
 
 				h4 {
-					font: normal 12pt "gotham", "Helvetica Neue", sans-serif;
+					font: normal 12pt "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
 					margin: 3em 0 0.7em;
 					text-transform: uppercase;
 				}
@@ -241,18 +216,18 @@ sup {
 					width: 80%;
 					border-left: 5px solid @orange;
 					padding-left: 10px;
-					color: fadeout(#fff, 15%);
+					color: #222;
 
 					cite {
-						color: fadeout(#fff, 40%);
+						color: fadeout(#000, 40%);
 
 						a {
-							color: #fff;
+							color: #000;
 							font-style: normal;
 						}
 
 						a:nth-of-type(1) {
-							font-family: "gotham", "Helvetica Neue", sans-serif;
+							font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
 							text-transform: uppercase;
 						}
 
@@ -263,18 +238,18 @@ sup {
 				}
 
 				code {
+					font-family: "Inconsolata", "Consolas", "Monaco", monospace;
 					background-color: fadeout(#fff, 90%);
 					border: 1px solid fadeout(#000, 85%);
 					padding: 3px 6px 2px;
 				}
 
 				pre {
+					border-radius: 5px;
+					font-size: 16px;
 					margin: 0 -50px 0;
 					padding: 0 50px;
-					background-color: rgba(0,0,0,0.2);
-					border-width: 2px 0;
-					border-color: rgba(0,0,0,0.03);
-					border-style: solid;
+					background-color: #eee; color: #222;
 
 					code {
 						background-color: transparent;
@@ -285,26 +260,29 @@ sup {
 
 				img {
 					margin-left: -50px;
-					max-width: 600px;
+					max-width: 800px;
 				}
 
 				strong {
-					font-family: "gotham", sans-serif;
 					font-weight: normal;
 				}
 
 				.disclaimer {
 					font-style: italic;
-					color: fadeout(#fff, 50%);
+					color: fadeout(#000, 50%);
 					display: inline-block;
 					margin-bottom: 2em;
 
 					strong { text-transform: uppercase; }
 				}
 
+				.twitter-tweet-rendered {
+					margin: 0 auto;
+				}
+
 				.footnote {
-					font-size: 11px;
-					color: fadeout(#fff, 30%);
+					font-size: 18px;
+					color: #666;
 
 					hr {
 						border: 0;
@@ -314,10 +292,10 @@ sup {
 					}
 
 					a {
-						color: #eee;
+						color: #222;
 
 						&[rev=footnote]{
-							font-size: 9px;
+							font-size: 12px;
 						}
 					}
 
@@ -328,15 +306,18 @@ sup {
 						li {
 							position: relative;
 							list-style: none;
+							margin-bottom: 1em;
 
 							&:before {
 								content: counter(li);
 								counter-increment: li;
-								position: absolute; left: -9px;	top: -2px;
-								font-size: 8px;
+								position: absolute; left: -15px; top: -15px;
+								font-size: 14px;
+								font-weight: bold;
+								color: #222;
 							}
 
-							p { margin: 0 0 0.5em; }
+							p { margin: 0 0 0.5em; line-height: 1.3em; }
 						}
 					}
 				}
@@ -362,9 +343,8 @@ sup {
 
 	#bottom {
 		//margin-left: -50px;
-		padding: 8px 50px;
-		background-color: rgba(0,0,0,0.2);
-		width: 500px;
+		padding: 0 50px;
+		width: 800px;
 
 		#paginator,
 		#btb {
@@ -372,13 +352,13 @@ sup {
 			float: left;
 
 			a {
+				background-color: #444;
 				color: #eee;
-				padding: 8px 8px;
-				font-size: 13px;
+				padding: 8px 12px;
+				font-size: 16px;
 
 				&:hover {
-					border-top: 2px solid @orange;
-					background-color: rgba(0,0,0,0.1);
+					background-color: #000;
 					color: #fff;
 				}
 			}
@@ -390,14 +370,14 @@ sup {
 
 		#copyright {
 			float: right;
-			color: rgba(255,255,255,0.2);
-			font-size: 12px;
+			color: #ccc;
+			font-size: 16px;
 			padding: 1px 0 0;
 		}
 	}
 }
 
-#posts > .post:first-child { padding-top: 50px !important; border-top: 0 !important; }
+#posts > .post:first-child { padding-top: 100px !important; border-top: 0 !important; }
 #posts > div:nth-last-of-type(2) { padding-bottom: 50px !important; }
 
 /*
