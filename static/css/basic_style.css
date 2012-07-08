@@ -11,14 +11,6 @@ body {
 body {
   min-width: 1000px;
 }
-/*
-@media only screen and (max-width: 480px) {
-	body {
-		min-width: 480px;
-		border-top: 0;
-	}
-}
-*/
 a {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -88,7 +80,7 @@ sup {
 }
 #content #posts .post .post-title {
   margin-bottom: 5px;
-  font-size: 34px;
+  font-size: 40px;
   font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
@@ -102,9 +94,8 @@ sup {
   padding: 0 0 10px;
   margin-bottom: 5px;
   color: #666;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.09999999999999998);
 }
 #content #posts .post .meta a {
   color: rgba(0, 0, 0, 0.95);
@@ -164,7 +155,7 @@ sup {
   margin: 1.5em 0;
 }
 #content #posts .post .post-body h4 {
-  font: normal 12pt "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+  font: bold 26px "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
   margin: 3em 0 0.7em;
   text-transform: uppercase;
 }
@@ -175,7 +166,7 @@ sup {
   margin: 20px 5px;
   width: 80%;
   border-left: 5px solid #c46d3b;
-  padding-left: 10px;
+  padding-left: 15px;
   color: #222;
 }
 #content #posts .post .post-body blockquote cite {
@@ -320,85 +311,8 @@ sup {
   border-top: 0 !important;
 }
 #posts > div:nth-last-of-type(2) {
-  padding-bottom: 50px !important;
+  padding-bottom: 100px !important;
 }
-/*
-@media only screen and (max-width: 480px) {
-
-	#content {
-		margin: 0 auto;
-		width: 100%;
-		overflow-x: hidden;
-		padding: 5px 15px;
-
-		#posts {
-			.post {
-				margin: 300px 0;
-
-				&:first-child {
-					margin-top: 5px;
-				}
-				
-				.post-title {
-					font-size: 74px;
-					margin-bottom: 30px;
-					line-height: 1em;
-				}
-				
-				.meta { font-size: 32px; }
-				
-				&.link {
-					.post-title {
-						font-size: 44px;
-					
-						a.permalink {
-							font-size: 44px;
-							margin-left: 0px;
-							margin-right: 5px;
-						}
-					}
-				}
-
-				.post-body {
-					font-size: 32px;
-
-					a {
-						&[rel=footnote]{ font-size: 39px; }
-					}
-
-					blockquote {
-						padding-left: 30px;
-					}
-
-					img {
-						max-width: 480px;
-						margin-left: -15px;
-					}
-
-					.footnote {
-						font-size: 42px;
-
-						a {
-							&[rev=footnote]{ font-size: 39px; }
-						}
-					}
-				}
-
-				.post-footer {
-					font-size: 20px;
-				}
-			}
-
-			#paginator, #btb {
-				a { 
-					font-size: 46px;
-					padding: 8px 12px;
-				}
-			}
-		}
-	}
-}
-*/
 .clear {
   clear: both;
 }
