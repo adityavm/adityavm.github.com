@@ -10,7 +10,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .meta{padding:0 0 10px;margin-bottom:5px;color:#666;font-size:16px;text-transform:uppercase;}#content #posts .post .meta a{color:rgba(0, 0, 0, 0.95);}#content #posts .post .meta a:hover{text-decoration:underline;}
 #content #posts .post.link .post-title{margin-bottom:10px;font-size:24px;text-align:left;}#content #posts .post.link .post-title a{color:#222;}#content #posts .post.link .post-title a.permalink{font-size:24px;float:left;color:rgba(0, 0, 0, 0.7);border-bottom:0;margin:-2px 0 0 -24px;}
 #content #posts .post.link .meta{font-style:italic;text-align:right;border-bottom:1px solid #eee;text-transform:normal;border-bottom:0;}
-#content #posts .post .post-body{font-size:22px;font-weight:300;font-family:"chaparral-pro",serif;line-height:1.5em;}#content #posts .post .post-body a{color:#333;border-bottom:1px solid #ddd;}#content #posts .post .post-body a:hover{color:#c46d3b;border-bottom-color:#aaa;}
+#content #posts .post .post-body{font-size:22px;font-family:"chaparral-pro",serif;line-height:1.5em;}#content #posts .post .post-body a{color:#333;border-bottom:1px solid #ddd;}#content #posts .post .post-body a:hover{color:#c46d3b;border-bottom-color:#aaa;}
 #content #posts .post .post-body a[rel=footnote]{font-size:75%;}
 #content #posts .post .post-body a.permalink{font-size:18px;color:rgba(255, 255, 255, 0.7);border-bottom:0;}#content #posts .post .post-body a.permalink:hover{opacity:1;}
 #content #posts .post .post-body p{margin:1.5em 0;}
@@ -25,7 +25,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .post-body strong{font-family:"ff-dagny-web-pro",sans-serif;font-weight:700;}
 #content #posts .post .post-body .disclaimer{font-style:italic;color:rgba(0, 0, 0, 0.5);display:inline-block;margin-bottom:2em;}
 #content #posts .post .post-body .twitter-tweet-rendered{margin:0 auto;}
-#content #posts .post .post-body .footnote{font-size:18px;color:#666;}#content #posts .post .post-body .footnote hr{border:0;border-bottom:1px solid rgba(255, 255, 255, 0.09999999999999998);margin:5px 0;height:0;width:200px;}
+#content #posts .post .post-body .footnote{font-size:18px;font-weight:300;color:#666;}#content #posts .post .post-body .footnote hr{border:0;border-bottom:1px solid rgba(255, 255, 255, 0.09999999999999998);margin:5px 0;height:0;width:200px;}
 #content #posts .post .post-body .footnote a{color:#222;}#content #posts .post .post-body .footnote a[rev=footnote]{font-size:12px;}
 #content #posts .post .post-body .footnote ol{margin-left:0;padding-left:15px;counter-reset:li;}#content #posts .post .post-body .footnote ol li{position:relative;list-style:none;margin-bottom:1em;}#content #posts .post .post-body .footnote ol li:before{content:counter(li);counter-increment:li;position:absolute;left:-15px;top:-15px;font-size:14px;font-weight:bold;color:#222;}
 #content #posts .post .post-body .footnote ol li p{margin:0 0 0.5em;line-height:1.3em;}
