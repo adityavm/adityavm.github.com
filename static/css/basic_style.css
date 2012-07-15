@@ -19,7 +19,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .post-body blockquote{margin:20px 0;width:80%;border-left:5px solid #c46d3b;padding-left:15px;color:#222;}#content #posts .post .post-body blockquote cite{color:rgba(0, 0, 0, 0.6);}#content #posts .post .post-body blockquote cite a{color:#000;font-style:normal;}
 #content #posts .post .post-body blockquote cite a:nth-of-type(1){font-family:"ff-dagny-web-pro","Helvetica Neue",sans-serif;text-transform:uppercase;}
 #content #posts .post .post-body blockquote cite:before{content:"\2014";}
-#content #posts .post .post-body code{font-family:"Inconsolata","Consolas","Monaco",monospace;background-color:rgba(0, 0, 0, 0.010000000000000009);padding:3px 6px 2px;}
+#content #posts .post .post-body code{font-family:"Inconsolata","Consolas","Monaco",monospace;font-size:18px;background-color:rgba(0, 0, 0, 0.030000000000000027);padding:3px 6px 2px;}
 #content #posts .post .post-body pre{border-radius:5px;font-size:16px;margin:0 -50px 0;padding:0 50px;background-color:#eee;color:#222;}#content #posts .post .post-body pre code{background-color:transparent;border:0;padding:0;}
 #content #posts .post .post-body img{margin-left:-50px;max-width:800px;}
 #content #posts .post .post-body strong{font-family:"ff-dagny-web-pro",sans-serif;font-weight:700;}
