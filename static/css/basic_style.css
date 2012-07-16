@@ -31,7 +31,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .post-body .footnote ol li p{margin:0 0 0.5em;line-height:1.3em;}
 #content #posts .post .post-footer{font-size:12px;border-top:1px solid rgba(255, 255, 255, 0.09999999999999998);padding-top:10px;}#content #posts .post .post-footer a{color:rgba(255, 255, 255, 0.6);}#content #posts .post .post-footer a:hover{text-decoration:underline;}
 #content #posts .post.link .post-footer{display:none;}
-#content #posts hr.post-divider{height:0;border:0;border-bottom:1px dashed rgba(255, 255, 255, 0.6);border-top:1px dashed rgba(0, 0, 0, 0.05);}#content #posts hr.post-divider:last-child{visibility:hidden;}
+#content #posts hr.post-divider{height:0;border:0;border-bottom:1px dashed #fff;border-top:1px dashed rgba(0, 0, 0, 0.1);}#content #posts hr.post-divider:last-child{visibility:hidden;}
 #content #bottom{padding:0 50px;width:800px;}#content #bottom #paginator,#content #bottom #btb{width:200px;float:left;}#content #bottom #paginator a,#content #bottom #btb a{background-color:#444;color:#eee;padding:8px 12px;font-size:16px;}#content #bottom #paginator a:hover,#content #bottom #btb a:hover{background-color:#000;color:#fff;}
 #content #bottom #btb{text-align:left;}
 #content #bottom #copyright{float:right;color:#ccc;font-size:16px;}
