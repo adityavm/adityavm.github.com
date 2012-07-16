@@ -93,7 +93,6 @@ sup {
 	#posts {
 		.post {
 			padding: 50px;
-			border-top: 1px dashed #eee;
 
 			.post-title {
 				margin-bottom: 5px;
@@ -325,6 +324,17 @@ sup {
 			}
 
 			&.link .post-footer { display: none; }
+		}
+
+		hr.divider {
+			height: 0;
+			border: 0;
+			border-bottom: 1px dashed rgba(255,255,255,0.6);
+			border-top: 1px dashed rgba(0,0,0,0.05);
+
+			&:last-child {
+				visibility: hidden;
+			}
 		}
 	}
 

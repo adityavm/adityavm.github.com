@@ -6,7 +6,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #intro .right{float:right;}#intro .right a.side{color:#888;display:inline-block;padding:10px 10px 11px;font-size:16px;text-decoration:none;float:left;}
 #intro a:hover{background-color:#222;color:#fff !important;}
 #content{margin:0 auto;width:800px;min-height:100%;color:#000;}#content a{text-decoration:none;color:#888;}
-#content #posts .post{padding:50px;border-top:1px dashed #eee;}#content #posts .post .post-title{margin-bottom:5px;font-size:40px;font-family:"ff-dagny-web-pro","Helvetica Neue",sans-serif;font-weight:900;}#content #posts .post .post-title a{color:#000;}#content #posts .post .post-title a:hover{text-decoration:underline;}
+#content #posts .post{padding:50px;}#content #posts .post .post-title{margin-bottom:5px;font-size:40px;font-family:"ff-dagny-web-pro","Helvetica Neue",sans-serif;font-weight:900;}#content #posts .post .post-title a{color:#000;}#content #posts .post .post-title a:hover{text-decoration:underline;}
 #content #posts .post .meta{padding:0 0 10px;margin-bottom:5px;color:#666;font-size:16px;text-transform:uppercase;}#content #posts .post .meta a{color:rgba(0, 0, 0, 0.95);}#content #posts .post .meta a:hover{text-decoration:underline;}
 #content #posts .post.link .post-title{margin-bottom:10px;font-size:24px;text-align:left;}#content #posts .post.link .post-title a{color:#222;}#content #posts .post.link .post-title a.permalink{font-size:24px;float:left;color:rgba(0, 0, 0, 0.7);border-bottom:0;margin:-2px 0 0 -24px;}
 #content #posts .post.link .meta{font-style:italic;text-align:right;border-bottom:1px solid #eee;text-transform:normal;border-bottom:0;}
@@ -31,6 +31,7 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #posts .post .post-body .footnote ol li p{margin:0 0 0.5em;line-height:1.3em;}
 #content #posts .post .post-footer{font-size:12px;border-top:1px solid rgba(255, 255, 255, 0.09999999999999998);padding-top:10px;}#content #posts .post .post-footer a{color:rgba(255, 255, 255, 0.6);}#content #posts .post .post-footer a:hover{text-decoration:underline;}
 #content #posts .post.link .post-footer{display:none;}
+#content #posts hr.divider{height:0;border:0;border-bottom:1px dashed rgba(255, 255, 255, 0.6);border-top:1px dashed rgba(0, 0, 0, 0.05);}#content #posts hr.divider:last-child{visibility:hidden;}
 #content #bottom{padding:0 50px;width:800px;}#content #bottom #paginator,#content #bottom #btb{width:200px;float:left;}#content #bottom #paginator a,#content #bottom #btb a{background-color:#444;color:#eee;padding:8px 12px;font-size:16px;}#content #bottom #paginator a:hover,#content #bottom #btb a:hover{background-color:#000;color:#fff;}
 #content #bottom #btb{text-align:left;}
 #content #bottom #copyright{float:right;color:#ccc;font-size:16px;}
