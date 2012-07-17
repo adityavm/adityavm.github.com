@@ -2,7 +2,7 @@ html,body{margin:0;padding:0;font:14px "ff-dagny-web-pro",sans-serif;background-
 body{min-width:1000px;border-top:3px solid #000;}
 a{-webkit-transition-duration:0.2s;-moz-transition-duration:0.2s;}
 sup{position:relative;top:-0.5em;vertical-align:baseline;}
-#intro{width:800px;height:34px;}#intro .left{float:left;width:50%;visibility:hidden;}#intro .left .blog-title{text-transform:uppercase;font-size:16px;margin:0;}#intro .left .blog-title a{text-decoration:none;display:inline-block;padding:4px 5px 0;color:#c46d3b;}#intro .left .blog-title a img.icon{width:30px;vertical-align:middle;position:relative;top:-2px;}
+#intro{width:800px;}#intro .left{float:left;width:50%;}#intro .left .blog-title{margin:0;}
 #intro .right{float:right;}#intro .right a.side{color:#888;display:inline-block;padding:10px 10px 11px;font-size:16px;text-decoration:none;float:left;}
 #intro a:hover{background-color:#222;color:#fff !important;}
 #content{margin:0 auto;width:800px;min-height:100%;color:#000;}#content a{text-decoration:none;color:#888;}
