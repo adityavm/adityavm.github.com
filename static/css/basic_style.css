@@ -2,7 +2,7 @@ html,body{margin:0;padding:0;font:14px "ff-dagny-web-pro",sans-serif;background-
 body{min-width:1000px;border-top:3px solid #000;}
 a{-webkit-transition-duration:0.2s;-moz-transition-duration:0.2s;}
 sup{position:relative;top:-0.5em;vertical-align:baseline;}
-#intro{width:800px;}#intro .left{float:left;width:50%;}#intro .left .blog-title{margin:0;}
+#intro{width:800px;padding:0 50px;}#intro .left{float:left;width:50%;}#intro .left .blog-title{margin:0;padding-top:100px;}#intro .left .blog-title img.icon{width:160px;}
 #intro .right{float:right;}#intro .right a.side{color:#888;display:inline-block;padding:10px 10px 11px;font-size:16px;text-decoration:none;float:left;}
 #intro a:hover{background-color:#222;color:#fff !important;}
 #content{margin:0 auto;width:800px;min-height:100%;color:#000;}#content a{text-decoration:none;color:#888;}
@@ -35,6 +35,6 @@ sup{position:relative;top:-0.5em;vertical-align:baseline;}
 #content #bottom{padding:0 50px;width:800px;}#content #bottom #paginator,#content #bottom #btb{width:200px;float:left;}#content #bottom #paginator a,#content #bottom #btb a{background-color:#444;color:#eee;padding:8px 12px;font-size:16px;}#content #bottom #paginator a:hover,#content #bottom #btb a:hover{background-color:#000;color:#fff;}
 #content #bottom #btb{text-align:left;}
 #content #bottom #copyright{float:right;color:#ccc;font-size:16px;}
-#posts>.post:first-child{padding-top:100px !important;border-top:0 !important;}
+#posts>.post:first-child{border-top:0 !important;}
 #posts>div:nth-last-of-type(2){padding-bottom:100px !important;}
 .clear{clear:both;}
