@@ -1,1 +1,0 @@
-When I saw the movie for the first time, I had a feeling the movie wasn't as simple as it appeared. So I saw it a second time after reading this, and it definitely makes more sense. Now I *can't* see the movie without noticing all the allusions.
