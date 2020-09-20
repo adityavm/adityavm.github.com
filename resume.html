@@ -3,8 +3,6 @@
 <head>
  	<title>Aditya Mukherjee is...</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500" rel="stylesheet">
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,6 +13,7 @@
 				background-color: #f5f5f5;
 				border: 10px solid #eee;
 				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 			}
 
 			a {
@@ -37,7 +36,6 @@
 				padding: 10px;
 				border: 1px solid gray;
 				color: silver;
-				font-family: "Roboto", sans-serif;
 				font-size: 11px;
 			}
 
@@ -54,7 +52,6 @@
 
 			.title {
 				color: #333;
-				font-family: Roboto ,serif;
 				margin: 10px 0px 12px -40px;
 				text-align: left;
 			}
@@ -123,7 +120,6 @@
 
 			.hresume {
 				color: #333;
-				font-family: Roboto, sans-serif;
 				font-size: 14px;
 				padding: 10px 50px 30px;
 
@@ -217,7 +213,6 @@
 			}
 
 			.hresume label {
-				font-family: "Roboto Condensed", sans-serif;
 				text-transform: uppercase;
 				color: #888;
 			}
@@ -262,10 +257,15 @@
 			.hresume .summary,
 			.hresume .tags {
 				margin: 10px 0 20px;
-				break-inside: avoid-column;
+				break-inside: avoid;
 			}
 
-			@media only screen and (max-width: 450px) {
+			.hresume .experience {
+				border-bottom: 1px dashed #ccc;
+				padding-bottom: 20px;
+			}
+
+			@media only screen and (max-width: 768px) {
 				.hresume .experience,
 				.hresume .education,
 				.hresume .accreditation,
@@ -303,7 +303,7 @@
 			.hresume .education .htitle,
 			.hresume .experience .htitle {
 				float: left;
-				width: 200px;
+				width: 50%;
 			}
 
 			.hresume .experience .htitle,
@@ -325,10 +325,10 @@
 			.hresume .education .date_duration,
 			.hresume .experience .date_duration {
 				color: #AAA;
-				float: left;
+				float: right;
 				font-size: 13px;
-				margin: 3px 0px 0px 10px;
-				width: 150px
+				width: 50%;
+				text-align: right;
 			}
 
 			.hresume .education abbr i {
@@ -391,6 +391,7 @@
 
 			.hresume .description {
 				line-height: 18px;
+				clear: both;
 			}
 
 			.hresume .experience .desc_summary {
@@ -440,8 +441,8 @@
 				outline: none;
 			}
 
-			summary::-webkit-details-marker {
-				display: none;
+			summary::marker {
+				color: transparent;
 			}
 
 			summary::before,
@@ -470,7 +471,6 @@
 
 			details.desc_summary summary::after {
 				content: "Show More";
-				font-family: "Roboto Condensed", sans-serif;
 				text-transform: uppercase;
 				font-size: 9px;
 				color: #aaa;
@@ -519,6 +519,7 @@
 
 			div.clear {
 				clear: both;
+				display: table;
 			}
 		}
 
@@ -606,7 +607,7 @@
 				<div class="vcalendar">
 					<div class="experience vevent vcard current">
 						<div class="htitle"><!-- div float container -->
-							<span class="org">Unikrn Inc.</span><br/>
+							<span class="org">Unikrn</span><br/>
 							<span class="location">India / United States / Australia</span>
 						</div>
 						<div class="date_duration">
