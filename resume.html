@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<title>Aditya Mukherjee is...</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+
+		@media print,screen {
+			body {
+				background-color: #f5f5f5;
+				border: 10px solid #eee;
+				margin: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.page_links {
+				position: fixed;
+				bottom: 4%;
+				left: 800px;
+			}
+
+			.page_links ul li {
+				float: left;
+				list-style: none;
+			}
+
+			.page_links ul li a {
+				display: block;
+				padding: 10px;
+				border: 1px solid gray;
+				color: silver;
+				font-family: "Roboto", sans-serif;
+				font-size: 11px;
+			}
+
+			.page_links ul li a:hover {
+				background: silver;
+				color: black;
+			}
+
+			.post_content {
+				width: 350px;
+				margin:30px 0px 0px 120px;
+				float: left;
+			}
+
+			.title {
+				color: #333;
+				font-family: Roboto ,serif;
+				margin: 10px 0px 12px -40px;
+				text-align: left;
+			}
+
+			.title a {
+				color: #eee;
+			}
+
+			.title a:hover {
+				border-bottom: 1px solid #777;
+				color: #fff;
+			}
+
+			.title .twitter {
+				font-size: 10px;
+				color: #ddd;
+			}
+
+			.morestuff {
+				width: 200px;
+				float: left;
+				margin: 70px 0px 0px 10px
+			}
+
+			.personal_info { }
+
+			.clear {
+				clear: both;
+			}
+
+			/* Between posts and hResume */
+
+			div.resume_img {
+				background-image: url(<? echo get_bloginfo('template_directory'); ?>/images/portfolio_images/resume.png);
+				background-repeat: no-repeat;
+				float: left;
+				height: 110px;
+				margin: 8px 0px 0px 35px;
+				position: absolute;
+				width: 35px;
+			}
+
+			.mugshot {
+				background-image: url(<? echo get_blogInfo('template_directory'); ?>/images/portfolio_images/mugshot_big.png);
+				border: 1px solid gray;
+				height: 307px;
+				left: 400px;
+				margin-top: 18px;
+				padding: 1px;
+				position: absolute;
+				width: 223px;
+			}
+
+			hr.divider {
+				background-image: url(http://images.adityamukherjee.com/divider_back.png);
+				background-position: center;
+				background-repeat :no-repeat;
+				border-width: 0px;
+				height: 5px;
+				margin: 10px auto;
+				width: 300px;
+				margin-bottom: 20px;
+			}
+
+			/* hResume */
+
+			.hresume {
+				color: #333;
+				font-family: Roboto, sans-serif;
+				font-size: 14px;
+				padding: 10px 50px 30px;
+
+				-moz-font-feature-settings:"liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+				-moz-font-feature-settings:"liga=1, dlig=1, hlig=1, clig=1";
+				-ms-font-feature-settings:"liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+				-o-font-feature-settings:"liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+				-webkit-font-feature-settings:"liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+				font-feature-settings:"liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+				text-rendering: optimizeLegibility;
+			}
+
+			@media only screen and (max-width: 450px) {
+				.hresume {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+
+			.hresume a,
+			.hresume a:visited {
+				color: #666;
+				border-bottom: 1px solid #ddd;
+			}
+
+			.hresume a:before {
+				content: "\25CA";
+				color: #aaa;
+				margin-right: 3px;
+			}
+
+			.hresume abbr {
+				text-decoration: none;
+			}
+
+			.hresume address {
+				font-style: normal;
+			}
+
+			.hresume hr {
+				display: block;
+			}
+
+			.hresume .contact {
+				width: 500px;
+				color: #888;
+				line-height: 18px;
+			}
+
+			.hresume .contact a {
+				color: #333;
+			}
+
+			.hresume .contact h4 {
+				font-family: "", sans-serif;
+				border-bottom: 1px solid #666;
+				margin-bottom: 2px;
+				color: #333;
+			}
+
+			.hresume .contact .fn {
+				font-weight: bold;
+				font-size: 12pt;
+			}
+
+			.hresume .contact table tr td {
+				padding: 2.5px 0;
+				margin: 0;
+			}
+
+			.hresume .contact table tr td:last-child {
+				color: #333;
+			}
+
+			.hresume .adr {
+				color: #666;
+			}
+
+			.hresume .adr,
+			.hresume .phone {
+				margin-left: 20px;
+			}
+
+			.hresume .adr {
+				float: left;
+				width: 200px;
+			}
+
+			.hresume .adr.termtime {
+				margin-top: -1.7em;
+			}
+
+			.hresume label {
+				font-family: "Roboto Condensed", sans-serif;
+				text-transform: uppercase;
+				color: #888;
+			}
+
+			.hresume small label {
+				text-transform: none !important;
+			}
+
+			.hresume .other {
+				width: 300px;
+				margin-left: 20px;
+			}
+
+			.hresume h4.name {
+				font: normal 21px "futura-pt",sans-serif;
+				margin: 0px 0px 5px 0px;
+				border: none;
+			}
+
+			.hresume .section {
+				column-count: 2;
+				column-gap: 50px;
+			}
+
+			.hresume .section + .section {
+				margin-top: 5em;
+			}
+
+			.hresume h4.section-title {
+				text-transform: uppercase;
+				border-bottom: 1px solid #ddd;
+				font: 500 14px "futura-pt",sans-serif;
+				margin: 10px 0 0 0;
+				padding: 0pt 2pt 5px;
+				width: 230px;
+				column-span: all;
+			}
+
+			.hresume .experience,
+			.hresume .education,
+			.hresume .accreditation,
+			.hresume .summary,
+			.hresume .tags {
+				margin: 10px 0 20px;
+				break-inside: avoid-column;
+			}
+
+			@media only screen and (max-width: 450px) {
+				.hresume .experience,
+				.hresume .education,
+				.hresume .accreditation,
+				.hresume .summary,
+				.hresume .tags {
+					column-span: all;
+				}
+			}
+
+			.hresume .experience + .experience {
+				margin-top: 3em;
+			}
+
+			.hresume .experience.current {
+				background-color: rgba(0, 0, 0, 0.02);
+				padding: 20px;
+				column-span: all;
+			}
+
+			.hresume .print-only { display: none; }
+
+			.hresume .github_intro {
+				font-style: italic;
+				color: #888;
+				margin-bottom: 0;
+				column-span: all;
+				text-align: right;
+			}
+
+			.hresume .github_intro a {
+				color: #666;
+				text-decoration: none;
+			}
+
+			.hresume .education .htitle,
+			.hresume .experience .htitle {
+				float: left;
+				width: 200px;
+			}
+
+			.hresume .experience .htitle,
+			.hresume .education .htitle .org {
+				font-weight: 500;
+				font-size: 16px;
+			}
+
+			.hresume .experience .htitle .location {
+				font-weight: 300;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+
+			.hresume .htitle .include {
+				display: none;
+			}
+
+			.hresume .education .date_duration,
+			.hresume .experience .date_duration {
+				color: #AAA;
+				float: left;
+				font-size: 13px;
+				margin: 3px 0px 0px 10px;
+				width: 150px
+			}
+
+			.hresume .education abbr i {
+				font-size: 11px;
+				line-height: 1.2em;
+				display: inline-block;
+				margin-top: 5px;
+				color: #bbb;
+			}
+
+			.hresume .education .summary {
+				margin: 0;
+			}
+
+			.hresume .education .subjects { }
+
+			.hresume .education .subjects ul li {
+				margin-bottom: 10px;
+				list-style: circle;
+			}
+
+			.hresume .education .subjects label {
+				text-transform: uppercase;
+				color: #888;
+			}
+
+			.hresume .education .subjects .em {
+				font-weight: 500;
+			}
+
+			.hresume .education .subjects ul li ul {
+				padding-left: 0em;
+				margin-top: 0.5em;
+			}
+
+			.hresume .education .subjects ul li ul label {
+				margin-bottom: 5px;
+				display: inline-block;
+			}
+
+			.hresume .education .subjects ul li ul li {
+				margin-bottom: 0.2em;
+				margin-left: 2em;
+				list-style: square;
+			}
+
+			.hresume .tags ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.hresume .tags ul li {
+				display: inline;
+			}
+
+			.hresume .hide {
+				display: none;
+			}
+
+			.hresume .description {
+				line-height: 18px;
+			}
+
+			.hresume .experience .desc_summary {
+				font-size: 14px;
+				margin: 4px 0;
+			}
+
+			.hresume .experience .description label {
+				font-size: 12px;
+				color: #888;
+				text-transform: uppercase;
+			}
+
+			.hresume .experience .description > ul,
+			.hresume .experience .description > ul > li {
+				margin-left: 0;
+				padding-left: 0;
+				list-style: none;
+			}
+
+			.hresume .description a,
+			.hresume .description a:visited {
+				color: #666;
+			}
+
+			.hresume .mini {
+				margin: 9px 0px 0px 18px;
+			}
+
+			.hresume .mini div.mini-head {
+				font: bold 10px "Georgia",serif;
+				border-bottom: 1px solid #888;
+				padding: 0px 2pt 2px;
+				width: 115px;
+				margin: 18px 0px 4px;
+			}
+
+			object {
+				display: none;
+			}
+
+			summary {
+				cursor: pointer;
+			}
+
+			summary:focus {
+				outline: none;
+			}
+
+			summary::-webkit-details-marker {
+				display: none;
+			}
+
+			summary::before,
+			summary::after {
+				font-size: 9px;
+				line-height: 9px;
+				font-weight: 600;
+			}
+
+			summary::before {
+				content: "〉";
+				padding-right: 5px;
+				color: #aaa;
+			}
+
+			details[open] summary::before {
+				content: "";
+				padding-right: 0;
+			}
+
+			details[open] summary::after {
+				content: "〉";
+				color: #666;
+				padding-left: 5px;
+			}
+
+			details.desc_summary summary::after {
+				content: "Show More";
+				font-family: "Roboto Condensed", sans-serif;
+				text-transform: uppercase;
+				font-size: 9px;
+				color: #aaa;
+				display: block;
+				margin-top: 1em;
+			}
+
+			details[open].desc_summary summary::after {
+				display: none;
+			}
+
+			.description details[open] {
+				border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+				padding-bottom: 10px;
+			}
+
+			.description summary {
+				color: #666;
+				font-size: 12px;
+			}
+
+			.description details ul {
+				width: 80%;
+				padding: 1em 0 0 1.5em;
+				margin: 0;
+			}
+
+			.description details ul li {
+				line-height: 1.4em;
+				list-style: circle;
+			}
+
+			.description details ul li + li {
+				margin-top: 0.75em;
+			}
+
+			.description details ul li > ul li {
+				list-style: square;
+			}
+
+			/* Miscellaneous */
+
+			.hide {
+				display: none;
+			}
+
+			div.clear {
+				clear: both;
+			}
+		}
+
+		@media print {
+			body { background-color: #fff; }
+			.hresume { margin-left: 0; }
+			.hresume .print-only { display: inline-block !important; color: #888; margin-left: 5px; }
+		}
+	</style>
+</head>
+<body>
+	<!-- hResume -->
+	<div class="resume_img">&nbsp;</div>
+	<div class="hresume" id="resume">
+		<div class="contact vcard">
+			<div class="fn n" id="j">
+				<h4 class='name'><span class="given-name">Aditya</span> <span class="family-name">Mukherjee</span></h4>
+			</div>
+			<div class="adr hide">
+				<span class="street-address">E-2296 Palam Vihar</span><br/>
+				<span class="locality">Gurgaon</span>,
+				<span class="region">Haryana</span>,<br/>
+				<span class="postal-code">122017</span><br/>
+				<span class="country-name">India</span>
+			</div><!-- adr -->
+			<div class="adr termtime hide">
+				<label>Term Time</label><br/>
+				<span class="street-address">E17, House 76</span><br/>
+				<span class="locality">County College, Lancaster University</span>,
+				<span class="region">Lancaster, Lancashire</span>,<br/>
+				<span class="postal-code">LA1 4YD</span><br/>
+				<span class="country-name">United Kingdom</span>
+			</div><!-- term time -->
+			<div class="adr termtime hide">
+				<label>Contract Time</label><br/>
+				<span class="street-address">#723, 1520 Eastlake Ave E</span><br/>
+				<span class="locality">Seattle</span>,
+				<span class="region">Washington</span>,<br/>
+				<span class="postal-code">98102</span><br/>
+				<span class="country-name">United States of America</span>
+			</div><!-- term time -->
+			<div class="clear"></div>
+			<div class="phone"></div>
+			<br/>
+			<div class="other">
+				<table>
+					<tr>
+						<td>Birth:</td><td>4<sup>th</sup> September, &rsquo;88</td>
+					</tr>
+						<td>Phone:</td><td>+91 8826 920311</td>
+					</tr>
+					<tr>
+						<td>Email:&nbsp;</td><td><a class="email" href="mailto:aditya@adityamukherjee.com">&#097;&#100;&#105;&#116;&#121;&#097;&#064;&#097;&#100;&#105;&#116;&#121;&#097;&#109;&#117;&#107;&#104;&#101;&#114;&#106;&#101;&#101;.&#099;&#111;&#109;</a></td>
+					</tr>
+					<tr>
+						<td>Web:&nbsp;</td><td><a class="url" href="http://adityamukherjee.com/">adityamukherjee.com</a></td>
+					</tr>
+					<tr>
+						<td>Github:&nbsp;</td><td><a class="url" href="http://github.com/adityavm">adityavm</a><span class="print-only"> &mdash; http://github.com/adityavm</span></td>
+					</tr>
+					<tr>
+						<td>Twitter:&nbsp;</td><td><a class="url" href="http://twitter.com/aditya">aditya</a><span class="print-only"> &mdash; http://twitter.com/aditya</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<br/>
+
+		<h4 class="section-title hide">Personal Profile</h4>
+		<div class="personal_info summary hide">
+			<p>I like to learn new things, and am constantly driven to make sense of why things are the way they are. I strongly believe in the often quoted words of Frank Oppenheimer, “The best way to learn is to teach”, and have taken every opportunity to teach and help fellow classmates when they&#8217;ve needed help. My style of learning&mdash;understanding and breaking down the problem rather than the solution&mdash;allows me to teach and explain concepts in the way a student approaches unfamiliar topic&mdash;through discovery and understanding.</p>
+
+			<p>I believe cultivating a love for the subject is as important as imparting knowledge, as we are automatically receptive to what interests us. I have been involved in the field of computers since high school, with contributions to open source projects and going on to consulting with companies later through my time at University. I have a strong grasp of current trends and technologies, with an understanding of real-world and modern contexts in which they are applied. This allows me to explain topics from both an academic and industrial perspective to help students see the possibilities of the technologies they are learning.</p>
+
+			<p>Other than computers, my interests lie mainly in the applied and performing arts. I have performed as a singer, guitarist and a keyboardist with several amateur to semi-professional music bands over the last decade. I&#8217;m also a hobbyist pencil artist and a graphics designer in my spare time.</p>
+		</div>
+		<br/>
+
+		<div class="section professional">
+			<!-- professional -->
+			<h4 class="section-title">Professional Experience</h4>
+				<div class="summary github_intro"><label>Note:</label> This list isn't exhaustive, as I've been regularly involved with many open-source projects which are listed on my <a href="http://github.com/adityavm/">Github</a>.</div>
+
+				<div class="vcalendar">
+					<div class="experience vevent vcard current">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Unikrn Inc.</span><br/>
+							<span class="location">India / United States / Australia</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2015-09-15">Sep 2015</abbr> -
+							<abbr class="dtend" title="">Present</abbr>
+						</div>
+						<div class="clear"></div>
+ 						<div class="description"><a href="http://unikrn.com/">Unikrn.com</a></div>
+						<div class="desc_summary">Unikrn is an eports wagering service, providing eSports fans and newcomers alike a safe and legal place to gather, game, and bet on eSports.</div><br/>
+						<div class="description">
+							<label>Position</label><br/>
+								Vice President of Engineering.<br/>
+								<details>
+									<summary>Responsibilities</summary>
+									<ul>
+										<li>Responsible for designing the technical architecture, development, testing and maintenance of the primary codebase according to product specifications for the company's flagship product, Unikrn Arena.</li>
+										<li>Define and optimise operational processes and workflows, and provide technical guidance to teams in other departments to facilitate smooth and easy development of new features.</li>
+										<li>Translate product and feature briefs provided by product managers into technical documentation and tasks.</li>
+										<li>Estimate product timelines, and manage sprints and releases for the engineering team using Agile methodology.</li>
+										<li>Collaborate with QA to diagnose and solve technical issues or bugs arising in systems during development and / or in production environments using bug trackers, version control systems, and continuous integration.</li>
+										<li>
+											<small><label>Previously</label> Director of Engineering.</small>
+										</li>
+									</ul>
+								</details>
+								<br/>
+								<small><label>Previously</label> Sen. Software &amp; Lead Frontend Engineer.</small><br/>
+								<details>
+									<summary>Responsibilities</summary>
+									<ul>
+										<li>Lead a team of four Junior and Senior Frontend developers.</li>
+										<li>Port company's flagship product, Unikrn Arena, from an inhouse custom framework to AngularJS (Angular v1.5).
+											<ul>
+												<li>Break down the older monolithic codebase into simpler components to allow better reusability and testability.</li>
+												<li>Create new documentation for each component to allow faster onboarding of new developers.</li>
+												<li>Document and distribute existing business logic between backend and frontend to improve robustness and reduce technical debt.</li>
+											</ul>
+										</li>
+									</ul>
+								</details>
+						</div>
+					</div>
+
+					<div class="experience vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Funhouse Technologies Pvt. Ltd / Dotaprohub</span><br/>
+							<span class="location">India</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2014-01-23">Jan 2014</abbr> -
+							<abbr class="dtend" title="2015-09-15">Sep 2015</abbr>
+						</div>
+						<div class="clear"></div>
+ 						<div class="description"><a href="http://dotaprohub.com/">Dotaprohub.com</a></div>
+						<details class="desc_summary">
+							<summary>An analysis tool for competitive Dota 2 catering to fans, professional players and casting studios, providing in-depth statistics in the form of dynamic visualizations to provide unique and automated analysis.</summary>
+							Dotaprohub's proprietary engine creatively combines historical as well as real-time data from every professional match ever played to provide at-a-glance and easy to understand pulse of the competitive scene. Our statistics go beyond simple performance metrics like rank and rating and into meta statistics like winnings and characteristics, all automated and generated through machine learning and algorithms.
+						</details>
+						<br />
+						<div class="description">
+							<label>Position</label><br/>Chief Technology Officer.
+							<details>
+								<summary>Responsibilities</summary>
+								<ul>
+									<li>Define the technical architecture and visual design of the primary product, Dotaprohub, based on market requirement and research into competitors.</li>
+									<li>Help product teams understand data gathered about user behaviour and collaborate with them to define product requirements keeping in mind technical restrictions.</li>
+									<li>Work with data science team to research and explore new points of interest from data gathered by data mining games, and develop new analysis models.</li>
+									<li>Work with engineering team to architect and develop user facing (frontend) systems as well as microservices (backend) serving those systems based on models created by data science team in a modular and testable way.</li>
+									<li>Develop guidelines for writing and maintaining technical documentation for implemented systems.</li>
+									<li>Diagnose, document and resolve bugs reported in production environments.</li>
+									<li>Research and explore technical requirements when adding new games to Dotaprohub’s offering and integrating them with existing systems.</li>
+								</ul>
+							</details>
+						</div>
+					</div>
+
+					<div class="experience vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Atticous Inc.</span><br/>
+							<span class="location">India / United States</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2011-06-01">Jun 2011</abbr> -
+							<abbr class="dtend" title="2013-09-01">Sep 2013</abbr>
+						</div>
+						<div class="clear"></div>
+ 						<div class="description"><a href="http://attico.us/">Attico.us</a></div>
+						<div class="desc_summary">A content-management and online identity system that meaningfully associates your data from all over the Internet to build a website that you can share with others as a part of your personal brand.</div><br/>
+						<div class="description">
+							<label>Position</label><br/>Co-founder, Chief of Design.
+						</div>
+					</div>
+
+					<div class="experience vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Bibbol Ltd.</span><br/>
+							<span class="location">United Kingdom</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2012-06-06">Jun 2012</abbr>
+							<abbr class="dtend" title="2012-06-20"></abbr>
+						</div>
+						<div class="clear"></div>
+ 						<div class="description"><a href="http://www.bibbol.ltd.uk/">Bibbol.ltd.uk</a></div>
+						<div class="desc_summary">Surveillance technology and solutions.</div><br/>
+						<div class="description">
+							<label>Work</label><br/>Part of Lancaster University's Engr445 Industrial Project. Worked on the SL8's &mdash; a new generation CCTV recording and management system &mdash; engineering design and feasibility research.
+						</div>
+					</div>
+
+					<div class="experience vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Planga LLC</span><br/>
+							<span class="location">India</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2010-04-08">Apr 2010</abbr> -
+							<abbr class="dtend" title="2010-07-08">Jul 2010</abbr><br/>
+						</div>
+						<div class="clear"></div>
+ 						<div class="description"><a href="http://planga.com">Planga.com</a></div>
+						<div class="desc_summary">Social calendar and event platform for college campuses. Groups and events are organized into a cutting-edge cloud system using the latest social web technologies. It's a next-generation platform for an ultra-organized campus and more vibrant student life.</div><br/>
+						<div class="description">
+							<label>Position</label><br>
+							Consultant for Product Design and responsible for complete front-end development including user interaction experience, artwork and graphics, and code.
+							<br><br>
+							<label>Languages</label><br>
+							Javascript, HTML and CSS.
+						</div>
+					</div>
+
+					<div class="experience vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Racked Hosting LLC</span><br/>
+							<span class="location">India</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2008-04-08">Apr 2008</abbr> -
+							<abbr class="dtend" title="2009-05-08">May 2009</abbr>
+						</div>
+						<div class="clear"></div>
+						<div class="description"><a href="http://rackedhosting.com">Rackedhosting.com</a></div>
+						<div class="desc_summary">Racked Hosting LLC has been in operation for almost 10 years providing online services such as web hosting, streaming media and dedicated servers to hundreds of customers.</div>
+						<div class="description">
+							<ul>
+								<label>Position</label><br/>
+								Software Architect.<br/>
+
+								<br/>
+								<small><label>Previously</label></small> Front-end Developer.<br />
+								<details>
+									<summary>Responsibilities</summary>
+									<ul>
+										<li>Design, artwork and complete front-end code for:
+											<ul>
+												<li>A web-based Twitter client &mdash; <a href="http://filttr.com">Filttr.com</a></li>
+												<li>Company website &mdash; <a href="http://rackedhosting.com">Rackedhosting.com</a></li>
+											</ul>
+										</li>
+									</ul>
+								</details><br>
+								<label>Languages</label>
+								<li>Python, PHP, SQL, Javascript, HTML and CSS.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="experience vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Beers Design</span><br/>
+							<span class="location"></span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2008-04-01">Apr 2008</abbr> -
+							<abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
+						</div>
+						<div class="clear"></div>
+						<div class="description"><a href="http://beersdesign.com">Beersdesign.com</a></div>
+						<div class="desc_summary"></div>
+						<div class="description">
+							<ul>
+								<label>Position</label><br>
+								<li>Remote on-call programming consultant, implementing/coding themes and web-pages for graphic designers at the company.</li>
+								<br>
+								<label>Languages</label>
+								<li>PHP, Javascript, HTML and CSS.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="experience vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Self-employed</span><br/>
+							<span class="location">India</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2006-07-01">Jul 2006</abbr> -
+							<abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
+						</div>
+						<div class="clear"></div>
+						<div class="description">
+							<ul>
+								<label>Position</label><br>
+								<li>Freelance web-designing and site-maintenance.</li>
+								<br>
+								<label>Languages</label>
+								<li>PHP, Python, Javascript, HTML and CSS.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- education -->
+			<div class="section education-affiliation">
+				<h4 class="section-title">Education &amp; Affiliations</h4>
+				<div class="vcalendar">
+					<div class="education vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Lancaster University</span><br/>
+							<span class="summary">MEng. Hons. Computer Systems Engineering</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2009-10-01">Oct 2009</abbr> -
+							<abbr class="dtend" title="2013-07-09">Jul 2013</abbr>
+						</div>
+						<div class="clear"></div>
+						<div class="subjects">
+							<ul>
+								<li>Including courses in FPGA and Logic Design Methodology, Electromagnetism, RF Engineering, Embedded Devices, Analogue Electronics, Nanotechnology, Operating Systems, Networks, Distributed Systems, Software Engineering and Programming in C/C++, Java & Verilog.
+									<ul>
+										<label>Works of Note</label>
+										<li>Wrote a complete filesystem for a simulated hard drive in C, with the ability to create, read and write files; organisation of files into nested directories upto 2 levels; and a basic filename based search.</li>
+										<li>Wrote a distributed chat system in Java leveraging the University LAN, modelled on the Internet Relay Chat (IRC) protocol.</li>
+									</ul>
+									<br>
+									<li><label>Individual Third Year Project</label><br><span class="em">Modular Simulink Model of an Induction Motor</span> &mdash; Designed a model of an Induction motor in Matlab and Simulink, including a feedback controller to drive the model. The model was developed as connected modules which were designed to be modifiable to adapt to different applications as required.</li>
+									<li><label>Group Fourth Year Project</label><br><span class="em">Formula Student - Electrical Team</span> &mdash; Involved in the design, manufacture and implementations of the electronics for the &rsquo;13 Lancaster University Formula Student Car.
+										<ul>
+											<label>Works of Note</label>
+											<li>Designing and setting up the vehicle&rsquo;s wiring loom.</li>
+											<li>Designing and implementing a <a href="http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en026337">Microchip PIC18F45K20</a> based Gear Indicator circuit, with the PIC programmed in C and Assembly, that uses outputs from the ECU and mounted sensors to calculate and drive a segmented display showing gear information</li>
+											<li>Design and creation of an Arduino based data-logging system to record various car parameters such as suspension travel and G-force, along with basic GPS capability to layout the track, to allow for optimisations to the car aerodynamics. Also designed a software solution to allow the data to be analysed using Matlab and Java.</li>
+										</ul>
+									</li>
+							</ul>
+						</div>
+					</div>
+					<!--<div class="education vevent vcard">
+						<div class="htitle">
+							<span class="org">Institution of Engineering and Technology</span><br/>
+							<span class="summary">Member</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2009-10-01">October 2009</abbr> -
+							<abbr class="dtend">Present</abbr>
+						</div>
+						<div class="clear"></div>
+						<br/>
+						<div class="subjects">
+							Student Member of the Institution of Engineering and Technology (IET).
+						</div>
+					</div>-->
+					<div class="education vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">International Centre for Applied Sciences,<br>Manipal University</span><br/>
+							<span class="summary">BS Computer Engineering</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2006-08-01">Aug 2006</abbr> -
+							<abbr class="dtend" title="2009-01-01">Jan 2009</abbr><br/>
+							<abbr><i>(Transferred to Lancaster University)</i></abbr>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="education vevent vcard">
+						<div class="htitle"><!-- div float container -->
+							<span class="org">Vasant Valley School</span><br/>
+							<span class="summary">High School <br/> (Senior secondary)</span>
+						</div>
+						<div class="date_duration">
+							<abbr class="dtstart" title="2004-07-01">Jul 2004</abbr> -
+							<abbr class="dtend" title="2006-03-01">Mar 2006</abbr>
+						</div>
+						<div class="clear"></div>
+						<br/>
+						<div class="subjects">
+							<label>Subjects</label> Physics, Chemistry, Mathematics, Computer Science, English.</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
