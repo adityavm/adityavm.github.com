@@ -1,0 +1,7 @@
+# Ideate v3: A(nother) new beginning
+
+At some point last year, I managed to hose my Mongodb. It's mostly my fault for not using AWS' database options and running a server on the EC2 instance itself, but there was no recovering from it. So I took down the site and shut the server off to save myself ~$5 every month. I've wanted to bring the site and blog back for a while now, and was trying to settle on an even easier and simpler way than I had for v2. So finally, after little deliberation, I wrote a static site generator based off markdown files saved in folders. This site is now served using Github Pages through an older repo that I had some years back. I don't remember why I stopped using it back then (probably because I wanted the blog to be more dynamic) but now I'm more concerned with putting thoughts to paper or keyboard.
+
+I've kept the v2 format as is, with things divided between short and longform. The generator is opinionated towards how I structure my posts and folders, so it might not suit your needs. But this time around it's all open source since there are no secrets or passwords involved. All one needs to do is add a new file in the appropriate folder, and run the `gen` command to generate the whole site.
+
+I will slowly bring back the older posts (or whatever backup I have left), and the rest of the pages in time. There are definitely rough edges, so pages might appear and disappear, but I'll try my best to not break the Internet.
