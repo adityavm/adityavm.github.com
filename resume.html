@@ -525,9 +525,49 @@
 		}
 
 		@media print {
-			body { background-color: #fff; }
-			.hresume { margin-left: 0; }
-			.hresume .print-only { display: inline-block !important; color: #888; margin-left: 5px; }
+			body {
+				background-color: #fff;
+				border-width: 0;
+			}
+
+			.hresume {
+				margin-left: 0;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			.hresume .other {
+				width: auto;
+			}
+
+			.hresume .section {
+				column-count: 1;
+			}
+
+			.hresume .print-only {
+				display: inline-block !important;
+				color: #888; 
+				margin-left: 5px;
+			}
+
+			.github_intro {
+				display: none;
+			}
+
+			.description details[open] {
+				border-bottom-width: 0;
+			}
+
+			.hresume .education-affiliation {
+				break-inside: avoid;
+			}
+
+			.hresume .experience,
+			.hresume .accreditation,
+			.hresume .summary,
+			.hresume .tags {
+				break-inside: unset;
+			}
 		}
 	</style>
 </head>
