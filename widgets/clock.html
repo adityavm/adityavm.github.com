@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clock</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		#clock {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+			font-size: 24px;
+			width: 100vw;
+			height: 100vh;
+			color: #4c566a;
+		}
+
+		#clock.day #date, #clock.day #time {
+			background-color: #fff;
+			color: #2e3440;
+		}
+
+		#clock.night #date, #clock.night #time {
+			background-color: #111;
+			color: #eceff4;
+		}
+	</style>
+</head>
+<body>
+	<div id="clock">
+		<div id="time"></div>
+		&nbsp;/&nbsp;
+		<div id="date"></div>
+	</div>
+	<script>
+		const getDayString = (date) => (
+			["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][date.getDay()]
+		);
+
+		const getMonthString = (date) => (
+			["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()]
+		);
+
+		setInterval(() => {
+			const currentDate = new Date();
+			const hours = currentDate.getHours();
+			const hours12 = hours > 12 ? hours - 12 : hours;
+			const mins = currentDate.getMinutes();
+			const seconds = currentDate.getSeconds();
+			const suffix = hours > 12 ? "a" : "p";
+			const timeOfDay = hours > 18 && hours < 6 ? "night" : "day";
+			const day = getDayString(currentDate);
+			const month = getMonthString(currentDate);
+
+			const clock = document.querySelector("#clock");
+			const time = document.querySelector("#time");
+			const date = document.querySelector("#date");
+			date.innerHTML = `${day.substr(0, 3)}, ${currentDate.getDate()} ${month}`;
+			time.innerHTML = `${hours12}${seconds % 2 === 0 ? ":" : " "}${mins}`;
+			if (timeOfDay === "day" && !clock.classList.contains("day")) {
+				clock.classList.remove("night");
+				clock.classList.add("day");
+			}
+			if (timeOfDay === "night" && !clock.classList.contains("night")) {
+				clock.classList.remove("day");
+				clock.classList.add("night");
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
