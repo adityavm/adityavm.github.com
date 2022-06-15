@@ -9,6 +9,7 @@
 		html, body {
 			margin: 0;
 			padding: 0;
+			background: transparent;
 		}
 
 		#clock {
@@ -22,13 +23,16 @@
 			color: #4c566a;
 		}
 
+		#clock.night {
+			color: #d8dee9;
+		}
+
 		#clock.day #date, #clock.day #time {
 			background-color: #fff;
 			color: #2e3440;
 		}
 
 		#clock.night #date, #clock.night #time {
-			background-color: #111;
 			color: #eceff4;
 		}
 	</style>
@@ -36,7 +40,7 @@
 <body>
 	<div id="clock">
 		<div id="time"></div>
-		&nbsp;/&nbsp;
+		&nbsp;.&nbsp;
 		<div id="date"></div>
 	</div>
 	<script>
@@ -63,14 +67,14 @@
 			const time = document.querySelector("#time");
 			const date = document.querySelector("#date");
 			date.innerHTML = `${day.substr(0, 3)}, ${currentDate.getDate()} ${month}`;
-			time.innerHTML = `${hours12}${seconds % 2 === 0 ? ":" : " "}${mins}`;
-			if (timeOfDay === "day" && !clock.classList.contains("day")) {
-				clock.classList.remove("night");
-				clock.classList.add("day");
-			}
-			if (timeOfDay === "night" && !clock.classList.contains("night")) {
+			time.innerHTML = `${String(hours12).padStart(2, "0")}${seconds % 2 === 0 ? ":" : " "}${String(mins).padStart(2, "0")}`;
+
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				clock.classList.remove("day");
 				clock.classList.add("night");
+			} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+				clock.classList.remove("night");
+				clock.classList.add("day");
 			}
 		}, 1000);
 	</script>
