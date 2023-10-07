@@ -5,34 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <style>
+      :root {
+        --light: #ddd; 
+        --light-dim: #ccc;
+        --light-dimmer: #aaa;
+        --light-dimmest: #666;
+
+        --dark: #1e1e1e;
+        --dark-dim: #444;
+        --dark-dimmer: #888;
+        --dark-dimmest: #aaa;
+
+        --purple: #9f7bfb;
+        --green-light: #598525;
+        --green-light-10: #5985250a;
+        --green-light-25: #59852519;
+        --green-light-35: #59852523;
+        --green-dark: #74b02e;
+        --green-dark-10: #74b02e0a;
+        --green-dark-25: #74b02e40;
+        --green-dark-35: #74b02e5a;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --background: var(--light);
+          --text: var(--dark);
+          --text-dim: var(--dark-dim);
+          --text-dimmer: var(--dark-dimmer);
+          --text-dimmest: var(--dark-dimmest);
+          --accent: var(--green-light);
+          --accent-10: var(--green-light-10);
+          --accent-25: var(--green-light-25);
+          --accent-35: var(--green-light-35);
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: var(--dark);
+          --text: var(--light);
+          --text-dim: var(--light-dim);
+          --text-dimmer: var(--light-dimmer);
+          --text-dimmest: var(--light-dimmest);
+          --accent: var(--green-dark);
+          --accent-10: var(--green-dark-10);
+          --accent-25: var(--green-dark-25);
+          --accent-35: var(--green-dark-35);
+        }
+      }
+
       body {
         padding: 0;
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        background-color: #f5f5f5;
-      }
-
-      .container {
+        background-color: var(--background);
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100dvh;
         width: 100dvw;
+      }
+
+      @media (max-width: 1024px) {
+        body {
+          width: 80dvw;
+          margin: 0 auto;
+        }
+      }
+
+      .container {
+        display: flex;
         margin-top: -20px;
       }
 
       @media (max-width: 1024px) {
         .container {
           flex-direction: column;
-          width: 50dvw;
           margin-left: auto;
           margin-right: auto;
-        }
-      }
-
-      @media (max-width: 375px) {
-        .container {
-          width: 80dvw;
         }
       }
 
@@ -40,17 +91,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 400px;
-        width: 400px;
+        width: 300px;
         text-align: center;
         font-size: 18px;
         border-radius: 4px;
-        color: #1e1e1e;
+        color: var(--text);
       }
 
       @media (max-width: 1024px) {
         .card {
-          width: 100dvw;
+          width: auto;
           height: auto;
         }
       }
@@ -60,43 +110,45 @@
       }
 
       .divider {
-        color: #ccc;
+        color: var(--text-dimmest);
         margin: 0 5px;
       }
 
       img {
         width: 250px;
-        height: 250px;
+        height: 230px;
         display: block;
         margin: 0 auto;
+        object-fit: cover;
       }
 
       a {
-        /* color: #9f7bfb; */
-        color: #666;
+        color: var(--text-dim);
         text-decoration: none;
-        border-bottom: 1px solid transparent;
+        border-bottom: 2px solid transparent;
         transition: border-bottom 0.1s linear;
         position: relative;
+      }
+
+      a:hover {
+        border-bottom-color: var(--text-dimmest);
       }
 
       .card a {
         font-size: 16px;
         padding: 0 4px 2px;
-        color: rgb(89,133,37);
-      }
-
-      .card a:hover {
-        border-bottom-color: #ccc;
+        color: var(--accent);
       }
 
       .foreword {
-        color: #1e1e1e;
+        display: flex;
+        align-items: center;
+        color: var(--text);
         line-height: 1.5em;
         max-width: 300px;
       }
 
-      @media (max-width: 1024px) {
+      @media (max-width: 1023px) {
         .foreword {
           margin-top: 40px;
           text-align: center;
@@ -112,13 +164,17 @@
         }
       }
 
+      .foreword a:hover {
+        border-bottom-color: transparent;
+      }
+
       .foreword a:before {
-        /* display: inline-block; */
         position: absolute;
+        z-index: -1;
         top: -2px;
         left: 50%;
         content: "";
-        background-color: rgb(89,133,37,0.1);
+        background-color: var(--accent-25);
         width: 0;
         height: calc(100% + 6px);
         transition: width 0.1s ease-in-out, left 0.1s;
@@ -129,14 +185,18 @@
         width: calc(100% + 8px);
       }
 
+      .foreword a.hl {
+        color: var(--text);
+      }
+
       .foreword a.hl:before {
         left: -4px;
         width: calc(100% + 8px);
-        background-color: rgb(89,133,37,0.1);
+        background-color: var(--accent-25);
       }
 
       .foreword a.hl:hover:before {
-        background-color: rgb(89,133,37,0.2);
+        background-color: var(--accent-35);
       }
 
       @media (min-width: 375px) {
@@ -164,13 +224,15 @@
         </div>
       </div>
       <div class="foreword">
-        <p>15 years of experience building products, product engineering, and engineering&nbsp;leadership.</p>
-        <p>
-        previously at 
-        <a href="https://unikrn.com/" rel="nofollow">unikrn</a>,
-        <a href="https://www.crunchbase.com/organization/atticous" rel="nofollow">atticous</a>,
-        and <a href="https://www.geekwire.com/2015/seattle-esports-wagering-company-unikrn-acquires-dotaprohub/" rel="nofollow">dotaprohub</a>.
-        <span class="shy"><br/></span><a href="mailto:hello@adityamukherjee.com" class="hl">let's talk</a> about working&nbsp;together.</p>
+        <div class="content">
+          <p>15 years of experience building products through engineering and&nbsp;leadership.</p>
+          <p>
+          previously at 
+          <a href="https://unikrn.com/" rel="nofollow">unikrn</a>,
+          <a href="https://www.crunchbase.com/organization/atticous" rel="nofollow">atticous</a>,
+          and <a href="https://www.geekwire.com/2015/seattle-esports-wagering-company-unikrn-acquires-dotaprohub/" rel="nofollow">dotaprohub</a>.
+          <span class="shy"><br/></span><a href="mailto:hello@adityamukherjee.com" class="hl">let's talk</a> about working&nbsp;together.</p>
+        </div>
       </div>
     </div>
     <script>
