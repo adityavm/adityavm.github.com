@@ -9,6 +9,7 @@
         padding: 0;
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        background-color: #f5f5f5;
       }
 
       .container {
@@ -17,19 +18,41 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        background-color: #eee;
+        margin-top: -20px;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          flex-direction: column;
+          width: 50vw;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      @media (max-width: 375px) {
+        .container {
+          width: 80vw;
+        }
       }
 
       .card {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 200px;
+        height: 400px;
         width: 400px;
-        background-color: #eee;
         text-align: center;
         font-size: 18px;
         border-radius: 4px;
+        color: #1e1e1e;
+      }
+
+      @media (max-width: 1024px) {
+        .card {
+          width: 100vw;
+          height: auto;
+        }
       }
 
       .name {
@@ -42,17 +65,84 @@
       }
 
       img {
-        width: 24px;
+        width: 250px;
+        height: 250px;
         display: block;
         margin: 0 auto;
       }
 
       a {
-        color: #9f7bfb;
+        /* color: #9f7bfb; */
+        color: #666;
         text-decoration: none;
-        border-bottom: 1px solid #ccc;
-        font-size: 14px;
-        padding: 0 2px 2px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.1s linear;
+        position: relative;
+      }
+
+      .card a {
+        font-size: 16px;
+        padding: 0 4px 2px;
+        color: rgb(89,133,37);
+      }
+
+      .card a:hover {
+        border-bottom-color: #ccc;
+      }
+
+      .foreword {
+        color: #1e1e1e;
+        line-height: 1.5em;
+        max-width: 300px;
+      }
+
+      @media (max-width: 1024px) {
+        .foreword {
+          margin-top: 40px;
+          text-align: center;
+          word-break: break-word;
+          word-wrap: break-word;
+          hyphens: manual;
+        }
+      }
+
+      @media (max-width: 375px) {
+        .foreword {
+          text-align: center;
+        }
+      }
+
+      .foreword a:before {
+        /* display: inline-block; */
+        position: absolute;
+        top: -2px;
+        left: 50%;
+        content: "";
+        background-color: rgb(89,133,37,0.1);
+        width: 0;
+        height: calc(100% + 6px);
+        transition: width 0.1s ease-in-out, left 0.1s;
+      }
+
+      .foreword a:hover:before {
+        left: -4px;
+        width: calc(100% + 8px);
+      }
+
+      .foreword a.hl:before {
+        left: -4px;
+        width: calc(100% + 8px);
+        background-color: rgb(89,133,37,0.1);
+      }
+
+      .foreword a.hl:hover:before {
+        background-color: rgb(89,133,37,0.2);
+      }
+
+      @media (min-width: 375px) {
+        .shy {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -60,7 +150,7 @@
     <div class="container">
       <div class="card">
         <div>
-          <img src="./purple.png" />
+          <img src="./assets/S.png" />
           <div class="name">aditya mukherjee</div>
           <a href="https://twitter.com/aditya" rel="nofollow noreferrer"
             >twitter</a
@@ -73,6 +163,17 @@
           <a href="./resume.html">resume</a>
         </div>
       </div>
+      <div class="foreword">
+        <p>15 years of experience building products, product engineering, and engineering&nbsp;leadership.</p>
+        <p>
+        previously at 
+        <a href="https://unikrn.com/" rel="nofollow">unikrn</a>,
+        <a href="https://www.crunchbase.com/organization/atticous" rel="nofollow">atticous</a>,
+        and <a href="https://www.geekwire.com/2015/seattle-esports-wagering-company-unikrn-acquires-dotaprohub/" rel="nofollow">dotaprohub</a>.
+        <span class="shy"><br/></span><a href="mailto:hello@adityamukherjee.com" class="hl">let's talk</a> about working&nbsp;together.</p>
+      </div>
     </div>
+    <script>
+    </script>
   </body>
 </html>

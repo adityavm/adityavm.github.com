@@ -1,3 +1,4 @@
 *.swp
 .gitignore
 todo
+.DS_Store

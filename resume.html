@@ -85,7 +85,7 @@
 			/* Between posts and hResume */
 
 			div.resume_img {
-				background-image: url(<? echo get_bloginfo('template_directory'); ?>/images/portfolio_images/resume.png);
+				background-image: url(/images/portfolio_images/resume.png);
 				background-repeat: no-repeat;
 				float: left;
 				height: 110px;
@@ -95,7 +95,7 @@
 			}
 
 			.mugshot {
-				background-image: url(<? echo get_blogInfo('template_directory'); ?>/images/portfolio_images/mugshot_big.png);
+				background-image: url(/images/portfolio_images/mugshot_big.png);
 				border: 1px solid gray;
 				height: 307px;
 				left: 400px;
@@ -253,12 +253,15 @@
 			}
 
 			.hresume .experience,
-			.hresume .education,
 			.hresume .accreditation,
 			.hresume .summary,
 			.hresume .tags {
 				margin: 10px 0 20px;
 				break-inside: avoid;
+			}
+
+			.hresume .education {
+				margin: 10px 0 20px;
 			}
 
 			.hresume .experience {
