@@ -1,0 +1,55 @@
+:root {
+	--light: #f5f5f5; 
+	--light-dim: #eee; 		/* dark */
+	--light-dimmer: #ddd;	/* darker */
+	--light-dimmest: #ccc;	/* darkest */
+
+	--dark: #1e1e1e;
+	--dark-dim: #333;			/* light */
+	--dark-dimmer: #555;  	/* lighter */
+	--dark-dimmest: #777;	/* lightest */
+
+	--purple: #9f7bfb;
+	--green-light: #598525;
+	--green-light-10: #5985250a;
+	--green-light-25: #59852519;
+	--green-light-35: #59852523;
+	--green-dark: #74b02e;
+	--green-dark-10: #74b02e0a;
+	--green-dark-25: #74b02e40;
+	--green-dark-35: #74b02e5a;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: var(--light);
+		--background-dim: var(--light-dim);
+		--background-dimmer: var(--light-dimmer);
+		--background-dimmest: var(--light-dimmest);
+		--text: var(--dark);
+		--text-dim: var(--dark-dim);
+		--text-dimmer: var(--dark-dimmer);
+		--text-dimmest: var(--dark-dimmest);
+		--accent: var(--green-light);
+		--accent-10: var(--green-light-10);
+		--accent-25: var(--green-light-25);
+		--accent-35: var(--green-light-35);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: var(--dark);
+		--background-dim: var(--dark-dim);
+		--background-dimmer: var(--dark-dimmer);
+		--background-dimmest: var(--dark-dimmest);
+		--text: var(--light);
+		--text-dim: var(--light-dim);
+		--text-dimmer: var(--light-dimmer);
+		--text-dimmest: var(--light-dimmest);
+		--accent: var(--green-dark);
+		--accent-10: var(--green-dark-10);
+		--accent-25: var(--green-dark-25);
+		--accent-35: var(--green-dark-35);
+	}
+}

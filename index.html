@@ -4,57 +4,8 @@
     <meta charset="utf8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link href="./css/colors.css" rel="stylesheet" />
     <style>
-      :root {
-        --light: #ddd; 
-        --light-dim: #ccc;
-        --light-dimmer: #aaa;
-        --light-dimmest: #666;
-
-        --dark: #1e1e1e;
-        --dark-dim: #444;
-        --dark-dimmer: #888;
-        --dark-dimmest: #aaa;
-
-        --purple: #9f7bfb;
-        --green-light: #598525;
-        --green-light-10: #5985250a;
-        --green-light-25: #59852519;
-        --green-light-35: #59852523;
-        --green-dark: #74b02e;
-        --green-dark-10: #74b02e0a;
-        --green-dark-25: #74b02e40;
-        --green-dark-35: #74b02e5a;
-      }
-
-      @media (prefers-color-scheme: light) {
-        :root {
-          --background: var(--light);
-          --text: var(--dark);
-          --text-dim: var(--dark-dim);
-          --text-dimmer: var(--dark-dimmer);
-          --text-dimmest: var(--dark-dimmest);
-          --accent: var(--green-light);
-          --accent-10: var(--green-light-10);
-          --accent-25: var(--green-light-25);
-          --accent-35: var(--green-light-35);
-        }
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --background: var(--dark);
-          --text: var(--light);
-          --text-dim: var(--light-dim);
-          --text-dimmer: var(--light-dimmer);
-          --text-dimmest: var(--light-dimmest);
-          --accent: var(--green-dark);
-          --accent-10: var(--green-dark-10);
-          --accent-25: var(--green-dark-25);
-          --accent-35: var(--green-dark-35);
-        }
-      }
-
       body {
         padding: 0;
         margin: 0;
