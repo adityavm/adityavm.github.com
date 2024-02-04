@@ -10,11 +10,11 @@
     <style type="text/css">
       .page-break-marker-h {
         position: absolute;
-        top: 1272px;
+        top: 1px;
         left: 0;
         border-top: 1px dashed red;
         width: 100%;
-        opacity: 0.1;
+        opacity: 0.2;
       }
 
       @media print, screen {
@@ -89,6 +89,10 @@
         .personal_info {
         }
 
+        .bold {
+          font-weight: 600;
+        }
+
         .clear {
           clear: both;
         }
@@ -125,6 +129,10 @@
           margin: 10px auto;
           width: 300px;
           margin-bottom: 20px;
+        }
+
+        span.divider {
+          color: var(--text-dimmest);
         }
 
         /* hResume */
@@ -210,13 +218,12 @@
 
         .hresume .contact {
           color: var(--text-dim);
-          line-height: 18px;
+          line-height: 1.4em;
+          display: flex;
         }
 
-        @media only screen and (min-width: 768px) {
-          .hresume .contact {
-            width: 500px;
-          }
+        .hresume .contact > div {
+          flex: 1;
         }
 
         .hresume .contact a {
@@ -274,7 +281,11 @@
 
         .hresume .other {
           width: 300px;
-          margin-left: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-start;
+          gap: 5px;
         }
 
         .hresume h4.name {
@@ -283,6 +294,12 @@
             sans-serif;
           margin: 0px 0px 5px 0px;
           border: none;
+        }
+
+        .hresume .titles {
+          font-size: 12px;
+          font-weight: normal;
+          margin-bottom: 1rem;
         }
 
         .hresume .highlight {
@@ -324,7 +341,7 @@
         }
 
         .hresume .section + .section {
-          margin-top: 5em;
+          margin-top: 3em;
         }
 
         .hresume h4.section-title {
@@ -347,16 +364,32 @@
           break-inside: avoid;
         }
 
+        @media print {
+          .hresume .experience,
+          .hresume .accreditation,
+          .hresume .summary,
+          .hresume .tags {
+            margin: 5px 0 10px;
+          }
+        }
+
         .hresume .education {
           margin: 10px 0 20px;
         }
 
-        .hresume .experience {
-          border-bottom: 1px dashed var(--background-dimmest);
-          padding-bottom: 20px;
+        @media print {
+          .hresume .education {
+            margin: 5px 0 10px;
+          }
         }
 
-        .hresume .highlight .col-group {
+        .hresume .experience {
+          border-bottom: 1px dashed var(--background-dimmest);
+          padding-bottom: 15px;
+          flex: 1;
+        }
+
+        .hresume .col-group {
           flex: 1;
         }
 
@@ -412,12 +445,12 @@
 
         .hresume .experience ul li ul:before {
           position: absolute;
-          left: -10px;
+          left: -14px;
           top: 0;
           content: "";
           height: 100%;
           width: 1px;
-          border-left: 1px dotted var(--text-dimmest);
+          border-left: 1px dotted #ccc;
         }
 
         .hresume .education .htitle,
@@ -435,7 +468,7 @@
         .hresume .experience .htitle .location,
         .hresume .education .htitle .location {
           font-weight: 300;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
         }
 
@@ -621,7 +654,7 @@
 
         .description details[open] {
           /* border-bottom: 1px dashed var(--background-dimmest); */
-          padding-bottom: 10px;
+          /* padding-bottom: 10px; */
         }
 
         .description summary {
@@ -629,21 +662,25 @@
           font-size: 12px;
         }
 
-        .description details ul {
+        .description details ul,
+        .experience-summary ul {
           padding: 1em 0 0 1.5em;
           margin: 0;
         }
 
-        .description details ul li {
+        .description details ul li,
+        .experience-summary ul li {
           line-height: 1.3em;
           list-style: circle;
         }
 
-        .description details ul li + li {
+        .description details ul li + li,
+        .experience-summary ul li + li {
           margin-top: 0.75em;
         }
 
-        .description details ul li > ul li {
+        .description details ul li > ul li,
+        .experience-summary ul li > ul li {
           list-style: square;
         }
 
@@ -669,6 +706,7 @@
         body {
           background-color: #fff;
           border-width: 0;
+          zoom: 90%;
         }
 
         .hresume {
@@ -699,15 +737,13 @@
           break-inside: avoid;
         }
 
-        @media print {
-          .hresume .education-affiliation {
-            width: 50%;
-            column-count: 1;
-          }
+        .hresume .education-affiliation {
+          width: 50%;
+          column-count: 1;
+        }
 
-          .hresume .education-affiliation summary {
-            display: none;
-          }
+        .hresume .education-affiliation summary {
+          display: none;
         }
 
         .hresume .experience,
@@ -716,128 +752,129 @@
         .hresume .tags {
           break-inside: unset;
         }
-      }
 
-      @media print {
+        .vcalendar {
+          display: flex;
+          column-gap: 20px;
+          /* break-inside: avoid; */
+        }
+
         .print-hide {
           display: none;
         }
+      }
+
+      .experience-summary {
+        display: flex;
+        line-height: 1.4em;
+        column-gap: 20px;
+      }
+
+      .experience-summary h3 {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .experience-summary .summary-column {
+        break-inside: avoid;
       }
     </style>
   </head>
   <body>
     <div class="page-break-marker-v hide"></div>
+    <div class="page-break-marker-h hide"></div>
 
     <!-- hResume -->
     <div class="resume_img">&nbsp;</div>
     <div class="hresume" id="resume">
       <div class="contact vcard">
-        <div class="fn n" id="j">
-          <h4 class="name">
-            <span class="given-name">Aditya</span>
-            <span class="family-name">Mukherjee</span>
-          </h4>
+        <div>
+          <div class="fn n" id="j">
+            <h4 class="name">
+              <span class="given-name">Aditya V.</span>
+              <span class="family-name">Mukherjee</span>
+            </h4>
+          <div class="titles">
+            Engineering leadership, strategy, and development</div>
+          </div>
+          <div class="adr hide">
+            <label>New Delhi, India</label><br />
+            <span class="street-address">C-60, Nizamuddin East</span><br />
+            <span class="locality">New Delhi</span>,
+            <span class="region">Delhi</span>,<br />
+            <span class="postal-code">110013</span><br />
+            <span class="country-name">India</span>
+          </div>
+          <div class="adr hide">
+            <label>Sydney, Australia</label><br />
+            <span class="street-address">319B, 134 O'Riordan Street</span><br />
+            <span class="locality">Mascot</span>,
+            <span class="region">NSW</span>,<br />
+            <span class="postal-code">2020</span><br />
+            <span class="country-name">Australia</span>
+          </div>
+          <div class="adr hide">
+            <label>Permanent</label><br />
+            <span class="street-address">E-2296 Palam Vihar</span><br />
+            <span class="locality">Gurgaon</span>,
+            <span class="region">Haryana</span>,<br />
+            <span class="postal-code">122017</span><br />
+            <span class="country-name">India</span>
+          </div>
+          <div class="adr termtime hide">
+            <label>Term Time</label><br />
+            <span class="street-address">E17, House 76</span><br />
+            <span class="locality">County College, Lancaster University</span>,
+            <span class="region">Lancaster, Lancashire</span>,<br />
+            <span class="postal-code">LA1 4YD</span><br />
+            <span class="country-name">United Kingdom</span>
+          </div>
+          <div class="adr hide">
+            <label>Contract Time</label><br />
+            <span class="street-address">#723, 1520 Eastlake Ave E</span><br />
+            <span class="locality">Seattle</span>,
+            <span class="region">Washington</span>,<br />
+            <span class="postal-code">98102</span><br />
+            <span class="country-name">United States of America</span>
+          </div>
+          Ph.: &#43;&#54;&#49;&#32;&#52;&#53;&#53;&#32;&#50;&#50;&#56;&#32;&#49;&#52;&#55;
+          <span class="divider"> / </span> &#43;&#57;&#49;&#32;&#56;&#56;&#50;&#54;&#57;&#32;&#50;&#48;&#51;&#49;&#49;
+          <br />
+          Em.: <a
+            class="email"
+            href="mailto:&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#116;&#121;&#97;&#109;&#117;&#107;&#104;&#101;&#114;&#106;&#101;&#101;&#46;&#99;&#111;&#109;"
+            >&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#116;&#121;&#97;&#109;&#117;&#107;&#104;&#101;&#114;&#106;&#101;&#101;&#46;&#99;&#111;&#109;</a
+          >
+          <div class="hide">
+            <td>Birth:</td>
+            <td>4<sup>th</sup> September, &rsquo;88</td>
+          </div>
         </div>
-        <div class="adr hide">
-          <label>New Delhi, India</label><br />
-          <span class="street-address">C-60, Nizamuddin East</span><br />
-          <span class="locality">New Delhi</span>,
-          <span class="region">Delhi</span>,<br />
-          <span class="postal-code">110013</span><br />
-          <span class="country-name">India</span>
-        </div>
-        <!-- adr -->
-        <div class="adr hide">
-          <label>Sydney, Australia</label><br />
-          <span class="street-address">319B, 134 O'Riordan Street</span><br />
-          <span class="locality">Mascot</span>,
-          <span class="region">NSW</span>,<br />
-          <span class="postal-code">2020</span><br />
-          <span class="country-name">Australia</span>
-        </div>
-        <!-- adr -->
-        <div class="adr hide">
-          <label>Permanent</label><br />
-          <span class="street-address">E-2296 Palam Vihar</span><br />
-          <span class="locality">Gurgaon</span>,
-          <span class="region">Haryana</span>,<br />
-          <span class="postal-code">122017</span><br />
-          <span class="country-name">India</span>
-        </div>
-        <!-- adr -->
-        <div class="adr termtime hide">
-          <label>Term Time</label><br />
-          <span class="street-address">E17, House 76</span><br />
-          <span class="locality">County College, Lancaster University</span>,
-          <span class="region">Lancaster, Lancashire</span>,<br />
-          <span class="postal-code">LA1 4YD</span><br />
-          <span class="country-name">United Kingdom</span>
-        </div>
-        <!-- term time -->
-        <div class="adr hide">
-          <label>Contract Time</label><br />
-          <span class="street-address">#723, 1520 Eastlake Ave E</span><br />
-          <span class="locality">Seattle</span>,
-          <span class="region">Washington</span>,<br />
-          <span class="postal-code">98102</span><br />
-          <span class="country-name">United States of America</span>
-        </div>
-        <!-- term time -->
-        <div class="clear"></div>
-        <div class="phone"></div>
-        <br />
         <div class="other">
-          <table>
-            <tr class="hide">
-              <td>Birth:</td>
-              <td>4<sup>th</sup> September, &rsquo;88</td>
-            </tr>
-            <tr>
-              <td>Phone:</td>
-              <td>
-                &#43;&#54;&#49;&#32;&#52;&#53;&#53;&#32;&#50;&#50;&#56;&#32;&#49;&#52;&#55;
-                <br />&#43;&#57;&#49;&#32;&#56;&#56;&#50;&#54;&#57;&#32;&#50;&#48;&#51;&#49;&#49;
-              </td>
-            </tr>
-            <tr>
-              <td>Email:&nbsp;</td>
-              <td>
-                <a
-                  class="email"
-                  href="mailto:&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#116;&#121;&#97;&#109;&#117;&#107;&#104;&#101;&#114;&#106;&#101;&#101;&#46;&#99;&#111;&#109;"
-                  >&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#116;&#121;&#97;&#109;&#117;&#107;&#104;&#101;&#114;&#106;&#101;&#101;&#46;&#99;&#111;&#109;</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Web:&nbsp;</td>
-              <td>
-                <a class="url" href="http://adityamukherjee.com/"
-                  >adityamukherjee.com</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Github:&nbsp;</td>
-              <td>
-                <a class="url" href="http://github.com/adityavm">adityavm</a
-                ><span class="print-only">
-                  &mdash; http://github.com/adityavm</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Twitter:&nbsp;</td>
-              <td>
-                <a class="url" href="http://twitter.com/aditya">aditya</a
-                ><span class="print-only">
-                  &mdash; http://twitter.com/aditya</span
-                >
-              </td>
-            </tr>
-          </table>
+          <span>
+            <a class="url" href="http://adityamukherjee.com/"
+              >Web</a><span class="print-only">&mdash; https://adityamukherjee.com</span>
+          </span>
+          <span>
+            <a class="url" href="http://linkedin.com/in/aditya-vm">LinkedIn</a
+            ><span class="print-only">
+              &mdash; http://linkedin.com/aditya-vm</span
+            >
+          </span>
+          <span>
+            <a class="url" href="http://github.com/adityavm">Github</a
+            ><span class="print-only">
+              &mdash; http://github.com/adityavm</span
+            >
+          </span>
+          <span>
+            <a class="url" href="http://twitter.com/aditya">Twitter</a
+            ><span class="print-only">
+              &mdash; http://twitter.com/aditya</span
+            >
+          </span>
         </div>
-        <div class="clear"></div>
       </div>
       <br />
 
@@ -879,14 +916,34 @@
       <div class="section professional">
         <!-- professional -->
         <h4 class="section-title">Professional Experience</h4>
-        <div class="summary github_intro">
+        <div class="summary github_intro hide">
           <label>Note:</label> I am regularly involved with many open-source
           projects which are listed on my
           <a href="http://github.com/adityavm/">Github</a>.
         </div>
 
+          <div class="experience experience-summary current">
+            <div class="technical summary-column">
+              <h3>Technical</h3>
+              <ul>
+                <li>15 years of front-end development, 5 years of back-end development across wagering, e-commerce, and data analytics and visualisation products.</li>
+                <li>Architected and developed web applications to serve 10k+ concurrent and 100k+ monthly users.</li>
+                <li>Extensive experience using Javascript and Typescript: in front-end using React (and Svelte), and back-end using NodeJS (serverless, ExpressJS).
+                <li>Fluent in UI/UX best practices, SEO, cross-browser compatibility, performance optimisation, testing, back-end technologies, and DevOps.</li>
+              </ul>
+            </div>
+            <div class="management summary-column">
+              <h3>Management</h3>
+              <ul>
+                <li>10 years of building and leading small to medium engineering teams (5-30 engineers, 1-2 engineering managers) across 3 companies.</li>
+                <li>Built cross-functional teams in engineering, data, and QA.</li>
+                <li>Led and worked alongside product, project, engineering managers, and heads of departments such as product design, customer support, QA, lead front-end and back-end engineers.</li>
+                <li>Strategy and execution liasion to cross-functional teams, advising on technical dependencies, priorities, and projects to maintain smooth development and release cadence.</li>
+              </ul>
+            </div>
+          </div>
         <div class="vcalendar">
-          <div class="highlight">
+          <div class="highlight hide">
             <div class="experience vevent vcard current">
               <div class="htitle">
                 <!-- div float container -->
@@ -938,7 +995,7 @@
               <!-- div float container -->
               <span class="org">Entain Esports <small>(ex. Unikrn)</small></span
               ><br />
-              <span class="location">India / United States / Australia</span>
+              <span class="location">Australia / United States</span>
             </div>
             <div class="date_duration">
               <abbr class="dtstart" title="2015-09-15">Sep 2015</abbr> -
@@ -956,90 +1013,79 @@
             <br />
             <div class="description">
               <label>Position</label><br />
-              Vice President of Engineering.<br />
+              <span class="bold">Vice President of Engineering</span><br />
               <details open="always">
                 <summary class="print-hide">Responsibilities</summary>
                 <ul>
                   <li>
-                    Provide technical guidance to non-technical teams to enable
+                    Provided technical guidance to non-technical teams to enable
                     robust communication with engineering teams.
                     <ul>
                       <li>
-                        Work with product managers to add technical knowledge to
-                        products and feature briefs.
-                      </li>
-                      <li>
-                        Help identify dependencies and blockers to improve
-                        efficiency of all teams by staggering development.
+                        Added technical knowledge to product briefs.
+                        Identified dependencies and blockers to improve team efficiency.
                       </li>
                     </ul>
                   </li>
                   <li>
-                    Estimate, prioritise, enforce product timelines, and manage
-                    sprints and releases for the engineering team.
+                    Estimated, prioritised, enforced product timelines, and managed
+                    releases for the engineering team.
                     <ul>
                       <li>
-                        Review code to improve security, reliability, reduce
+                        Reviewed code to improve security, reliability, reduce
                         tech debt, and align teams with broader product vision.
                       </li>
                     </ul>
                   </li>
                   <li>
-                    Drive QA to diagnose issues and bugs arising in systems
-                    during development and after release using bug trackers and
-                    continuous integration.
+                    Led QA to detect product and performance issues, and regressions arising in systems
+                    during development and after release.
                     <ul>
                       <li>
-                        Built team of automation engineers to create suite of
+                        Introduced QA automation to reduce manual QA load around
                         regression tests and pre/post-release monitoring.
-                        Upskilled all manual QA engineers to help them read and
-                        write automated tests.
                       </li>
                     </ul>
                   </li>
                   <li>
-                    Manage and support external partner relationships and
+                    Managed and supported external partner relationships and
                     communications to ensure timely completion of deliverables.
                   </li>
                   <li>
-                    Recruit frontend engineers and develop onboarding plans.
-                    Built two teams of 8-10 engineers each.
+                    Recruited frontend engineers and develop onboarding plans.
+                    Built and led two teams of 8-10 engineers each.
                   </li>
                   <li>
-                    <small
-                      ><label>Previously</label> Director of Engineering.</small
-                    >
+                    <small><label>Previously</label> Director of Engineering.</small>
                   </li>
                 </ul>
               </details>
               <br />
               <small
                 ><label>Previously</label> Sen. Software &amp; Lead Frontend
-                Engineer.</small
+                Engineer</small
               ><br />
               <details open="always">
                 <summary class="print-hide">Responsibilities</summary>
                 <ul>
                   <li>
-                    Responsible for architecture, development, testing, and
-                    maintenance of the flagship product, Unikrn Arena.
+                    Responsible for architecting, developing, testing, and
+                    maintaining the flagship product, Unikrn Arena.
                   </li>
                   <li>
-                    Lead a team of 8-10 mid-to-senior level frontend developers.
+                    Led team of 2-5 mid-to-senior level frontend developers.
                   </li>
                   <li>
-                    Port all frontends from inhouse custom frameworks to React
-                    for easier documentation and faster onboarding of new
-                    developers.
+                    Ported all frontends from inhouse custom frameworks to React.
                     <ul>
                       <li>
-                        Convert monolithic codebase into simpler, reusable and
+                        Converted monolithic codebase into simpler, reusable and
                         testable components.
                       </li>
                       <li>
-                        Document and distribute business logic between backend
-                        and frontend to improve security and reduce technical
-                        debt.
+                        Documented and distributed business logic between backend
+                        and frontend to improve security, reduce technical
+                        debt, and centralise logic.
                       </li>
                     </ul>
                   </li>
@@ -1052,7 +1098,7 @@
               <div class="htitle">
                 <!-- div float container -->
                 <span class="org"
-                  >Funhouse Technologies Pvt. Ltd / Dotaprohub</span
+                  >Funhouse Technologies Pvt. Ltd</span
                 ><br />
                 <span class="location">India</span>
               </div>
@@ -1081,44 +1127,32 @@
               </details>
               <br />
               <div class="description">
-                <label>Position</label><br />Co-founder, Chief Technology
-                Officer.
+                <label>Position</label><br /><span class="bold"
+                  >Co-founder, Chief Technology Officer</span
+                >
                 <details open="always">
                   <summary class="print-hide">Responsibilities</summary>
                   <ul>
                     <li>
-                      Define the technical architecture and visual design of the
-                      primary product, Dotaprohub, based on market requirement
-                      and research into competitors.
+                      Defined the technical architecture and visual design of the
+                      primary product, Dotaprohub.
                     </li>
                     <li>
-                      Help product teams understand data gathered about user
-                      behaviour and collaborate with them to define product
-                      requirements keeping in mind technical restrictions.
+                      Enabled communication between product, data, and engineering teams.
+                      <ul>
+                        <li>
+                          Data mined games (replay files, official data) to explore points of interest and develop analysis models.
+                        </li>
+                        <li>
+                          Developed user facing (frontend) systems as well as microservices
+                          (backend) serving those systems based on models created by
+                          data scientists.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      Work with data science team to research and explore new
-                      points of interest from data gathered by data mining
-                      games, and develop new analysis models.
-                    </li>
-                    <li>
-                      Work with engineering team to architect and develop user
-                      facing (frontend) systems as well as microservices
-                      (backend) serving those systems based on models created by
-                      data science team in a modular and testable way.
-                    </li>
-                    <li>
-                      Develop guidelines for writing and maintaining technical
+                      Developed guidelines for writing and maintaining technical
                       documentation for implemented systems.
-                    </li>
-                    <li>
-                      Diagnose, document and resolve bugs reported in production
-                      environments.
-                    </li>
-                    <li>
-                      Research and explore technical requirements when adding
-                      new games to Dotaprohub’s offering and integrating them
-                      with existing systems.
                     </li>
                   </ul>
                 </details>
@@ -1152,224 +1186,220 @@
               </details>
               <br />
               <div class="description">
-                <label>Position</label><br />Co-founder, Chief of Product &amp;
-                Design.
-                <details>
+                <label>Position</label><br />
+                <span class="bold">
+                  Co-founder, Chief of Product &amp; Design
+                </span>
+                <details open="always">
                   <summary class="print-hide">Responsibilities</summary>
                   <ul>
                     <li>
-                      Conceptualisation, and development of the primary product
+                      Conceptualised, and developed the primary site-builder and e-commerce product
                       including design, features, and code.
-                    </li>
-                    <li>
-                      Create the front-end technology stack used to serve the
-                      user websites.
-                    </li>
-                    <li>
-                      Create tools to allow users to manage their websites, and
-                      admin tools to help company staff manage user accounts.
-                    </li>
-                    <li>
-                      Create special purpose themes and templates for users to
-                      choose from when setting up their websites. Eg. e-commerce
-                      focused templates, and content focused templates.
+                      <ul>
+                        <li>
+                          Developed the front-end used to serve the user websites, including SEO, block-based site builder, and payments integrations.
+                        </li>
+                        <li>
+                          Developed tools to allow users to manage their websites, and
+                          back-office tools to help company staff manage user accounts.
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </details>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="other-experience">
-            <div class="experience vevent vcard print-hide">
-              <div class="htitle">
-                <!-- div float container -->
-                <span class="org">Bibbol Ltd.</span><br />
-                <span class="location">United Kingdom</span>
-              </div>
-              <div class="date_duration">
-                <abbr class="dtstart" title="2012-06-06">Jun 2012</abbr>
-                <abbr class="dtend" title="2012-06-20"></abbr>
-              </div>
-              <div class="clear"></div>
-              <div class="description">
-                <a href="http://www.bibbol.ltd.uk/">Bibbol.ltd.uk</a>
-              </div>
-              <div class="desc_summary">
-                Surveillance technology and solutions.
-              </div>
-              <br />
-              <div class="description">
-                <label>Position</label><br />Internship
-                <details>
-                  <summary class="print-hide">Responsibilities</summary>
-                  <ul>
-                    <li>
-                      Worked on the flagship product SL8's &mdash; a new
-                      generation CCTV recording and management system &mdash;
-                      engineering design.
-                    </li>
-                    <li>
-                      Conducted research into modernising the system with
-                      cloud-based storage and monitoring.
-                    </li>
-                    <li>
-                      Part of Lancaster University's Engr445 Industrial Project
-                      Team.
-                    </li>
-                  </ul>
-                </details>
-              </div>
+        <div class="other-experience">
+          <div class="experience vevent vcard print-hide">
+            <div class="htitle">
+              <!-- div float container -->
+              <span class="org">Bibbol Ltd.</span><br />
+              <span class="location">United Kingdom</span>
             </div>
-            <div class="experience vevent vcard">
-              <div class="htitle">
-                <!-- div float container -->
-                <span class="org">Planga LLC</span><br />
-                <span class="location">India</span>
-              </div>
-              <div class="date_duration">
-                <abbr class="dtstart" title="2010-04-08">Apr 2010</abbr> -
-                <abbr class="dtend" title="2010-07-08">Jul 2010</abbr><br />
-              </div>
-              <div class="clear"></div>
-              <div class="description">
-                <a href="http://planga.com">Planga.com</a>
-              </div>
-              <div class="desc_summary">
-                Social calendar and event platform for college campuses. Groups
-                and events are organized into a cutting-edge cloud system using
-                the latest social web technologies. It's a next-generation
-                platform for an ultra-organized campus and more vibrant student
-                life.
-              </div>
-              <br />
-              <div class="description">
-                <label>Position</label><br />
-                Consultant for Product Design &amp; Development.
-                <details>
-                  <summary class="print-hide">Responsibilities</summary>
-                  <ul>
-                    <li>
-                      Responsible for complete front-end development including
-                      UI / UX, artwork and graphics, and code.
-                    </li>
-                    <li>
-                      Ideate and execute on product roadmap based on
-                      requirements from executives and product owners.
-                    </li>
-                  </ul>
-                </details>
-                <br />
-                <label>Languages</label><br />
-                Javascript, HTML and CSS.
-              </div>
+            <div class="date_duration">
+              <abbr class="dtstart" title="2012-06-06">Jun 2012</abbr>
+              <abbr class="dtend" title="2012-06-20"></abbr>
             </div>
-            <div class="experience vevent vcard">
-              <div class="htitle">
-                <!-- div float container -->
-                <span class="org">Racked Hosting LLC</span><br />
-                <span class="location">India</span>
-              </div>
-              <div class="date_duration">
-                <abbr class="dtstart" title="2008-04-08">Apr 2008</abbr> -
-                <abbr class="dtend" title="2009-05-08">May 2009</abbr>
-              </div>
-              <div class="clear"></div>
-              <div class="description">
-                <a href="http://rackedhosting.com">Rackedhosting.com</a>
-              </div>
-              <div class="desc_summary">
-                Racked Hosting LLC has been in operation for almost 10 years
-                providing online services such as web hosting, streaming media
-                and dedicated servers to hundreds of customers.
-              </div>
-              <div class="description">
+            <div class="clear"></div>
+            <div class="description">
+              <a href="http://www.bibbol.ltd.uk/">Bibbol.ltd.uk</a>
+            </div>
+            <div class="desc_summary">
+              Surveillance technology and solutions.
+            </div>
+            <br />
+            <div class="description">
+              <label>Position</label><br />
+              <span class="bold">Intern</span>
+              <details>
+                <summary class="print-hide">Responsibilities</summary>
                 <ul>
-                  <label>Position</label
-                  ><br />
-                  Software Architect.<br />
-
-                  <br />
-                  <small><label>Previously</label></small>
-                  Front-end Developer.<br />
-                  <details>
-                    <summary>Responsibilities</summary>
+                  <li>
+                    Worked on the flagship product SL8's &mdash; a new
+                    generation CCTV recording and management system &mdash;
+                    engineering design.
+                  </li>
+                  <li>
+                    Conducted research into modernising the system with
+                    cloud-based storage and monitoring.
+                  </li>
+                  <li>
+                    Part of Lancaster University's Engr445 Industrial Project
+                    Team.
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <div class="experience vevent vcard">
+            <div class="htitle">
+              <!-- div float container -->
+              <span class="org">Planga LLC</span><br />
+              <span class="location">United Kingdom</span>
+            </div>
+            <div class="date_duration">
+              <abbr class="dtstart" title="2010-04-08">Apr 2010</abbr> -
+              <abbr class="dtend" title="2010-07-08">Jul 2010</abbr><br />
+            </div>
+            <div class="clear"></div>
+            <div class="description">
+              <a href="http://planga.com">Planga.com</a>
+            </div>
+            <div class="desc_summary">
+              Social calendar and event platform for college campuses. Groups
+              and events are organized into a cutting-edge cloud system using
+              the latest social web technologies. It's a next-generation
+              platform for an ultra-organized campus and more vibrant student
+              life.
+            </div>
+            <br />
+            <div class="description">
+              <label>Position</label><br />
+              <span class="bold">
+                Consultant for Product Design &amp; Development
+              </span>
+              <details>
+                <summary class="print-hide">Responsibilities</summary>
+                <ul>
+                  <li>
+                    Responsible for complete front-end development including UI
+                    / UX, artwork and graphics, and code.
+                  </li>
+                  <li>
+                    Ideated and executed on product roadmap based on requirements
+                    from executives and product owners.
+                  </li>
+                </ul>
+              </details>
+              <br />
+              <label>Languages</label><br />
+              Javascript, HTML and CSS.
+            </div>
+          </div>
+          <div class="experience vevent vcard">
+            <div class="htitle">
+              <!-- div float container -->
+              <span class="org">Racked Hosting LLC</span><br />
+              <span class="location">India</span>
+            </div>
+            <div class="date_duration">
+              <abbr class="dtstart" title="2008-04-08">Apr 2008</abbr> -
+              <abbr class="dtend" title="2009-05-08">May 2009</abbr>
+            </div>
+            <div class="clear"></div>
+            <div class="description">
+              <a href="http://rackedhosting.com">Rackedhosting.com</a>
+            </div>
+            <div class="desc_summary">
+              Racked Hosting LLC has been in operation for almost 10 years
+              providing online services such as web hosting, streaming media and
+              dedicated servers to hundreds of customers.
+            </div>
+            <div class="description">
+              <br />
+              <label>Position</label><br />
+              <span class="bold">Principal Engineer</span>
+              <br />
+              <small><label>Previously</label></small>
+              Front-end Developer.<br />
+              <details>
+                <summary>Responsibilities</summary>
+                <ul>
+                  <li>
+                    Design, artwork and complete front-end code for:
                     <ul>
                       <li>
-                        Design, artwork and complete front-end code for:
-                        <ul>
-                          <li>
-                            A web-based Twitter client &mdash;
-                            <a href="http://filttr.com">Filttr.com</a>
-                          </li>
-                          <li>
-                            Company website &mdash;
-                            <a href="http://rackedhosting.com"
-                              >Rackedhosting.com</a
-                            >
-                          </li>
-                        </ul>
+                        A web-based Twitter client &mdash;
+                        <a href="http://filttr.com">Filttr.com</a>
+                      </li>
+                      <li>
+                        Company website &mdash;
+                        <a href="http://rackedhosting.com">Rackedhosting.com</a>
                       </li>
                     </ul>
-                  </details>
-                  <br />
-                  <label>Languages</label>
-                  <li>Python, PHP, SQL, Javascript, HTML and CSS.</li>
+                  </li>
                 </ul>
-              </div>
+              </details>
+              <br />
+              <label>Languages</label>
+              <li>Python, PHP, SQL, Javascript, HTML and CSS.</li>
             </div>
-            <div class="experience vevent vcard print-hide">
-              <div class="htitle">
-                <!-- div float container -->
-                <span class="org">Beers Design</span><br />
-                <span class="location"></span>
-              </div>
-              <div class="date_duration">
-                <abbr class="dtstart" title="2008-04-01">Apr 2008</abbr> -
-                <abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
-              </div>
-              <div class="clear"></div>
-              <div class="description">
-                <a href="http://beersdesign.com">Beersdesign.com</a>
-              </div>
-              <div class="desc_summary"></div>
-              <div class="description">
-                <label>Position</label><br />Programming consultant
-                <details>
-                  <summary>Responsibilities</summary>
-                  <ul>
-                    <li>
-                      Implementing/coding themes and web-pages for graphic
-                      designers at the company.
-                    </li>
-                  </ul>
-                </details>
-                <br />
-                <label>Languages</label><br />
-                PHP, Javascript, HTML and CSS.
-              </div>
+          </div>
+          <div class="experience vevent vcard print-hide">
+            <div class="htitle">
+              <!-- div float container -->
+              <span class="org">Beers Design</span><br />
+              <span class="location"></span>
             </div>
-            <div class="experience vevent vcard print-hide">
-              <div class="htitle">
-                <!-- div float container -->
-                <span class="org">Self-employed</span><br />
-                <span class="location">India</span>
-              </div>
-              <div class="date_duration">
-                <abbr class="dtstart" title="2006-07-01">Jul 2006</abbr> -
-                <abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
-              </div>
-              <div class="clear"></div>
-              <div class="description">
+            <div class="date_duration">
+              <abbr class="dtstart" title="2008-04-01">Apr 2008</abbr> -
+              <abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
+            </div>
+            <div class="clear"></div>
+            <div class="description">
+              <a href="http://beersdesign.com">Beersdesign.com</a>
+            </div>
+            <div class="desc_summary"></div>
+            <div class="description">
+              <label>Position</label><br />Programming consultant
+              <details>
+                <summary>Responsibilities</summary>
                 <ul>
-                  <label>Position</label
-                  ><br />
-                  <li>Freelance web-designing and site-maintenance.</li>
-                  <br />
-                  <label>Languages</label>
-                  <li>PHP, Python, Javascript, HTML and CSS.</li>
+                  <li>
+                    Implementing/coding themes and web-pages for graphic
+                    designers at the company.
+                  </li>
                 </ul>
-              </div>
+              </details>
+              <br />
+              <label>Languages</label><br />
+              PHP, Javascript, HTML and CSS.
+            </div>
+          </div>
+          <div class="experience vevent vcard print-hide">
+            <div class="htitle">
+              <!-- div float container -->
+              <span class="org">Self-employed</span><br />
+              <span class="location">India</span>
+            </div>
+            <div class="date_duration">
+              <abbr class="dtstart" title="2006-07-01">Jul 2006</abbr> -
+              <abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
+            </div>
+            <div class="clear"></div>
+            <div class="description">
+              <ul>
+                <label>Position</label
+                ><br />
+                <li>Freelance web-designing and site-maintenance.</li>
+                <br />
+                <label>Languages</label>
+                <li>PHP, Python, Javascript, HTML and CSS.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1380,7 +1410,7 @@
         <h4 class="section-title">Education &amp; Affiliations</h4>
         <details open>
           <summary>Details</summary>
-          <div class="vcalendar">
+          <div class="">
             <div class="education vevent vcard">
               <div class="htitle">
                 <!-- div float container -->
@@ -1514,9 +1544,6 @@
               </div>
               <div class="date_duration">
                 <abbr class="dtstart" title="2004-07-01">Jul 2004</abbr> -
-                <abbr class="dtend" title="2006-03-01">Mar 2006</abbr>
-              </div>
-              <div class="clear"></div>
               <br />
               <div class="subjects">
                 <label>Subjects</label> Physics, Chemistry, Mathematics,
