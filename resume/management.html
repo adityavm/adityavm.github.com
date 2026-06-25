@@ -31,64 +31,16 @@
           text-decoration: none;
         }
 
-        .page_links {
-          position: fixed;
-          bottom: 4%;
-          left: 800px;
-        }
 
-        .page_links ul li {
-          float: left;
-          list-style: none;
-        }
 
-        .page_links ul li a {
-          display: block;
-          padding: 10px;
-          border: 1px solid var(--text-dim);
-          color: silver;
-          font-size: 11px;
-        }
 
-        .page_links ul li a:hover {
-          background: silver;
-          color: black;
-        }
 
-        .post_content {
-          width: 350px;
-          margin: 30px 0px 0px 120px;
-          float: left;
-        }
 
-        .title {
-          color: #333;
-          margin: 10px 0px 12px -40px;
-          text-align: left;
-        }
 
-        .title a {
-          color: var(--text);
-        }
 
-        .title a:hover {
-          border-bottom: 1px solid #777;
-          color: #fff;
-        }
 
-        .title .twitter {
-          font-size: 10px;
-          color: #ddd;
-        }
 
-        .morestuff {
-          width: 200px;
-          float: left;
-          margin: 70px 0px 0px 10px;
-        }
 
-        .personal_info {
-        }
 
         .bold {
           font-weight: 600;
@@ -110,16 +62,6 @@
           width: 35px;
         }
 
-        .mugshot {
-          background-image: url(/images/portfolio_images/mugshot_big.png);
-          border: 1px solid gray;
-          height: 307px;
-          left: 400px;
-          margin-top: 18px;
-          padding: 1px;
-          position: absolute;
-          width: 223px;
-        }
 
         hr.divider {
           background-image: url(http://images.adityamukherjee.com/divider_back.png);
@@ -238,10 +180,6 @@
           color: var(--text);
         }
 
-        .hresume .contact .fn {
-          font-weight: bold;
-          font-size: 12pt;
-        }
 
         .hresume .contact table tr td {
           padding: 2.5px 0;
@@ -253,23 +191,9 @@
           color: var(--text);
         }
 
-        .hresume .adr {
-          color: var(--text-dim);
-        }
 
-        .hresume .adr,
-        .hresume .phone {
-          margin-left: 20px;
-        }
 
-        .hresume .adr {
-          float: left;
-          width: 200px;
-        }
 
-        .hresume .adr.termtime {
-          margin-top: -1.7em;
-        }
 
         .hresume label {
           text-transform: uppercase;
@@ -472,7 +396,7 @@
 
         .hresume .experience ul li ul:before {
           position: absolute;
-          left: -14px;
+          left: -11px;
           top: 0;
           content: "";
           height: 100%;
@@ -499,9 +423,6 @@
           text-transform: uppercase;
         }
 
-        .hresume .htitle .include {
-          display: none;
-        }
 
         .hresume .education .date_duration,
         .hresume .experience .date_duration {
@@ -608,19 +529,7 @@
           color: var(--text-dim);
         }
 
-        .hresume .mini {
-          margin: 9px 0px 0px 18px;
-        }
 
-        .hresume .mini div.mini-head {
-          font:
-            bold 10px "Georgia",
-            serif;
-          border-bottom: 1px solid #888;
-          padding: 0px 2pt 2px;
-          width: 115px;
-          margin: 18px 0px 4px;
-        }
 
         object {
           display: none;
@@ -813,94 +722,48 @@
     </style>
   </head>
   <body>
-    <div class="page-break-marker-v hide"></div>
     <div class="page-break-marker-h hide"></div>
 
     <!-- hResume -->
     <div class="resume_img">&nbsp;</div>
     <div class="hresume" id="resume">
-      <div class="contact vcard">
+      <div class="contact">
         <div>
-          <div class="fn n" id="j">
+          <div id="j">
             <h4 class="name">
-              <span class="given-name">Aditya V.</span>
-              <span class="family-name">Mukherjee</span>
+              <span>Aditya V.</span>
+              <span>Mukherjee</span>
             </h4>
           <div class="titles">
             Engineering leadership, strategy, and development</div>
-          </div>
-          <div class="adr hide">
-            <label>New Delhi, India</label><br />
-            <span class="street-address">C-60, Nizamuddin East</span><br />
-            <span class="locality">New Delhi</span>,
-            <span class="region">Delhi</span>,<br />
-            <span class="postal-code">110013</span><br />
-            <span class="country-name">India</span>
-          </div>
-          <div class="adr hide">
-            <label>Sydney, Australia</label><br />
-            <span class="street-address">319B, 134 O'Riordan Street</span><br />
-            <span class="locality">Mascot</span>,
-            <span class="region">NSW</span>,<br />
-            <span class="postal-code">2020</span><br />
-            <span class="country-name">Australia</span>
-          </div>
-          <div class="adr hide">
-            <label>Permanent</label><br />
-            <span class="street-address">E-2296 Palam Vihar</span><br />
-            <span class="locality">Gurgaon</span>,
-            <span class="region">Haryana</span>,<br />
-            <span class="postal-code">122017</span><br />
-            <span class="country-name">India</span>
-          </div>
-          <div class="adr termtime hide">
-            <label>Term Time</label><br />
-            <span class="street-address">E17, House 76</span><br />
-            <span class="locality">County College, Lancaster University</span>,
-            <span class="region">Lancaster, Lancashire</span>,<br />
-            <span class="postal-code">LA1 4YD</span><br />
-            <span class="country-name">United Kingdom</span>
-          </div>
-          <div class="adr hide">
-            <label>Contract Time</label><br />
-            <span class="street-address">#723, 1520 Eastlake Ave E</span><br />
-            <span class="locality">Seattle</span>,
-            <span class="region">Washington</span>,<br />
-            <span class="postal-code">98102</span><br />
-            <span class="country-name">United States of America</span>
           </div>
           Ph.: &#43;&#54;&#49;&#32;&#52;&#53;&#53;&#32;&#50;&#50;&#56;&#32;&#49;&#52;&#55;
           <span class="divider"> / </span> &#43;&#57;&#49;&#32;&#56;&#56;&#50;&#54;&#57;&#32;&#50;&#48;&#51;&#49;&#49;
           <br />
           Em.: <a
-            class="email"
-            href="mailto:&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#116;&#121;&#97;&#109;&#117;&#107;&#104;&#101;&#114;&#106;&#101;&#101;&#46;&#99;&#111;&#109;"
-            >&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#116;&#121;&#97;&#109;&#117;&#107;&#104;&#101;&#114;&#106;&#101;&#101;&#46;&#99;&#111;&#109;</a
+            href="mailto:&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#46;&#105;&#115;"
+            >&#114;&#101;&#115;&#117;&#109;&#101;&#64;&#97;&#100;&#105;&#46;&#105;&#115;</a
           >
-          <div class="hide">
-            <td>Birth:</td>
-            <td>4<sup>th</sup> September, &rsquo;88</td>
-          </div>
         </div>
         <div class="other">
           <span>
-            <a class="url" href="http://adityamukherjee.com/"
+            <a href="http://adityamukherjee.com/"
               >Web</a><span class="print-only">&mdash; https://adityamukherjee.com</span>
           </span>
           <span>
-            <a class="url" href="http://linkedin.com/in/aditya-vm">LinkedIn</a
+            <a href="http://linkedin.com/in/aditya-vm">LinkedIn</a
             ><span class="print-only">
               &mdash; http://linkedin.com/in/aditya-vm</span
             >
           </span>
           <span>
-            <a class="url" href="http://github.com/adityavm">Github</a
+            <a href="http://github.com/adityavm">Github</a
             ><span class="print-only">
               &mdash; http://github.com/adityavm</span
             >
           </span>
           <span>
-            <a class="url" href="http://twitter.com/aditya">Twitter</a
+            <a href="http://twitter.com/aditya">Twitter</a
             ><span class="print-only">
               &mdash; http://twitter.com/aditya</span
             >
@@ -910,7 +773,7 @@
       <br />
 
       <h4 class="section-title hide">Personal Profile</h4>
-      <div class="personal_info summary hide">
+      <div class="summary hide">
         <p>
           I like to learn new things, and am constantly driven to make sense of
           why things are the way they are. I strongly believe in the often
@@ -943,7 +806,7 @@
         </p>
       </div>
 
-      <div class="section professional">
+      <div class="section">
         <!-- professional -->
         <h4 class="section-title">Professional Experience</h4>
         <div class="summary github_intro hide">
@@ -953,16 +816,16 @@
         </div>
 
           <div class="experience experience-summary current">
-            <div class="technical summary-column">
+            <div class="summary-column">
               <h3>Technical</h3>
               <ul>
-                <li>15 years of front-end development, 5 years of back-end development across wagering, e-commerce, and data analytics and visualisation products.</li>
+                <li>15 years of front-end development, 6 years of back-end development across wagering, e-commerce, and data analytics and visualisation products.</li>
                 <li>Architected and developed web applications to serve 10k+ concurrent and 100k+ monthly users.</li>
                 <li>Extensive experience using Javascript and Typescript: in front-end using React (and Svelte), and back-end using NodeJS (serverless, ExpressJS).
                 <li>Fluent in UI/UX best practices, SEO, cross-browser compatibility, performance optimisation, testing, scalability, back-end technologies, and DevOps.</li>
               </ul>
             </div>
-            <div class="management summary-column">
+            <div class="summary-column">
               <h3>Management</h3>
               <ul>
                 <li>10 years of building and leading small to medium engineering teams (5-30 engineers, 1-2 engineering managers) across 3 companies.</li>
@@ -974,15 +837,15 @@
           </div>
         <div class="vcalendar">
           <div class="highlight hide">
-            <div class="experience vevent vcard current">
+            <div class="experience current">
               <div class="htitle">
                 <!-- div float container -->
                 <span class="org">BetCashbacks</span><br />
                 <span class="location">Australia</span>
               </div>
               <div class="date_duration">
-                <abbr class="dtstart" title="2023-10-10">Oct 2023</abbr> -
-                <abbr class="dtend" title="">Present</abbr>
+                <abbr title="2023-10-10">Oct 2023</abbr> -
+                <abbr title="">Present</abbr>
               </div>
               <div class="clear"></div>
               <div class="description">
@@ -1019,7 +882,46 @@
               </div>
             </div>
           </div>
-          <div class="experience vevent vcard">
+          <div class="experience current">
+            <div class="htitle">
+              <!-- div float container -->
+              <span class="org">Constantinople</span><br />
+              <span class="location">Australia</span>
+            </div>
+            <div class="date_duration">
+              <abbr title="2025-08-01">Aug 2025</abbr> -
+              <abbr title="">Present</abbr>
+            </div>
+            <div class="clear"></div>
+            <div class="description">
+              <a href="https://cxnpl.com/">Cxnpl.com</a>
+            </div>
+            <div class="desc_summary">Banking-as-a-service platform powering digital lending and origination products for banks and lenders.</div>
+            <br />
+            <div class="description">
+              <label>Position</label><br />
+              <span class="bold">Staff Software Engineer</span><br />
+              <details open="always">
+                <summary class="print-hide">Responsibilities</summary>
+                <ul>
+                  <li>
+                    Technical lead for the Lending backend team, owning delivery of loan origination products (construction loans, mortgages, broker purchase flows) across engineering, product, and operations.
+                  </li>
+                  <li>
+                    Mentor and grow engineers, and push the bar for quality and engineering excellence across the org &mdash; reviewing 170+ merge requests across 25+ engineers, and driving code review, design, and delivery standards.
+                  </li>
+                  <li>
+                    Set technical direction and roadmap for Lending &mdash; authoring RFCs and tech roadmaps for backend observability, workflow versioning, testing uplift, and data-entity modelling, and aligning cross-functional teams on priorities and dependencies.
+                  </li>
+                  <li>
+                    Continually establish and develop detailed guidelines and standards for product development processes.
+                  </li>
+                </ul>
+              </details>
+              <br /><label>Technologies</label>: Typescript, NodeJS, Temporal, DynamoDB, AWS (Lambda, SNS, SST), Zod, GraphQL, ReactJS, LocalStack, CI/CD.
+            </div>
+          </div>
+          <div class="experience">
             <div class="htitle">
               <!-- div float container -->
               <span class="org">Dovetail</span
@@ -1027,8 +929,8 @@
               <span class="location">Australia</span>
             </div>
             <div class="date_duration">
-              <abbr class="dtstart" title="2024-04-29">Apr 2024</abbr> -
-              <abbr class="dtend" title="">Present</abbr>
+              <abbr title="2024-04-29">Apr 2024</abbr> -
+              <abbr title="2025-08-31">Aug 2025</abbr>
             </div>
             <div class="clear"></div>
             <div class="description">
@@ -1056,7 +958,7 @@
               <br/><label>Technologies</label>: Typescript, Postgres, Redis, GraphQL, Apollo, ReactJS, Emotion, AWS
             </div>
           </div>
-          <div class="experience vevent vcard">
+          <div class="experience">
             <div class="htitle">
               <!-- div float container -->
               <span class="org">Entain Esports <small>(ex. Unikrn)</small></span
@@ -1064,8 +966,8 @@
               <span class="location">Australia / United States</span>
             </div>
             <div class="date_duration">
-              <abbr class="dtstart" title="2015-09-15">Sep 2015</abbr> -
-              <abbr class="dtend" title="2023-10-05">Oct 2023</abbr>
+              <abbr title="2015-09-15">Sep 2015</abbr> -
+              <abbr title="2023-10-05">Oct 2023</abbr>
             </div>
             <div class="clear"></div>
             <div class="description">
@@ -1137,7 +1039,7 @@
             </div>
           </div>
           <div class="col-group">
-            <div class="experience vevent vcard">
+            <div class="experience">
               <div class="htitle">
                 <!-- div float container -->
                 <span class="org"
@@ -1146,8 +1048,8 @@
                 <span class="location">India</span>
               </div>
               <div class="date_duration">
-                <abbr class="dtstart" title="2014-01-23">Jan 2014</abbr> -
-                <abbr class="dtend" title="2015-09-15">Sep 2015</abbr>
+                <abbr title="2014-01-23">Jan 2014</abbr> -
+                <abbr title="2015-09-15">Sep 2015</abbr>
               </div>
               <div class="clear"></div>
               <div class="description">
@@ -1202,15 +1104,15 @@
                 <br /><label>Technologies</label>: AngularJS 1.5, NodeJS, MySQL, HTML, SASS CSS.
               </div>
             </div>
-            <div class="experience vevent vcard">
+            <div class="experience">
               <div class="htitle">
                 <!-- div float container -->
                 <span class="org">Atticous Inc.</span><br />
                 <span class="location">India / United States</span>
               </div>
               <div class="date_duration">
-                <abbr class="dtstart" title="2011-06-01">Jun 2011</abbr> -
-                <abbr class="dtend" title="2013-09-01">Sep 2013</abbr>
+                <abbr title="2011-06-01">Jun 2011</abbr> -
+                <abbr title="2013-09-01">Sep 2013</abbr>
               </div>
               <div class="clear"></div>
               <div class="description">
@@ -1259,15 +1161,15 @@
         </div>
 
         <div class="other-experience">
-          <div class="experience vevent vcard print-hide">
+          <div class="experience print-hide">
             <div class="htitle">
               <!-- div float container -->
               <span class="org">Bibbol Ltd.</span><br />
               <span class="location">United Kingdom</span>
             </div>
             <div class="date_duration">
-              <abbr class="dtstart" title="2012-06-06">Jun 2012</abbr>
-              <abbr class="dtend" title="2012-06-20"></abbr>
+              <abbr title="2012-06-06">Jun 2012</abbr>
+              <abbr title="2012-06-20"></abbr>
             </div>
             <div class="clear"></div>
             <div class="description">
@@ -1300,15 +1202,15 @@
               </details>
             </div>
           </div>
-          <div class="experience vevent vcard">
+          <div class="experience">
             <div class="htitle">
               <!-- div float container -->
               <span class="org">Planga LLC</span><br />
               <span class="location">United Kingdom</span>
             </div>
             <div class="date_duration">
-              <abbr class="dtstart" title="2010-04-08">Apr 2010</abbr> -
-              <abbr class="dtend" title="2010-07-08">Jul 2010</abbr><br />
+              <abbr title="2010-04-08">Apr 2010</abbr> -
+              <abbr title="2010-07-08">Jul 2010</abbr><br />
             </div>
             <div class="clear"></div>
             <div class="description">
@@ -1340,20 +1242,18 @@
                   </li>
                 </ul>
               </details>
-              <br />
-              <label>Languages</label><br />
-              JQuery, HTML, CSS
+              <br /><label>Technologies</label>: JQuery, HTML, CSS
             </div>
           </div>
-          <div class="experience vevent vcard">
+          <div class="experience">
             <div class="htitle">
               <!-- div float container -->
               <span class="org">Racked Hosting LLC</span><br />
               <span class="location">India</span>
             </div>
             <div class="date_duration">
-              <abbr class="dtstart" title="2008-04-08">Apr 2008</abbr> -
-              <abbr class="dtend" title="2009-05-08">May 2009</abbr>
+              <abbr title="2008-04-08">Apr 2008</abbr> -
+              <abbr title="2009-05-08">May 2009</abbr>
             </div>
             <div class="clear"></div>
             <div class="description">
@@ -1389,20 +1289,18 @@
                   </li>
                 </ul>
               </details>
-              <br />
-              <label>Languages</label>
-              <li>Python, PHP, SQL, Javascript, HTML and CSS.</li>
+              <br /><label>Technologies</label>: Python, PHP, SQL, Javascript, HTML, CSS.
             </div>
           </div>
-          <div class="experience vevent vcard print-hide">
+          <div class="experience print-hide">
             <div class="htitle">
               <!-- div float container -->
               <span class="org">Beers Design</span><br />
               <span class="location"></span>
             </div>
             <div class="date_duration">
-              <abbr class="dtstart" title="2008-04-01">Apr 2008</abbr> -
-              <abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
+              <abbr title="2008-04-01">Apr 2008</abbr> -
+              <abbr title="2008-07-01">Jul 2008</abbr>
             </div>
             <div class="clear"></div>
             <div class="description">
@@ -1420,20 +1318,18 @@
                   </li>
                 </ul>
               </details>
-              <br />
-              <label>Languages</label><br />
-              PHP, Javascript, HTML and CSS.
+              <br /><label>Technologies</label>: PHP, Javascript, HTML, CSS.
             </div>
           </div>
-          <div class="experience vevent vcard print-hide">
+          <div class="experience print-hide">
             <div class="htitle">
               <!-- div float container -->
               <span class="org">Self-employed</span><br />
               <span class="location">India</span>
             </div>
             <div class="date_duration">
-              <abbr class="dtstart" title="2006-07-01">Jul 2006</abbr> -
-              <abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
+              <abbr title="2006-07-01">Jul 2006</abbr> -
+              <abbr title="2008-07-01">Jul 2008</abbr>
             </div>
             <div class="clear"></div>
             <div class="description">
@@ -1441,9 +1337,7 @@
                 <label>Position</label
                 ><br />
                 <li>Freelance web-designing and site-maintenance.</li>
-                <br />
-                <label>Languages</label>
-                <li>PHP, Python, Javascript, HTML and CSS.</li>
+                <br /><label>Technologies</label>: PHP, Python, Javascript, HTML, CSS.
               </ul>
             </div>
           </div>
@@ -1456,7 +1350,7 @@
         <details open>
           <summary>Details</summary>
           <div class="">
-            <div class="education vevent vcard">
+            <div class="education">
               <div class="htitle">
                 <!-- div float container -->
                 <span class="org">Lancaster University</span><br />
@@ -1466,8 +1360,8 @@
                 <span class="location">United Kingdom</span>
               </div>
               <div class="date_duration">
-                <abbr class="dtstart" title="2009-10-01">Oct 2009</abbr> -
-                <abbr class="dtend" title="2013-07-09">Jul 2013</abbr>
+                <abbr title="2009-10-01">Oct 2009</abbr> -
+                <abbr title="2013-07-09">Jul 2013</abbr>
               </div>
               <div class="clear"></div>
               <div class="subjects hide">
@@ -1545,14 +1439,14 @@
                 </ul>
               </div>
             </div>
-            <!--<div class="education vevent vcard">
+            <!--<div class="education">
 						<div class="htitle">
 							<span class="org">Institution of Engineering and Technology</span><br/>
 							<span class="summary">Member</span>
 						</div>
 						<div class="date_duration">
-							<abbr class="dtstart" title="2009-10-01">October 2009</abbr> -
-							<abbr class="dtend">Present</abbr>
+							<abbr title="2009-10-01">October 2009</abbr> -
+							<abbr>Present</abbr>
 						</div>
 						<div class="clear"></div>
 						<br/>
@@ -1560,7 +1454,7 @@
 							Student Member of the Institution of Engineering and Technology (IET).
 						</div>
 					</div>-->
-            <div class="education vevent vcard">
+            <div class="education">
               <div class="htitle">
                 <!-- div float container -->
                 <span class="org"
@@ -1571,13 +1465,13 @@
                 <span class="location">India</span>
               </div>
               <div class="date_duration">
-                <abbr class="dtstart" title="2006-08-01">Aug 2006</abbr> -
-                <abbr class="dtend" title="2009-01-01">Jan 2009</abbr><br />
+                <abbr title="2006-08-01">Aug 2006</abbr> -
+                <abbr title="2009-01-01">Jan 2009</abbr><br />
                 <abbr><i>(Transferred to Lancaster University)</i></abbr>
               </div>
               <div class="clear"></div>
             </div>
-            <div class="education vevent vcard">
+            <div class="education">
               <div class="htitle">
                 <!-- div float container -->
                 <span class="org">Vasant Valley School</span><br />
@@ -1588,8 +1482,9 @@
                 <span class="location">India</span>
               </div>
               <div class="date_duration">
-                <abbr class="dtstart" title="2004-07-01">Jul 2004</abbr> -
-              <br />
+                <abbr title="2004-07-01">Jul 2004</abbr> -
+                <br />
+              </div>
               <div class="subjects">
                 <label>Subjects</label> Physics, Chemistry, Mathematics,
                 Computer Science, English.
