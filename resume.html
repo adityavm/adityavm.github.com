@@ -50,6 +50,17 @@
           clear: both;
         }
 
+        /*
+         * Print-only grouping wrappers. On screen they are transparent
+         * (display: contents) so the experiences remain direct flex children
+         * of .vcalendar and the existing layout is unchanged; print turns them
+         * into the page-one / page-two groups.
+         */
+        .recent-roles,
+        .earlier-roles {
+          display: contents;
+        }
+
         /* Between posts and hResume */
 
         div.resume_img {
@@ -702,6 +713,47 @@
         .print-hide {
           display: none;
         }
+
+        /*
+         * The oldest roles (Planga, Racked Hosting) print as position +
+         * technologies only; their responsibility lists are dropped to keep
+         * page two tidy. More recent roles keep their full detail.
+         */
+        .hresume .other-experience .experience .description details {
+          display: none;
+        }
+
+        /* Education is omitted from the printed resume. */
+        .hresume .education-affiliation {
+          display: none;
+        }
+
+        /*
+         * Page layout: the current and previous roles (Constantinople,
+         * Dovetail) own page one; everything older breaks onto page two.
+         */
+        .hresume .vcalendar {
+          display: block;
+        }
+
+        .hresume .recent-roles {
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+        }
+
+        .hresume .earlier-roles {
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+          break-before: page;
+        }
+
+        .hresume .other-experience {
+          column-count: 2;
+          padding-top: 0;
+          break-before: avoid;
+        }
       }
 
       .experience-summary {
@@ -880,6 +932,7 @@
               </div>
             </div>
           </div>
+          <div class="recent-roles">
           <div class="experience current">
             <div class="htitle">
               <!-- div float container -->
@@ -957,6 +1010,8 @@
               <br/><label>Technologies</label>: AI, LLM, Typescript, Postgres, Redis, GraphQL, Apollo, ReactJS, Emotion, AWS
             </div>
           </div>
+          </div>
+          <div class="earlier-roles">
           <div class="experience">
             <div class="htitle">
               <!-- div float container -->
@@ -1015,42 +1070,39 @@
                     </ul>
                   </li>
                   <li>
-                    Managed and supported external partner relationships and
-                    communications to ensure timely completion of deliverables.
-                  </li>
-                  <li>
-                    Recruited frontend engineers and develop onboarding plans.
-                    Built and led two teams of 8-10 engineers each.
-                  </li>
-                  <li>
-                    <small><label>Previously</label> Director of Engineering.</small>
+                    Recruited frontend engineers and built onboarding plans;
+                    built and led two teams of 8-10 engineers each. Managed
+                    external partner relationships and deliverables.
+                    <small>(<label>Previously</label> Director of Engineering.)</small>
                   </li>
                 </ul>
               </details>
               <br />
-              <small
-                ><label>Previously</label> Sen. Software &amp; Lead Frontend
-                Engineer</small
-              ><br />
-              <details open="always">
-                <summary class="print-hide">Responsibilities</summary>
-                <ul>
-                  <li>
-                    Lead team of 2-5 front-end engineers to manage all aspects of development, including architecture, testing, and
-                    maintaining the front-ends for all products.
-                  </li>
-                  <li>
-                    Ported all frontends from inhouse custom frameworks to React,
-                    converted monolithic codebase into simpler, reusable, and
-                    testable components.
-                  </li>
-                  <li>
-                    Documented and distributed business logic between backend
-                    and frontend to improve security, reduce technical
-                    debt, and centralise logic.
-                  </li>
-                </ul>
-              </details>
+              <div class="print-hide">
+                <small
+                  ><label>Previously</label> Sen. Software &amp; Lead Frontend
+                  Engineer</small
+                ><br />
+                <details open="always">
+                  <summary class="print-hide">Responsibilities</summary>
+                  <ul>
+                    <li>
+                      Lead team of 2-5 front-end engineers to manage all aspects of development, including architecture, testing, and
+                      maintaining the front-ends for all products.
+                    </li>
+                    <li>
+                      Ported all frontends from inhouse custom frameworks to React,
+                      converted monolithic codebase into simpler, reusable, and
+                      testable components.
+                    </li>
+                    <li>
+                      Documented and distributed business logic between backend
+                      and frontend to improve security, reduce technical
+                      debt, and centralise logic.
+                    </li>
+                  </ul>
+                </details>
+              </div>
               <br/><label>Technologies</label>: ReactJS, Node JS, Typescript, Javascript, MySQL, Redis, HTML5, SASS CSS, styled-components, REST API, Serverless
             </div>
           </div>
@@ -1173,6 +1225,7 @@
                 <br /><label>Technologies</label>: AngularJS 1.5, NodeJS, MySQL, HTML, LESS CSS.
               </div>
             </div>
+          </div>
           </div>
         </div>
 
