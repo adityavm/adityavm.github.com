@@ -50,6 +50,17 @@
           clear: both;
         }
 
+        /*
+         * Print-only grouping wrappers. On screen they are transparent
+         * (display: contents) so the experiences remain direct flex children
+         * of .vcalendar and the existing layout is unchanged; print turns them
+         * into the page-one / page-two groups.
+         */
+        .recent-roles,
+        .earlier-roles {
+          display: contents;
+        }
+
         /* Between posts and hResume */
 
         div.resume_img {
@@ -702,6 +713,47 @@
         .print-hide {
           display: none;
         }
+
+        /*
+         * The oldest roles (Planga, Racked Hosting) print as position +
+         * technologies only; their responsibility lists are dropped to keep
+         * page two tidy. More recent roles keep their full detail.
+         */
+        .hresume .other-experience .experience .description details {
+          display: none;
+        }
+
+        /* Education is omitted from the printed resume. */
+        .hresume .education-affiliation {
+          display: none;
+        }
+
+        /*
+         * Page layout: the current and previous roles (Constantinople,
+         * Dovetail) own page one; everything older breaks onto page two.
+         */
+        .hresume .vcalendar {
+          display: block;
+        }
+
+        .hresume .recent-roles {
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+        }
+
+        .hresume .earlier-roles {
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+          break-before: page;
+        }
+
+        .hresume .other-experience {
+          column-count: 2;
+          padding-top: 0;
+          break-before: avoid;
+        }
       }
 
       .experience-summary {
@@ -882,6 +934,7 @@
               </div>
             </div>
           </div>
+          <div class="recent-roles">
           <div class="experience current">
             <div class="htitle">
               <!-- div float container -->
@@ -958,6 +1011,8 @@
               <br/><label>Technologies</label>: Typescript, Postgres, Redis, GraphQL, Apollo, ReactJS, Emotion, AWS
             </div>
           </div>
+          </div>
+          <div class="earlier-roles">
           <div class="experience">
             <div class="htitle">
               <!-- div float container -->
@@ -1011,6 +1066,7 @@
                 </ul>
               </details>
               <br />
+              <div class="print-hide">
               <small
                 ><label>Previously</label> Sen. Software &amp; Lead Frontend
                 Engineer</small
@@ -1035,6 +1091,7 @@
                   </li>
                 </ul>
               </details>
+              </div>
               <br/><label>Technologies</label>: ReactJS, Typescript, Javascript, NodeJS, MySQL, Redis, HTML5, SASS CSS, styled-components, REST API, Serverless
             </div>
           </div>
@@ -1157,6 +1214,7 @@
                 <br /><label>Technologies</label>: AngularJS 1.5, NodeJS, MySQL, HTML, LESS CSS.
               </div>
             </div>
+          </div>
           </div>
         </div>
 
