@@ -1,5 +1,10 @@
 {
+  "scripts": {
+    "build:blog": "node scripts/build-blog.mjs"
+  },
   "dependencies": {
+    "markdown-it": "^15.0.3",
+    "markdown-it-footnote": "^4.0.0",
     "prettier": "^3.0.3"
   }
 }

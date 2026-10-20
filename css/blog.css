@@ -1,0 +1,91 @@
+body {
+  --pad: 40px;
+  margin: 0;
+  padding: 40px 20px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  body {
+    --pad: 24px;
+  }
+}
+
+.post {
+  max-width: 680px;
+  margin: 0 auto;
+  border: 3px solid var(--text);
+  box-shadow: 10px 10px 0 var(--accent);
+}
+
+.post header {
+  padding: 32px var(--pad);
+  border-bottom: 3px solid var(--text);
+}
+
+.post h1 {
+  margin: 20px 0 4px;
+  font-size: 24px;
+}
+
+.post time {
+  color: var(--text-dimmest);
+}
+
+.content {
+  padding: 8px var(--pad) 32px;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
+}
+
+a:hover {
+  color: var(--background);
+  background-color: var(--accent);
+  text-decoration: none;
+}
+
+.home {
+  color: var(--accent);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.footnote-ref a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+hr.footnotes-sep {
+  border: none;
+  border-top: 3px solid var(--text);
+  margin: 32px calc(-1 * var(--pad)) 0;
+}
+
+.footnotes {
+  padding-top: 16px;
+  font-size: 13px;
+  color: var(--text-dimmer);
+}
+
+.footnotes-list {
+  padding-left: 2ch;
+}
+
+.footnote-backref {
+  text-decoration: none;
+}
