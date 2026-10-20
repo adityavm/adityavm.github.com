@@ -23,7 +23,7 @@ function parseFrontmatter(src) {
   return { meta, body: src.slice(match[0].length) };
 }
 
-function render({ title, date, html, rel }) {
+function render({ title, date, html, rel, back }) {
   const t = md.utils.escapeHtml(title);
   return `<!doctype html>
 <html lang="en">
@@ -37,9 +37,9 @@ function render({ title, date, html, rel }) {
   <body>
     <article class="post">
       <header>
-        <a href="${rel}" class="home" aria-label="home">←</a>
+        <a href="${back}" class="home" aria-label="back">←</a>
         <h1>${t}</h1>
-        <time datetime="${date}">${date}</time>
+        ${date ? `<time datetime="${date}">${date}</time>` : ""}
       </header>
       <div class="content">
 ${html}
@@ -50,7 +50,10 @@ ${html}
 `;
 }
 
+const toHref = (from, to) =>
+  path.relative(from, to).split(path.sep).join("/") + "/";
 const files = (await readdir(blogDir)).filter((f) => f.endsWith(".md"));
+const posts = [];
 
 for (const file of files) {
   const { meta, body } = parseFrontmatter(
@@ -59,18 +62,40 @@ for (const file of files) {
   if (!meta.slug) throw new Error(`${file}: missing slug`);
 
   const outDir = path.join(blogDir, meta.slug);
-  const rel = path.relative(outDir, root).split(path.sep).join("/") + "/";
   const out = path.join(outDir, "index.html");
+  const title = meta.title ?? file;
+  const date = meta.date ?? "";
+  posts.push({ title, date, href: toHref(blogDir, outDir) });
 
   await mkdir(outDir, { recursive: true });
   await writeFile(
     out,
     render({
-      title: meta.title ?? file,
-      date: meta.date ?? "",
+      title,
+      date,
       html: md.render(body),
-      rel,
+      rel: toHref(outDir, root),
+      back: toHref(outDir, blogDir),
     }),
   );
   console.log(`${file} → ${path.relative(root, out)}`);
 }
+
+const list = posts
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .map(
+    (p) =>
+      `<li><time datetime="${p.date}">${p.date}</time> <a href="${p.href}">${md.utils.escapeHtml(p.title)}</a></li>`,
+  )
+  .join("\n");
+
+await writeFile(
+  path.join(blogDir, "index.html"),
+  render({
+    title: "blog",
+    html: `<ul class="posts">\n${list}\n</ul>`,
+    rel: "../",
+    back: "../",
+  }),
+);
+console.log("blog/index.html");
