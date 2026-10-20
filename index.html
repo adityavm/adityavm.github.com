@@ -8,171 +8,165 @@
     <link href="./css/colors.css" rel="stylesheet" />
     <style>
       body {
-        padding: 0;
         margin: 0;
-        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-        font-size: 15px;
-        background-color: var(--background);
-        color: var(--text);
+        padding: 24px;
+        box-sizing: border-box;
+        min-height: 100dvh;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100dvh;
-      }
-
-      .container {
-        display: flex;
-        margin: 40px 20px;
-        border: 3px solid var(--text);
-        box-shadow: 10px 10px 0 var(--accent);
-      }
-
-      @media (max-width: 1024px) {
-        .container {
-          flex-direction: column;
-          max-width: 400px;
-          margin: 20px;
-        }
-      }
-
-      .card {
-        width: 300px;
-        padding: 32px 24px;
-        text-align: center;
-        border-right: 3px solid var(--text);
-      }
-
-      @media (max-width: 1024px) {
-        .card {
-          width: auto;
-          border-right: none;
-          border-bottom: 3px solid var(--text);
-        }
-      }
-
-      .name {
-        margin: 16px 0 12px;
-        font-size: 18px;
-        font-weight: 700;
-      }
-
-      .divider {
-        color: var(--text-dimmest);
-        margin: 0 4px;
-      }
-
-      img {
-        width: 250px;
-        max-width: 100%;
-        height: 230px;
-        display: block;
-        margin: 0 auto;
-        object-fit: cover;
-      }
-
-      a {
+        background: var(--background);
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
         color: var(--text);
-        text-decoration: underline;
-        text-decoration-color: var(--accent);
-        text-decoration-thickness: 2px;
-        text-underline-offset: 3px;
-        text-decoration-skip-ink: none;
+      }
+
+      .page {
+        container-type: inline-size;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: min(520px, 100%);
+        aspect-ratio: 3 / 4;
+        padding: 40px 36px;
+      }
+
+      .links {
+        display: flex;
+        justify-content: flex-end;
+        gap: 6cqw;
+      }
+
+      .links a {
+        padding: 2px 6px;
+        color: var(--accent);
+        font-size: clamp(13px, 3.6cqw, 14px);
+        text-decoration: none;
+      }
+
+      .page a {
         white-space: nowrap;
-        background-image: linear-gradient(var(--accent), var(--accent));
-        background-repeat: no-repeat;
-        background-size: 0% 100%;
+        background: linear-gradient(var(--accent), var(--accent)) no-repeat 0
+          0 / 0% 100%;
         transition:
           background-size 0.3s,
           color 0.3s;
       }
 
-      .card a {
-        color: var(--accent);
+      .hero {
+        display: grid;
+        place-items: center;
       }
 
-      a:hover {
-        color: var(--background);
-        background-size: 100% 100%;
+      .hero > * {
+        grid-area: 1 / 1;
+      }
+
+      .seal {
+        width: 44cqw;
+      }
+
+      .seal img {
+        display: block;
+        width: 100%;
+        filter: url(#redprint);
+      }
+
+      .name {
+        position: relative;
+        margin: 0;
+        font-size: 10cqw;
+        font-weight: 600;
+        white-space: nowrap;
+        line-height: 1.05;
+        text-align: center;
       }
 
       .foreword {
-        display: flex;
-        align-items: center;
-        max-width: 340px;
-        padding: 48px;
-        line-height: 1.6;
+        font-size: clamp(13px, 4.4cqw, 16px);
+        line-height: 1.7;
       }
 
-      @media (max-width: 1024px) {
-        .foreword {
-          padding: 32px 28px;
-        }
-      }
-
-      .foreword p:first-child {
-        margin-top: 0;
+      .foreword p {
+        margin: 0 0 0.8em;
       }
 
       .foreword p:last-child {
         margin-bottom: 0;
       }
 
-      .foreword a.hl {
-        color: var(--background);
-        background-color: var(--accent);
-        padding: 2px 6px;
-        text-decoration: none;
+      .foreword a {
+        color: inherit;
+        text-decoration: underline var(--accent);
+        text-underline-offset: 3px;
       }
 
-      @media (min-width: 375px) {
-        .shy {
-          display: none;
-        }
+      .foreword a.hl {
+        color: var(--accent);
+      }
+
+      .page a:hover {
+        color: var(--background);
+        background-size: 100% 100%;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <div>
-          <img src="./assets/S.png" />
-          <div class="name">aditya mukherjee</div>
-          <a href="./writing/">writing</a>
-          <span class="divider">/</span>
-          <a href="https://github.com/adityavm" rel="nofollow noreferrer"
-            >github</a
-          >
-          <span class="divider">/</span>
-          <a href="./resume.html">resume</a>
-        </div>
-      </div>
+    <svg width="0" height="0" style="position: absolute">
+      <filter id="redprint" color-interpolation-filters="sRGB">
+        <feColorMatrix
+          values="0 0 0 0 .992  0 0 0 0 .263  0 0 0 0 0  -.9 -1.6 -.5 0 2.2"
+          result="tint"
+        />
+        <feComposite in="tint" in2="SourceAlpha" operator="in" />
+      </filter>
+    </svg>
+
+    <main class="page">
       <div class="foreword">
-        <div class="content">
-          <p>
-            20 years of experience building products through engineering
-            and&nbsp;leadership.
-          </p>
-          <p>
-            previously at <a href="https://dovetail.com" rel="nofollow">dovetail</a>, 
-            <a href="https://unikrn.com/" rel="nofollow">unikrn</a>,
-            <a
-              href="https://www.crunchbase.com/organization/atticous"
-              rel="nofollow"
-              >atticous</a
-            >, and
-            <a
-              href="https://www.geekwire.com/2015/seattle-esports-wagering-company-unikrn-acquires-dotaprohub/"
-              rel="nofollow"
-              >dotaprohub</a
-            >. <span class="shy"><br /></span
-            ><a href="mailto:hello@adityamukherjee.com" class="hl"
-              >let's talk</a
-            >
-            about working&nbsp;together.
-          </p>
-        </div>
+        <p>
+          20 years of experience building products through engineering
+          and&nbsp;leadership.
+        </p>
+        <p>
+          previously at
+          <a href="https://dovetail.com" rel="nofollow">dovetail</a>,
+          <a href="https://unikrn.com/" rel="nofollow">unikrn</a>,
+          <a
+            href="https://www.crunchbase.com/organization/atticous"
+            rel="nofollow"
+            >atticous</a
+          >, and
+          <a
+            href="https://www.geekwire.com/2015/seattle-esports-wagering-company-unikrn-acquires-dotaprohub/"
+            rel="nofollow"
+            >dotaprohub</a
+          >.
+        </p>
+        <p>
+          <a href="mailto:hello@adityamukherjee.com" class="hl">let's talk</a>
+          about working&nbsp;together.
+        </p>
       </div>
-    </div>
-    <script></script>
+
+      <div class="hero">
+        <div class="seal"><img src="./assets/S.png" alt="" /></div>
+        <h1 class="name">aditya mukherjee</h1>
+      </div>
+
+      <nav class="links">
+        <a href="./writing/">writing</a>
+        <a href="https://github.com/adityavm" rel="nofollow noreferrer"
+          >github</a
+        >
+        <a href="./resume.html">resume</a>
+      </nav>
+    </main>
   </body>
 </html>
