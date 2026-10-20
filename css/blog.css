@@ -24,13 +24,12 @@ body {
 .post {
   max-width: 680px;
   margin: 0 auto;
-  border: 3px solid var(--text);
-  box-shadow: 10px 10px 0 var(--accent);
 }
 
 .post header {
-  padding: 32px var(--pad);
-  border-bottom: 3px solid var(--text);
+  padding: 32px calc(var(--pad) - 3px);
+  border: 3px solid var(--text);
+  box-shadow: 10px 10px 0 var(--accent);
 }
 
 .post h1 {
@@ -43,7 +42,7 @@ body {
 }
 
 .content {
-  padding: 8px var(--pad) 32px;
+  padding: 16px var(--pad) 32px;
 }
 
 .posts {
@@ -67,12 +66,17 @@ a {
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   text-decoration-skip-ink: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition:
+    background-size 0.3s,
+    color 0.3s;
 }
 
 a:hover {
   color: var(--background);
-  background-color: var(--accent);
-  text-decoration: none;
+  background-size: 100% 100%;
 }
 
 .content a[href^="http"]:not([href*="//adi.is"])::after {
@@ -80,6 +84,7 @@ a:hover {
   display: inline-block;
   margin-left: 2px;
   color: var(--accent);
+  transition: color 0.3s;
 }
 
 .content a[href^="http"]:not([href*="//adi.is"]):hover::after {
