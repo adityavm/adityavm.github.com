@@ -76,6 +76,12 @@
         text-underline-offset: 3px;
         text-decoration-skip-ink: none;
         white-space: nowrap;
+        background-image: linear-gradient(var(--accent), var(--accent));
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        transition:
+          background-size 0.3s,
+          color 0.3s;
       }
 
       .card a {
@@ -84,8 +90,7 @@
 
       a:hover {
         color: var(--background);
-        background-color: var(--accent);
-        text-decoration: none;
+        background-size: 100% 100%;
       }
 
       .foreword {
