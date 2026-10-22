@@ -23,7 +23,7 @@ function parseFrontmatter(src) {
   return { meta, body: src.slice(match[0].length) };
 }
 
-function render({ title, date, html, rel, back }) {
+function render({ title, date, html, rel, links }) {
   const t = md.utils.escapeHtml(title);
   return `<!doctype html>
 <html lang="en">
@@ -37,7 +37,9 @@ function render({ title, date, html, rel, back }) {
   <body>
     <article class="post">
       <header>
-        <a href="${back}" class="home" aria-label="back">←</a>
+        <nav>
+          ${links.map(([href, label]) => `<a href="${href}">${label}</a>`).join("\n          ")}
+        </nav>
         <h1>${t}</h1>
         ${date ? `<time datetime="${date}">${date}</time>` : ""}
       </header>
@@ -75,7 +77,10 @@ for (const file of files) {
       date,
       html: md.render(body),
       rel: toHref(outDir, root),
-      back: toHref(outDir, writingDir),
+      links: [
+        [toHref(outDir, root), "home"],
+        [toHref(outDir, writingDir), "writing"],
+      ],
     }),
   );
   console.log(`${file} → ${path.relative(root, out)}`);
@@ -95,7 +100,7 @@ await writeFile(
     title: "writing",
     html: `<ul class="posts">\n${list}\n</ul>`,
     rel: "../",
-    back: "../",
+    links: [["../", "home"]],
   }),
 );
 console.log("writing/index.html");

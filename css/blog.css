@@ -5,46 +5,66 @@ body {
 }
 
 body {
-  --pad: 40px;
-  --content-pad: var(--pad);
-  margin: 0;
-  padding: 20px;
-  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  font-size: 15px;
+  padding: 24px;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 16px;
   line-height: 1.7;
   background-color: var(--background);
   color: var(--text);
 }
 
-@media (max-width: 640px) {
-  body {
-    --pad: 24px;
-    --content-pad: 0;
-  }
-}
-
 .post {
-  max-width: 680px;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 16px 0 64px;
 }
 
-.post header {
-  padding: 32px calc(var(--pad) - 3px);
-  border: 3px solid var(--text);
-  box-shadow: 10px 10px 0 var(--accent);
+.post nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+nav a {
+  padding: 2px 6px;
+  color: var(--accent);
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .post h1 {
-  margin: 20px 0 4px;
-  font-size: 24px;
+  margin: 64px 0 0;
+  font-size: clamp(32px, 8vw, 44px);
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
 }
 
-.post time {
+.post header time {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+}
+
+time {
   color: var(--text-dimmest);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
 }
 
 .content {
-  padding: 16px var(--content-pad) 32px;
+  margin-top: 56px;
+}
+
+.content img {
+  max-width: 100%;
 }
 
 .posts {
@@ -54,31 +74,19 @@ body {
 
 .posts li {
   display: flex;
+  align-items: baseline;
   gap: 2ch;
-}
-
-.content img {
-  max-width: 100%;
 }
 
 a {
   color: var(--text);
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 2px;
+  text-decoration: underline var(--accent);
   text-underline-offset: 3px;
-  text-decoration-skip-ink: none;
-  background-image: linear-gradient(var(--accent), var(--accent));
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
+  background: linear-gradient(var(--accent), var(--accent)) no-repeat 0 0 / 0%
+    100%;
   transition:
     background-size 0.3s,
     color 0.3s;
-}
-
-a:hover {
-  color: var(--background);
-  background-size: 100% 100%;
 }
 
 .content a[href^="http"]:not([href*="//adi.is"])::after {
@@ -93,26 +101,18 @@ a:hover {
   color: inherit;
 }
 
-.home {
-  color: var(--accent);
-  font-size: 22px;
-  text-decoration: none;
-}
-
 .footnote-ref a {
   color: var(--accent);
   text-decoration: none;
 }
 
 hr.footnotes-sep {
-  border: none;
-  border-top: 3px solid var(--text);
-  margin: 32px calc(-1 * var(--content-pad)) 0;
+  display: none;
 }
 
 .footnotes {
-  padding-top: 16px;
-  font-size: 13px;
+  margin-top: 48px;
+  font-size: 14px;
   color: var(--text-dimmer);
 }
 
@@ -122,4 +122,10 @@ hr.footnotes-sep {
 
 .footnote-backref {
   text-decoration: none;
+}
+
+a:hover,
+.footnote-ref a:hover {
+  color: var(--background);
+  background-size: 100% 100%;
 }
