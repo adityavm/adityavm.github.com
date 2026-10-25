@@ -64,7 +64,9 @@ time {
 }
 
 .content img {
-  max-width: 100%;
+  max-width: min(100%, 600px);
+  display: block;
+  margin: 0 auto;
 }
 
 .posts {
