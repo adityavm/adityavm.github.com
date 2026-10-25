@@ -2,6 +2,7 @@
 title: japan
 slug: /japan
 date: 2026-10-20
+category: longform
 ---
 
 After almost two years of planning and not being able to make the trip happen for one reason or another, we were finally able to make Japan happen a few weeks ago. We decided to just throw some stuff in a suitcase, stuff it inside a bigger one, and just go -- before we got cold feet again[^1] from not having the ideal plan. Even unplanned, the trip was part-therapeutic, and part-adventure.

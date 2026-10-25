@@ -103,6 +103,17 @@ a {
   color: inherit;
 }
 
+.posts a .ext {
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--accent);
+  transition: color 0.3s;
+}
+
+.posts a:hover .ext {
+  color: inherit;
+}
+
 .footnote-ref a {
   color: var(--accent);
   text-decoration: none;
@@ -130,4 +141,8 @@ a:hover,
 .footnote-ref a:hover {
   color: var(--background);
   background-size: 100% 100%;
+}
+
+.categories .label {
+  color: var(--text-dimmest);
 }
