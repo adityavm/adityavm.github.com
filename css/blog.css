@@ -84,8 +84,10 @@ a {
   color: var(--text);
   text-decoration: underline var(--accent);
   text-underline-offset: 3px;
-  background: linear-gradient(var(--accent), var(--accent)) no-repeat 0 0 / 0%
-    100%;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 0.01% 100%;
   transition:
     background-size 0.3s,
     color 0.3s;
